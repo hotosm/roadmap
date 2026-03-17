@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2025-01-01T00:00:00.000Z",
+  "itemCount": 1,
+  "items": [
+    {
+      "id": "project_123",
+      "title": "Example roadmap item",
+      "group": "Core platform",
+      "summary": "Short summary for the roadmap card and detail panel.",
+      "status": "In progress",
+      "owner": "Alex Example",
+      "startDate": "2025-01-15T00:00:00.000Z",
+      "targetDate": "2025-03-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "issue_123",
+          "identifier": "ENG-101",
+          "title": "Example implementation issue",
+          "priority": 2,
+          "state": {
+            "name": "In Progress"
+          },
+          "assignee": {
+            "name": "Alex Example"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:org/repo"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/org/repo/issues/123",
+                "title": "GitHub issue",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

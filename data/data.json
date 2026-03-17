@@ -1,0 +1,513 @@
+{
+  "generatedAt": "2026-03-17T19:37:55.184Z",
+  "itemCount": 25,
+  "items": [
+    {
+      "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
+      "title": "DroneTM: scalable and resilient imagery processing",
+      "category": "imagery",
+      "group": "Imagery: users can collect, process, and visualise from coordinated field activities",
+      "summary": "Users need better insight and control of the processing. It should also be fault tolerant and scale with demand.",
+      "status": "In progress",
+      "owner": "Sam Woodcock",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "95ff0877-2c0a-421e-960c-fe7e646b7470",
+      "title": "DroneTM: improve the experience of uploading captured photos",
+      "category": "imagery",
+      "group": "Imagery: users can collect, process, and visualise from coordinated field activities",
+      "summary": "The first release had lots of great field feedback, user frustrations, and parts to improve",
+      "status": "In progress",
+      "owner": "Sam Woodcock",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "targetDate": "2026-03-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "16dc5dcc-3e35-4f2c-891d-ba6846105013",
+      "title": "Imagery: new frontend for OpenAerialMap",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "572f15bf-295e-44c3-975f-d241540faa2f",
+      "title": "DroneTM: improvements to drone operator experience in the field",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "Operators often don't have internet, need to navigate difficult terrain, and be flexible with workflows",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "1bcc0527-745d-4272-b3e7-37efeab0a1c4",
+      "title": "DroneTM: support additional drone models",
+      "category": "imagery",
+      "group": "Imagery: users can collect, process, and visualise from coordinated field activities",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "44ff5688-b308-44db-88ce-fc0124fcf5c2",
+      "title": "Imagery: new uploader for OpenAerialMap",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "539e9ba5-c3a3-4253-b48f-0daf7fcb230c",
+      "title": "Utilize 3D data collected by DroneTM to enrich OpenStreetMap",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2027-07-01T00:00:00.000Z",
+      "targetDate": "2028-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "19ae5d95-3b95-41a2-bfe3-b1c53fd6724b",
+      "title": "OSM Sandbox: storing mapped data outside of OpenStreetMap",
+      "category": "digitization",
+      "group": "Digitisation: users should be able to create data both inside and outside OSM",
+      "summary": "",
+      "status": "In progress",
+      "owner": "ramya.ragupathy@hotosm.org",
+      "startDate": "2025-01-01T00:00:00.000Z",
+      "targetDate": "2025-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "63d5b26a-8b45-4214-84cf-568c35c48130",
+      "title": "fAIr: process predictions in the background while user is offline",
+      "category": "digitization",
+      "group": "Roadmap item",
+      "summary": "Currently the user must wait for predictions to be made in the same session. This should be stored and can be returned to.",
+      "status": "In progress",
+      "owner": "",
+      "startDate": "2025-07-01T00:00:00.000Z",
+      "targetDate": "2025-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "bf855439-8abe-4259-9c19-2b149893cd8f",
+      "title": "fAIr: re-use same pre-trained model on new imagery or different area",
+      "category": "digitization",
+      "group": "Roadmap item",
+      "summary": "Currently a model is linked to a specific set of imagery and area. Re-using the same models would be helpful.",
+      "status": "In progress",
+      "owner": "",
+      "startDate": "2025-07-01T00:00:00.000Z",
+      "targetDate": "2025-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "0b8e6c47-2f32-40c9-8b13-349cc24fca68",
+      "title": "fAIr: integrate with MapSwipe for feature validation",
+      "category": "digitization",
+      "group": "Roadmap item",
+      "summary": "User validation via MapSwipe would allow for fAIr-generated data to be pushed to OpenStreetMap.",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "c2624635-6f3a-4ef2-b143-f211c70934bf",
+      "title": "FieldTM: Mapa das Periferias collaboration",
+      "category": "field",
+      "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
+      "summary": "The government of Brazil need a customized FieldTM application for mapping informal settlements throughout the country.",
+      "status": "In progress",
+      "owner": "Sam Woodcock",
+      "startDate": "2025-01-01T00:00:00.000Z",
+      "targetDate": "2025-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "0040a20b-bf69-4cb7-a2f4-80de554a8c1d",
+      "title": "FieldTM: QField integration",
+      "category": "field",
+      "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
+      "summary": "Integrations with QField as underlying mapping app",
+      "status": "In progress",
+      "owner": "Sam Woodcock",
+      "startDate": "2025-07-01T00:00:00.000Z",
+      "targetDate": "2025-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
+      "title": "FieldTM: restructure as primarily a project coordinator, not a mapping app",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "FieldTM diverged to become both a coordination and mapping app. Let's keep it simple and focus on coordination only.",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "eced36c2-f888-4205-a9cd-79cbce62736f",
+          "identifier": "TECH-790",
+          "title": "Move the FieldTM management frontend into a separate frontend build / app",
+          "priority": 0,
+          "state": {
+            "name": "Canceled"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend:management"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2859",
+                "title": "#2859 Move the FieldTM management frontend into a separate frontend build / app",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "9e72e34e-7d28-4be6-a70c-508c0d431501",
+          "identifier": "TECH-787",
+          "title": "Simply the FieldTM / WebForms online workflow",
+          "priority": 0,
+          "state": {
+            "name": "Canceled"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2853",
+                "title": "#2853 Simply the FieldTM / WebForms online workflow",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "358d4756-249d-49b9-8f33-d857ae45b4bb",
+      "title": "ChatMap: real-time visualization & better data export methods",
+      "category": "field",
+      "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
+      "summary": "",
+      "status": "Planned",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "8b744c42-cb1d-4a3a-8a28-832a814d4bc4",
+      "title": "FieldTM: improved OpenStreetMap integration",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "The scope of FieldTM widened over the years, but we plan to prioritize OSM-based workflows again",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "399a4364-270d-4672-bb0d-2369880729f5",
+          "identifier": "TECH-712",
+          "title": "Addition of other Survey categories on FMTM",
+          "priority": 0,
+          "state": {
+            "name": "Canceled"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2334",
+                "title": "#2334 Addition of other Survey categories on FMTM",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "5bd98fbe-7528-4d6e-a7ac-2c9a8561298c",
+      "title": "FieldTM: integrate with other field data collection tools",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2027-01-01T00:00:00.000Z",
+      "targetDate": "2027-06-30T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "40cb8703-8583-4c99-a85e-f5c4a97bf6cf",
+          "identifier": "TECH-783",
+          "title": "Add ChatMap as an additional field mapping app downstream",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2850",
+                "title": "#2850 Add ChatMap as an additional field mapping app downstream",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "46e436c0-6bbb-468b-869f-88fcdbaeeeeb",
+          "identifier": "TECH-688",
+          "title": "Support odk.ona.io as ODK server option",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "dependency:osm-fieldwork"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/1829",
+                "title": "#1829 Support odk.ona.io as ODK server option",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "3bd90973-59dd-4ec4-aca0-de68f9eafcaa",
+      "title": "FieldTM: data extraction and visualization dashboards",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2027-07-01T00:00:00.000Z",
+      "targetDate": "2027-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "653b098c-cb9a-4ce3-8464-a4d939173701",
+      "title": "Data access: reassess our OSM export tools and simplify where possible",
+      "category": "data-access",
+      "group": "Data access: users should be able to export their data from each part of the E2E chain",
+      "summary": "",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "a1da56cf-33c6-4074-8202-0014e6b948c7",
+      "title": "Data access: append additional metadata to OSM for humanitarian purposes",
+      "category": "data-access",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-07-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "a229a0c1-684f-4f87-8086-895755e15b01",
+      "title": "Data quality: simple OSM primary road validation",
+      "category": "data-access",
+      "group": "Data quality: analysis and pipelines to improve OSM data",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2027-01-01T00:00:00.000Z",
+      "targetDate": "2027-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "8e47d72f-57e9-49c9-b366-4f9858c01875",
+      "title": "Data access: QGIS plugin to load localization for OSM data",
+      "category": "data-access",
+      "group": "Data access: users should be able to export their data from each part of the E2E chain",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2027-01-01T00:00:00.000Z",
+      "targetDate": "2027-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "93542378-35cb-43a9-80c2-bc4178606d05",
+      "title": "Move tools to more modern and optimized infrastructure",
+      "category": "cross-project",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "In progress",
+      "owner": "dakota.benjamin@hotosm.org",
+      "startDate": "2025-07-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "be51e279-709d-4afd-a3a4-827b8875c341",
+      "title": "HOT Portal: centralized E2E mapping dashboard",
+      "category": "cross-project",
+      "group": "Experience: our tools should be easy to use and accessible with low tech literacy",
+      "summary": "",
+      "status": "In progress",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "targetDate": "2025-12-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "33193480-35f0-4dd1-a998-13276575a30d",
+      "title": "All HOT tools should have a similar look and feel: UI/UX enhancements",
+      "category": "cross-project",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2027-09-30T00:00:00.000Z",
+      "issues": []
+    }
+  ]
+}

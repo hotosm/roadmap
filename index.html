@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOT Tech Roadmap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <div class="app__brand">
+        <p class="app__eyebrow">Humanitarian OpenStreetMap Team</p>
+        <h1 class="app__title">Tech Roadmap</h1>
+        <p class="app__subtitle" id="timeline-meta"></p>
+      </div>
+      <nav class="legend" id="legend" aria-label="Category legend"></nav>
+    </header>
+
+    <section class="timeline-shell" aria-label="Roadmap timeline">
+      <div class="timeline-scroll" id="timeline-scroll">
+        <div class="timeline-canvas" id="timeline-canvas">
+          <div class="today-line" aria-hidden="true">
+            <span class="today-line__label">Today</span>
+          </div>
+          <div class="timeline-axis" id="timeline-axis"></div>
+          <section class="timeline-rows" id="timeline-rows" aria-live="polite"></section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="request-fab" id="request-fab" type="button">
+    <svg class="request-fab__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 1v14M1 8h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span>Tech Request</span>
+  </button>
+
+  <div class="request-modal" id="request-modal" hidden>
+    <div class="request-modal__backdrop" data-close-request="true"></div>
+    <section class="request-panel" role="dialog" aria-modal="true" aria-labelledby="request-title">
+      <div class="request-panel__header">
+        <div>
+          <p class="request-panel__eyebrow">Humanitarian OpenStreetMap Team</p>
+          <h2 class="request-panel__title" id="request-title">Submit a Tech Request</h2>
+          <p class="request-panel__desc">Describe what you need from the tech team. This will open a GitHub issue for tracking.</p>
+        </div>
+        <button class="request-panel__close" id="request-close" type="button" aria-label="Close">&times;</button>
+      </div>
+      <form class="request-form" id="request-form">
+        <label class="request-form__field">
+          <span>Your Name</span>
+          <input name="name" type="text" required placeholder="e.g. Jane Smith">
+        </label>
+        <label class="request-form__field">
+          <span>Email Address</span>
+          <input name="email" type="email" required placeholder="e.g. jane@hotosm.org">
+        </label>
+        <label class="request-form__field">
+          <span>Regional Hub</span>
+          <select name="hub" required>
+            <option value="" disabled selected>Select a regional hub…</option>
+            <option value="ESA">ESA</option>
+            <option value="WNA">WNA</option>
+            <option value="LAC">LAC</option>
+            <option value="AP">AP</option>
+          </select>
+        </label>
+        <label class="request-form__field">
+          <span>Related Tool</span>
+          <select name="tool" required>
+            <option value="" disabled selected>Select a tool…</option>
+            <option value="Tasking Manager">Tasking Manager</option>
+            <option value="fAIr">fAIr</option>
+            <option value="OpenAerialMap">OpenAerialMap</option>
+            <option value="DroneTM">DroneTM</option>
+            <option value="FieldTM">FieldTM</option>
+            <option value="ChatMap">ChatMap</option>
+            <option value="uMap">uMap</option>
+            <option value="Data Export">Data Export</option>
+            <option value="HOT Portal">HOT Portal</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="request-form__field">
+          <span>Request Type</span>
+          <select name="type" required>
+            <option value="" disabled selected>Select type…</option>
+            <option value="Bug Report">Bug Report</option>
+            <option value="Feature Request">Feature Request</option>
+            <option value="Data Request">Data Request</option>
+            <option value="Access / Permissions">Access / Permissions</option>
+            <option value="Question">Question</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="request-form__field">
+          <span>Priority</span>
+          <select name="priority">
+            <option value="Normal" selected>Normal</option>
+            <option value="Low">Low</option>
+            <option value="High">High</option>
+            <option value="Urgent">Urgent</option>
+          </select>
+        </label>
+        <label class="request-form__field request-form__field--full">
+          <span>Title</span>
+          <input name="title" type="text" required placeholder="Brief summary of your request">
+        </label>
+        <label class="request-form__field request-form__field--full">
+          <span>Description</span>
+          <textarea name="description" rows="5" required placeholder="Please include as much detail as possible: what you need, why, and any relevant context."></textarea>
+        </label>
+        <p class="request-form__hint">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="vertical-align: -2px; margin-right: 2px;">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          This opens a pre-filled issue on GitHub - just review and submit.
+        </p>
+        <div class="request-form__actions">
+          <button class="request-form__secondary" id="request-cancel" type="button">Cancel</button>
+          <button class="request-form__submit" type="submit">
+            Open on GitHub
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" style="margin-left: 4px;">
+              <path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

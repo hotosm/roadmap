@@ -1,0 +1,48 @@
+name: Refresh Roadmap Data
+
+on:
+  schedule:
+    # Run once per week
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Generate roadmap data
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+        run: node scripts/generate.js
+
+      - name: Commit updated data
+        env:
+          GIT_AUTHOR_NAME: ${{ github.actor }}
+          GIT_AUTHOR_EMAIL: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+          GIT_COMMITTER_NAME: ${{ github.actor }}
+          GIT_COMMITTER_EMAIL: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
+        run: |
+          if git diff --quiet -- data/data.json; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "$GIT_AUTHOR_NAME"
+          git config user.email "$GIT_AUTHOR_EMAIL"
+          git add data/data.json
+          git commit -m "docs: update roadmap data"
+          git push
