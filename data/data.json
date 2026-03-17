@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-17T19:37:55.184Z",
+  "generatedAt": "2026-03-17T21:31:33.871Z",
   "itemCount": 25,
   "items": [
     {
@@ -27,18 +27,6 @@
       "issues": []
     },
     {
-      "id": "16dc5dcc-3e35-4f2c-891d-ba6846105013",
-      "title": "Imagery: new frontend for OpenAerialMap",
-      "category": "imagery",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-09-30T00:00:00.000Z",
-      "issues": []
-    },
-    {
       "id": "572f15bf-295e-44c3-975f-d241540faa2f",
       "title": "DroneTM: improvements to drone operator experience in the field",
       "category": "imagery",
@@ -48,6 +36,18 @@
       "owner": "Sam Woodcock",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "16dc5dcc-3e35-4f2c-891d-ba6846105013",
+      "title": "Imagery: new frontend for OpenAerialMap",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
       "issues": []
     },
     {
