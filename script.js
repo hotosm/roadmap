@@ -67,9 +67,44 @@ const CATEGORY_ORDER = Object.keys(CATEGORIES).sort(
 
 let scheduledRangeStart = null;
 let activeDetailPanel = null;
+let roadmapItems = [];
+let activeCategoryFilter = null;
 
 function syncBodyModalState() {
   document.body.classList.toggle("modal-open", Boolean(activeDetailPanel) || !requestModal.hidden);
+}
+
+function getVisibleItems() {
+  if (!activeCategoryFilter) return roadmapItems;
+  return roadmapItems.filter((item) => item.category === activeCategoryFilter);
+}
+
+function normalizeIssues(issues) {
+  if (Array.isArray(issues)) return issues;
+  if (Array.isArray(issues?.nodes)) return issues.nodes;
+  return [];
+}
+
+function normalizeRoadmapItem(item) {
+  return {
+    ...item,
+    category: item.category || classifyCategory(item.title, item.group),
+    issues: normalizeIssues(item.issues),
+  };
+}
+
+function getRoadmapItemById(id) {
+  return roadmapItems.find((item) => item.id === id) || null;
+}
+
+function updateTimelineMeta() {
+  if (!activeCategoryFilter) {
+    timelineMeta.textContent = "Click a project for details. Click a legend category to filter.";
+    return;
+  }
+
+  const cat = CATEGORIES[activeCategoryFilter];
+  timelineMeta.textContent = `Showing ${cat.label} items only. Click the category again to clear the filter.`;
 }
 
 /* ── Category classification ─────────────────────────────── */
@@ -151,10 +186,7 @@ async function loadRoadmap() {
   }
 
   // Ensure every item has a category
-  return items.map((item) => ({
-    ...item,
-    category: item.category || classifyCategory(item.title, item.group),
-  }));
+  return items.map(normalizeRoadmapItem);
 }
 
 /* ── Render: legend ──────────────────────────────────────── */
@@ -162,12 +194,23 @@ function renderLegend() {
   legendContainer.innerHTML = "";
   CATEGORY_ORDER.forEach((key) => {
     const cat = CATEGORIES[key];
-    const el = document.createElement("span");
+    const el = document.createElement("button");
+    const isActive = activeCategoryFilter === key;
     el.className = "legend__item";
+    el.type = "button";
+    el.setAttribute("aria-pressed", String(isActive));
+    if (isActive) el.classList.add("legend__item--active");
     el.innerHTML = `
       <span class="legend__dot" style="background:${cat.color}"></span>
       <span>${cat.label}</span>
     `;
+    el.addEventListener("click", () => {
+      activeCategoryFilter = isActive ? null : key;
+      closeDetailPanel();
+      updateTimelineMeta();
+      renderLegend();
+      renderScheduled(getVisibleItems());
+    });
     legendContainer.appendChild(el);
   });
 }
@@ -220,8 +263,12 @@ function renderScheduled(items) {
   const scheduled = items.filter((i) => i.targetDate);
 
   if (!scheduled.length) {
-    timelineRows.innerHTML = '<div class="empty-state">No scheduled roadmap items.</div>';
+    const emptyMessage = activeCategoryFilter
+      ? `No scheduled ${CATEGORIES[activeCategoryFilter].label.toLowerCase()} items.`
+      : "No scheduled roadmap items.";
+    timelineRows.innerHTML = `<div class="empty-state">${escapeHtml(emptyMessage)}</div>`;
     timelineAxis.innerHTML = "";
+    scheduledRangeStart = null;
     return;
   }
 
@@ -329,37 +376,39 @@ function closeDetailPanel() {
 }
 
 function toggleDetailPanel(item, bar) {
-  if (activeDetailPanel?.id === item.id) {
+  const resolvedItem = getRoadmapItemById(item.id) || normalizeRoadmapItem(item);
+
+  if (activeDetailPanel?.id === resolvedItem.id) {
     closeDetailPanel();
     return;
   }
   closeDetailPanel();
 
   bar.classList.add("roadmap-bar--active");
-  const cat = CATEGORIES[item.category] || CATEGORIES["cross-project"];
-  const statusSlug = slugify(item.status);
+  const cat = CATEGORIES[resolvedItem.category] || CATEGORIES["cross-project"];
+  const statusSlug = slugify(resolvedItem.status);
 
   const overlay = document.createElement("div");
   overlay.className = "detail-modal";
   overlay.innerHTML = `
     <div class="detail-modal__backdrop" data-close-modal="true"></div>
-    <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-${item.id}">
+    <section class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title-${resolvedItem.id}">
       <div class="detail-panel__header">
         <div class="detail-panel__title-row">
           <p class="detail-panel__category">
             <span class="detail-panel__category-dot" style="background:${cat.color}"></span>
             ${escapeHtml(cat.label)}
           </p>
-          <h2 class="detail-panel__title" id="detail-title-${item.id}">${escapeHtml(item.title)}</h2>
+          <h2 class="detail-panel__title" id="detail-title-${resolvedItem.id}">${escapeHtml(resolvedItem.title)}</h2>
         </div>
         <button class="detail-panel__close" aria-label="Close">&times;</button>
       </div>
       <div class="detail-panel__meta">
-        <span class="status-pill status-pill--${statusSlug}">${escapeHtml(item.status)}</span>
-        <span>${item.owner ? escapeHtml(item.owner) : "Unassigned"}</span>
-        <span>${item.startDate ? fmtDate(item.startDate) : "No start"} &rarr; ${fmtDate(item.targetDate)}</span>
+        <span class="status-pill status-pill--${statusSlug}">${escapeHtml(resolvedItem.status)}</span>
+        <span>${resolvedItem.owner ? escapeHtml(resolvedItem.owner) : "Unassigned"}</span>
+        <span>${resolvedItem.startDate ? fmtDate(resolvedItem.startDate) : "No start"} &rarr; ${fmtDate(resolvedItem.targetDate)}</span>
       </div>
-      ${item.summary ? `<p class="detail-panel__summary">${escapeHtml(item.summary)}</p>` : ""}
+      ${resolvedItem.summary ? `<p class="detail-panel__summary">${escapeHtml(resolvedItem.summary)}</p>` : ""}
       <div class="detail-panel__issues"></div>
     </section>
   `;
@@ -372,10 +421,10 @@ function toggleDetailPanel(item, bar) {
 
   overlay.querySelector(".detail-panel__close").addEventListener("click", closeDetailPanel);
   document.body.appendChild(overlay);
-  activeDetailPanel = { id: item.id, panel: overlay, bar };
+  activeDetailPanel = { id: resolvedItem.id, panel: overlay, bar };
   syncBodyModalState();
 
-  renderIssuesInPanel(overlay.querySelector(".detail-panel__issues"), item.issues || []);
+  renderIssuesInPanel(overlay.querySelector(".detail-panel__issues"), normalizeIssues(resolvedItem.issues));
 }
 
 function openRequestModal() {
@@ -530,12 +579,13 @@ function renderError(msg) {
 
 /* ── Init ─────────────────────────────────────────────────── */
 async function init() {
-  timelineMeta.textContent = "Click a project for details";
+  updateTimelineMeta();
   renderLegend();
 
   try {
-    const items = await loadRoadmap();
-    renderScheduled(items);
+    roadmapItems = await loadRoadmap();
+    renderLegend();
+    renderScheduled(getVisibleItems());
   } catch (err) {
     renderError(err.message);
   }

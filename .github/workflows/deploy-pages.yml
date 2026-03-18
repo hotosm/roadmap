@@ -34,6 +34,8 @@ jobs:
         run: |
           mkdir -p dist/data
           cp index.html script.js styles.css dist/
+          [ -f favicon.ico ] && cp favicon.ico dist/ || true
+          [ -f favicon.png ] && cp favicon.png dist/ || true
           cp data/data.json dist/data/data.json
 
       - name: Upload Pages artifact

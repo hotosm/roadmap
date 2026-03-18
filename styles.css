@@ -98,10 +98,33 @@ a { color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--muted);
   white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+  font: inherit;
+}
+
+.legend__item:hover {
+  color: var(--ink);
+  background: rgba(46, 72, 115, 0.06);
+}
+
+.legend__item:focus-visible {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.legend__item--active {
+  color: var(--ink);
+  background: rgba(46, 72, 115, 0.1);
+  border-color: rgba(46, 72, 115, 0.24);
 }
 
 .legend__dot {
