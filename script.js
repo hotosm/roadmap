@@ -14,7 +14,7 @@ const requestCancel = document.getElementById("request-cancel");
 /* ── Config ───────────────────────────────────────────────── */
 const DATA_URL = "./data/data.json";
 const GITHUB_REQUESTS_REPO = "hotosm/requests";
-const DAY_WIDTH = 18;
+const DAY_WIDTH = 8;
 const ROW_HEIGHT = 48;
 const BAR_HEIGHT = 34;
 
@@ -317,7 +317,7 @@ function renderScheduled(items) {
     const visibleStart = itemStart < rangeStart ? rangeStart : itemStart;
     const visibleEnd = itemEnd > rangeEnd ? rangeEnd : itemEnd;
     const leftPx = diffDays(visibleStart, rangeStart) * DAY_WIDTH;
-    const widthPx = Math.max(diffDays(visibleEnd, visibleStart) * DAY_WIDTH, 80);
+    const widthPx = Math.max(diffDays(visibleEnd, visibleStart) * DAY_WIDTH, 72);
 
     const bar = document.createElement("div");
     bar.className = `roadmap-bar roadmap-bar--${statusSlug}`;

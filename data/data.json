@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-18T02:09:29.011Z",
-  "itemCount": 29,
+  "generatedAt": "2026-03-18T03:47:07.835Z",
+  "itemCount": 30,
   "items": [
     {
       "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
@@ -3063,6 +3063,101 @@
       ]
     },
     {
+      "id": "dda32e14-16dd-47e0-a304-e030e9e8682d",
+      "title": "All tools should use a unified login system (shared login)",
+      "category": "cross-project",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "414dbcc2-ee2f-42ea-b86b-d9da4d2697a5",
+          "identifier": "TECH-1028",
+          "title": "Add bundled hanko login instance as part of Kubernetes deployment options",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "devops"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3032",
+                "title": "#3032 Add bundled hanko login instance as part of Kubernetes deployment options",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ded27613-830d-4e88-8a99-6686216ab873",
+          "identifier": "TECH-989",
+          "title": "Add login to frontend via unified HOT login",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3019",
+                "title": "#3019 Add login to frontend via unified HOT login",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "be51e279-709d-4afd-a3a4-827b8875c341",
       "title": "HOT Portal: centralized E2E mapping dashboard",
       "category": "cross-project",
@@ -3081,7 +3176,7 @@
       "group": "Roadmap item",
       "summary": "",
       "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
+      "owner": "Sam Woodcock",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2027-06-30T00:00:00.000Z",
       "issues": []
