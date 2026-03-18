@@ -46,9 +46,9 @@ const CATEGORIES = {
   "data-access": {
     label: "Data Access",
     description: "Export Tools & APIs",
-    color: "#2E4873",
+    color: "#53688B",
     bg: "#E6E9EE",
-    border: "#97A5BA",
+    border: "#BFC8D6",
     order: 3,
   },
   "cross-project": {
