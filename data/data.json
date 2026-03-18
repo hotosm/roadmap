@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T01:41:55.777Z",
+  "generatedAt": "2026-03-18T02:09:29.011Z",
   "itemCount": 29,
   "items": [
     {
@@ -1762,11 +1762,49 @@
       "category": "field",
       "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
       "summary": "Integrations with QField as underlying mapping app",
-      "status": "Done",
+      "status": "In progress",
       "owner": "Sam Woodcock",
       "startDate": "2025-07-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": []
+      "issues": [
+        {
+          "id": "1e068283-fea5-495e-8f41-6409a4cd7a66",
+          "identifier": "TECH-1073",
+          "title": "Deploy QFieldCloud on a separate server - self hosted via helm chart",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "devops"
+              },
+              {
+                "name": "QField"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3036",
+                "title": "#3036 Deploy QFieldCloud on a separate server - self hosted via helm chart",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
