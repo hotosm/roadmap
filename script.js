@@ -548,7 +548,7 @@ function renderIssuesInPanel(container, issues) {
       <span class="issue-item__title">${title}</span>
       <span class="issue-item__state issue-state--${stateSlug}">${escapeHtml(issue.state?.name || "")}</span>
       ${assignee ? `<span class="issue-item__assignee">${assignee}</span>` : ""}
-      ${ghUrl ? `<a class="issue-item__link" href="${escapeHtml(ghUrl)}" target="_blank" rel="noopener noreferrer" title="Open on GitHub">&nearr;</a>` : ""}
+      ${ghUrl ? `<a class="issue-item__link" href="${escapeHtml(ghUrl)}" target="_blank" rel="noopener noreferrer" title="Create on GitHub">&nearr;</a>` : ""}
     `;
 
     if (ghUrl) {
