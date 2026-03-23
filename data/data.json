@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T03:47:07.835Z",
+  "generatedAt": "2026-03-23T08:14:31.819Z",
   "itemCount": 30,
   "items": [
     {
@@ -737,249 +737,6 @@
       ]
     },
     {
-      "id": "b97beeb9-08b0-45d9-bdf2-81c97fd807f0",
-      "title": "Imagery: refine the metadata catalog for OpenAerialMap (STAC)",
-      "category": "imagery",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "cristiano.giovando@hotosm.org",
-      "startDate": "2026-04-01T00:00:00.000Z",
-      "targetDate": "2026-12-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "e27bdc98-3474-41a8-ba61-71dc4dbfc72a",
-          "identifier": "TECH-917",
-          "title": "Ensure metadata fixes propagate across to STAC correctly",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "High Priority"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/247",
-                "title": "#247 Ensure metadata fixes propagate across to STAC correctly",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "c5d6e3b3-cbbf-4679-80f1-f023bc78ae68",
-          "identifier": "TECH-817",
-          "title": "Add external links to OpenAerialMap STAC catalog schema",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/239",
-                "title": "#239 Add external links to OpenAerialMap STAC catalog schema",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7900ac8a-4304-4c92-b89c-1e2cd9e549e1",
-          "identifier": "TECH-36",
-          "title": "Add additional metadata to global coverage tiles for filtering",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/225",
-                "title": "#225 Add additional metadata to global coverage tiles for filtering",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "95ce7784-9a0a-4584-918b-7d5a2d4b8c11",
-          "identifier": "TECH-35",
-          "title": "Cleanup of invalid imagery from catalogue",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "STAC"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/224",
-                "title": "#224 Cleanup of invalid imagery from catalogue",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "b73473de-9a23-491c-8eb4-c04a868e7adb",
-          "identifier": "TECH-32",
-          "title": "Define queryables in PgSTAC",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/199",
-                "title": "#199 Define queryables in PgSTAC",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "1dc900cb-7b0f-4671-a34c-e291ccf27098",
-          "identifier": "TECH-21",
-          "title": "Automatic indexing of DG Open Data imagery",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "STAC"
-              },
-              {
-                "name": "new data"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/87",
-                "title": "#87 Automatic indexing of DG Open Data imagery",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "6a0a02a5-c6c7-4fbe-a1a7-cfb83cdc2d04",
-          "identifier": "TECH-20",
-          "title": "Encouraging good attribution practices",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "STAC"
-              },
-              {
-                "name": "docs"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/78",
-                "title": "#78 Encouraging good attribution practices",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "44ff5688-b308-44db-88ce-fc0124fcf5c2",
       "title": "Imagery: new uploader for OpenAerialMap",
       "category": "imagery",
@@ -1363,6 +1120,249 @@
       ]
     },
     {
+      "id": "b97beeb9-08b0-45d9-bdf2-81c97fd807f0",
+      "title": "Imagery: refine the metadata catalog for OpenAerialMap (STAC)",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "cristiano.giovando@hotosm.org",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "e27bdc98-3474-41a8-ba61-71dc4dbfc72a",
+          "identifier": "TECH-917",
+          "title": "Ensure metadata fixes propagate across to STAC correctly",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "High Priority"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/247",
+                "title": "#247 Ensure metadata fixes propagate across to STAC correctly",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "c5d6e3b3-cbbf-4679-80f1-f023bc78ae68",
+          "identifier": "TECH-817",
+          "title": "Add external links to OpenAerialMap STAC catalog schema",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/239",
+                "title": "#239 Add external links to OpenAerialMap STAC catalog schema",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7900ac8a-4304-4c92-b89c-1e2cd9e549e1",
+          "identifier": "TECH-36",
+          "title": "Add additional metadata to global coverage tiles for filtering",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/225",
+                "title": "#225 Add additional metadata to global coverage tiles for filtering",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "95ce7784-9a0a-4584-918b-7d5a2d4b8c11",
+          "identifier": "TECH-35",
+          "title": "Cleanup of invalid imagery from catalogue",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "STAC"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/224",
+                "title": "#224 Cleanup of invalid imagery from catalogue",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b73473de-9a23-491c-8eb4-c04a868e7adb",
+          "identifier": "TECH-32",
+          "title": "Define queryables in PgSTAC",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/199",
+                "title": "#199 Define queryables in PgSTAC",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1dc900cb-7b0f-4671-a34c-e291ccf27098",
+          "identifier": "TECH-21",
+          "title": "Automatic indexing of DG Open Data imagery",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "STAC"
+              },
+              {
+                "name": "new data"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/87",
+                "title": "#87 Automatic indexing of DG Open Data imagery",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "6a0a02a5-c6c7-4fbe-a1a7-cfb83cdc2d04",
+          "identifier": "TECH-20",
+          "title": "Encouraging good attribution practices",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "STAC"
+              },
+              {
+                "name": "docs"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/78",
+                "title": "#78 Encouraging good attribution practices",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "539e9ba5-c3a3-4253-b48f-0daf7fcb230c",
       "title": "Utilize 3D data collected by DroneTM to enrich OpenStreetMap",
       "category": "imagery",
@@ -1462,79 +1462,6 @@
               {
                 "url": "https://github.com/hotosm/tasking-manager/issues/7178",
                 "title": "#7178 Visual cues for sandbox projects in the project page",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "70d66103-eff0-4af4-88b9-a2e716b62b4c",
-          "identifier": "TECH-978",
-          "title": "Changeset comments to indicate sandbox edits",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:tm"
-              },
-              {
-                "name": "status: in progress"
-              },
-              {
-                "name": "scope: backend"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/tasking-manager/issues/7161",
-                "title": "#7161 Changeset comments to indicate sandbox edits",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "832d1734-34e6-4d59-be02-d7ee7b51a542",
-          "identifier": "TECH-970",
-          "title": "Pending tasks for sandbox implementation",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:tm"
-              },
-              {
-                "name": "Type: Enhancement"
-              },
-              {
-                "name": "upcoming release 🔜"
-              },
-              {
-                "name": "Priority: High"
-              },
-              {
-                "name": "ui/ux 👥"
-              },
-              {
-                "name": "status: done"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/tasking-manager/issues/7153",
-                "title": "#7153 Pending tasks for sandbox implementation",
                 "sourceType": "github"
               }
             ]
@@ -1807,94 +1734,6 @@
       ]
     },
     {
-      "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
-      "title": "FieldTM: restructure as primarily a project coordinator, not a mapping app",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "FieldTM diverged to become both a coordination and mapping app. Let's keep it simple and focus on coordination only.",
-      "status": "Done",
-      "owner": "Sam Woodcock",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "eced36c2-f888-4205-a9cd-79cbce62736f",
-          "identifier": "TECH-790",
-          "title": "Move the FieldTM management frontend into a separate frontend build / app",
-          "priority": 0,
-          "state": {
-            "name": "Canceled"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "frontend:management"
-              },
-              {
-                "name": "effort:medium"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2859",
-                "title": "#2859 Move the FieldTM management frontend into a separate frontend build / app",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "9e72e34e-7d28-4be6-a70c-508c0d431501",
-          "identifier": "TECH-787",
-          "title": "Simply the FieldTM / WebForms online workflow",
-          "priority": 0,
-          "state": {
-            "name": "Canceled"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "effort:high"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2853",
-                "title": "#2853 Simply the FieldTM / WebForms online workflow",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "8e860023-88ef-4c49-b65f-57066aa2e54d",
       "title": "ChatMap: save data via the web interface",
       "category": "field",
@@ -1903,7 +1742,7 @@
       "status": "Planned",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-06-30T00:00:00.000Z",
+      "targetDate": "2026-03-31T00:00:00.000Z",
       "issues": [
         {
           "id": "2dd443c9-24f2-4591-a82b-5a091f4d8d50",
@@ -2137,6 +1976,136 @@
       ]
     },
     {
+      "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
+      "title": "FieldTM: restructure as primarily a project coordinator, not a mapping app",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "FieldTM diverged to become both a coordination and mapping app. Let's keep it simple and focus on coordination only.",
+      "status": "Done",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-03-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "eced36c2-f888-4205-a9cd-79cbce62736f",
+          "identifier": "TECH-790",
+          "title": "Move the FieldTM management frontend into a separate frontend build / app",
+          "priority": 0,
+          "state": {
+            "name": "Canceled"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend:management"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2859",
+                "title": "#2859 Move the FieldTM management frontend into a separate frontend build / app",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "9e72e34e-7d28-4be6-a70c-508c0d431501",
+          "identifier": "TECH-787",
+          "title": "Simply the FieldTM / WebForms online workflow",
+          "priority": 0,
+          "state": {
+            "name": "Canceled"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2853",
+                "title": "#2853 Simply the FieldTM / WebForms online workflow",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "5a35de38-11d4-4f1a-a441-6ef54879b7fc",
+      "title": "ChatMap: data collection timeline",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "1589691a-7ba2-44cb-bb88-a3898aac77dd",
+          "identifier": "TECH-744",
+          "title": "Content timeline",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/7",
+                "title": "#7 Content timeline",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "8b744c42-cb1d-4a3a-8a28-832a814d4bc4",
       "title": "FieldTM: improved OpenStreetMap integration",
       "category": "field",
@@ -2212,48 +2181,6 @@
               {
                 "url": "https://github.com/hotosm/field-tm/issues/2334",
                 "title": "#2334 Addition of other Survey categories on FMTM",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "5a35de38-11d4-4f1a-a441-6ef54879b7fc",
-      "title": "ChatMap: data collection timeline",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2026-04-01T00:00:00.000Z",
-      "targetDate": "2026-09-30T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "1589691a-7ba2-44cb-bb88-a3898aac77dd",
-          "identifier": "TECH-744",
-          "title": "Content timeline",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/7",
-                "title": "#7 Content timeline",
                 "sourceType": "github"
               }
             ]
@@ -2752,44 +2679,6 @@
               {
                 "url": "https://github.com/hotosm/k8s-infra/issues/62",
                 "title": "#62 Adjust reclaim policy is good to ensure PVs don't sprawl",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "a22baab6-a2c7-4be0-a6ef-bee622cab166",
-          "identifier": "TECH-1066",
-          "title": "Karpenter AWS setup optimization and best practices",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "question"
-              },
-              {
-                "name": "actionable"
-              },
-              {
-                "name": "repo:k8s-infra"
-              },
-              {
-                "name": "Migrated"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/k8s-infra/issues/61",
-                "title": "#61 Karpenter AWS setup optimization and best practices",
                 "sourceType": "github"
               }
             ]
