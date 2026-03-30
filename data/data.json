@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-23T08:14:31.819Z",
+  "generatedAt": "2026-03-30T08:27:20.598Z",
   "itemCount": 30,
   "items": [
     {
@@ -1410,35 +1410,6 @@
       "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
         {
-          "id": "766fdbc3-952c-4b20-bd6a-b6d3a18e935e",
-          "identifier": "TECH-1024",
-          "title": "Unable to use lock and map sandbox projects",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:tm"
-              },
-              {
-                "name": "Priority: High"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/tasking-manager/issues/7197",
-                "title": "#7197 Unable to use lock and map sandbox projects",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "d5593f90-a78a-4294-9256-bff67ce849de",
           "identifier": "TECH-993",
           "title": "Visual cues for sandbox projects in the project page",
@@ -1745,32 +1716,6 @@
       "targetDate": "2026-03-31T00:00:00.000Z",
       "issues": [
         {
-          "id": "2dd443c9-24f2-4591-a82b-5a091f4d8d50",
-          "identifier": "TECH-1001",
-          "title": "Fix open a saved map",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/99",
-                "title": "#99 Fix open a saved map",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "bf3c7129-51de-4e6c-9d6b-0d55d82fda4f",
           "identifier": "TECH-999",
           "title": "Link for accessing to the GeoJSON URL in a saved map",
@@ -1791,58 +1736,6 @@
               {
                 "url": "https://github.com/hotosm/chatmap/issues/97",
                 "title": "#97 Link for accessing to the GeoJSON URL in a saved map",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "a4b81084-6e00-48b5-b76b-2e97f75981d6",
-          "identifier": "TECH-923",
-          "title": "Save maps created from exported chats",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/64",
-                "title": "#64 Save maps created from exported chats",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "b5b0979a-16d0-461c-87c3-a17217f03bd7",
-          "identifier": "TECH-885",
-          "title": "Add authentication + saved maps",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/53",
-                "title": "#53 Add authentication + saved maps",
                 "sourceType": "github"
               }
             ]
