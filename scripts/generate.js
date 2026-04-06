@@ -45,7 +45,6 @@ const PROJECT_ISSUES_QUERY = `
       after: $after
       filter: {
         project: { id: { eq: $projectId } }
-        state: { type: { neq: "completed" } }
       }
     ) {
       pageInfo {
@@ -59,6 +58,7 @@ const PROJECT_ISSUES_QUERY = `
         priority
         state {
           name
+          type
         }
         assignee {
           name
@@ -235,16 +235,26 @@ function transformProject(project) {
     owner: project.lead?.name || "",
     startDate: start ? start.toISOString() : null,
     targetDate: target ? target.toISOString() : null,
-    issues: (project.issues || []).map((issue) => ({
-      id: issue.id,
-      identifier: issue.identifier,
-      title: issue.title,
-      priority: issue.priority,
-      state: issue.state ? { name: issue.state.name } : null,
-      assignee: issue.assignee ? { name: issue.assignee.name } : null,
-      labels: { nodes: issue.labels?.nodes || [] },
-      attachments: { nodes: issue.attachments?.nodes || [] },
-    })),
+    issues: (project.issues || []).map((issue) => {
+      const stateType = issue.state?.type || "";
+      const stateName = issue.state?.name || "";
+      // Normalize issue state name based on Linear's canonical type
+      let displayState = stateName;
+      if (stateType === "completed") displayState = "Done";
+      else if (stateType === "cancelled") displayState = "Cancelled";
+      else if (stateType === "started") displayState = "In Progress";
+
+      return {
+        id: issue.id,
+        identifier: issue.identifier,
+        title: issue.title,
+        priority: issue.priority,
+        state: { name: displayState, type: stateType },
+        assignee: issue.assignee ? { name: issue.assignee.name } : null,
+        labels: { nodes: issue.labels?.nodes || [] },
+        attachments: { nodes: issue.attachments?.nodes || [] },
+      };
+    }),
   };
 }
 
