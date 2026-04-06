@@ -865,6 +865,22 @@ a { color: inherit; }
   white-space: nowrap;
 }
 
+.issue-item--done {
+  opacity: 0.55;
+}
+
+.issue-item--done .issue-item__title {
+  text-decoration: line-through;
+}
+
+.issue-item--cancelled {
+  opacity: 0.4;
+}
+
+.issue-item--cancelled .issue-item__title {
+  text-decoration: line-through;
+}
+
 .issue-state--done,
 .issue-state--closed {
   background: rgba(54, 99, 97, 0.12);

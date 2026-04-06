@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T08:27:40.323Z",
+  "generatedAt": "2026-04-06T22:02:56.512Z",
   "itemCount": 29,
   "items": [
     {
@@ -19,7 +19,8 @@
           "title": "Determine approx resource requirements for workflow based on number of images to process",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -54,7 +55,8 @@
           "title": "Implement split-merge processing",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -89,7 +91,8 @@
           "title": "Assist users with ongoing imagery processing problems",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -127,7 +130,8 @@
           "title": "Considerations for processing large city-scale projects",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -166,12 +170,55 @@
           }
         },
         {
+          "id": "5f532e18-98d6-4707-847e-e23944482eea",
+          "identifier": "TECH-625",
+          "title": "Optimize processing by automating data cleanup on NodeODM",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "odm"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/539",
+                "title": "#539 Optimize processing by automating data cleanup on NodeODM",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "64686432-967d-4b6c-8338-b2a4c80bb3e7",
           "identifier": "TECH-622",
           "title": "Add setup / easy workflow for processing imagery on a local laptop to validate final imagery",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -217,7 +264,8 @@
           "title": "Provide option to re-run processing after new imagery is uploaded",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -251,6 +299,51 @@
               }
             ]
           }
+        },
+        {
+          "id": "c93c2869-2048-470d-a4c6-858bd1bff455",
+          "identifier": "TECH-601",
+          "title": "No option to add or replace images when image processing fails",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "good first issue"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/408",
+                "title": "#408 No option to add or replace images when image processing fails",
+                "sourceType": "github"
+              }
+            ]
+          }
         }
       ]
     },
@@ -266,12 +359,356 @@
       "targetDate": "2026-03-31T00:00:00.000Z",
       "issues": [
         {
+          "id": "8df8717d-abf5-4a93-b7c5-de2397deaaff",
+          "identifier": "TECH-1022",
+          "title": "Unable to upload images for processing",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/736",
+                "title": "#736 Unable to upload images for processing",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7787d8d2-d58d-434c-a7ee-ee26c02e6166",
+          "identifier": "TECH-982",
+          "title": "Should we add the Golden Retriever plugin to uppy uploads?",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/729",
+                "title": "#729 Should we add the Golden Retriever plugin to uppy uploads?",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "0d8b7a24-eea1-421a-a0de-1e36963d6470",
+          "identifier": "TECH-958",
+          "title": "Competing sidebars in the image upload zone",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/719",
+                "title": "#719 Competing sidebars in the image upload zone",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "5ad36141-6e94-4cb4-aa1b-ad2ec8194720",
+          "identifier": "TECH-956",
+          "title": "UI adjustments to photo upload flow",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/717",
+                "title": "#717 UI adjustments to photo upload flow",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "73d58c7c-1e51-41a1-86b6-4ff8425e85e0",
+          "identifier": "TECH-955",
+          "title": "Better handling for when the user aborts the photo upload process by accident",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/716",
+                "title": "#716 Better handling for when the user aborts the photo upload process by accident",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "21460442-131b-4fd5-b07e-19ca58a95655",
+          "identifier": "TECH-954",
+          "title": "The map to display uploaded and classified images does not work",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/715",
+                "title": "#715 The map to display uploaded and classified images does not work",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1cfc2b43-5b15-4c9e-b7fa-a5dafd6574fb",
+          "identifier": "TECH-934",
+          "title": "Display rejected images during upload on the task review map",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/701",
+                "title": "#701 Display rejected images during upload on the task review map",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d113e4ab-7592-40d2-af8b-3478a533c1bc",
+          "identifier": "TECH-930",
+          "title": "Add S3 transfer acceleration for imagery uploads",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "devops"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/699",
+                "title": "#699 Add S3 transfer acceleration for imagery uploads",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "694ce663-3768-4d5a-8701-ef364e33020c",
+          "identifier": "TECH-632",
+          "title": "Improve imagery upload workflow and provide fallback for poor internet connections",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/553",
+                "title": "#553 Improve imagery upload workflow and provide fallback for poor internet connections",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "cc2316b0-37a3-4bd2-9c52-ac7dac4e3e65",
           "identifier": "TECH-629",
           "title": "DroneTM says uploaded images are outside the project's area, but this isn't the case",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -305,6 +742,51 @@
               }
             ]
           }
+        },
+        {
+          "id": "f741aab9-c26f-42b9-bc30-685d88d3b022",
+          "identifier": "TECH-626",
+          "title": "Add a second workflow for drone imagery upload: photo dump per SD card",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/540",
+                "title": "#540 Add a second workflow for drone imagery upload: photo dump per SD card",
+                "sourceType": "github"
+              }
+            ]
+          }
         }
       ]
     },
@@ -320,12 +802,54 @@
       "targetDate": "2026-12-31T00:00:00.000Z",
       "issues": [
         {
+          "id": "45843ef0-daf2-43ca-badc-bccb34138b6d",
+          "identifier": "TECH-806",
+          "title": "Add flightplan export to QGroundControl .plan JSON format",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/645",
+                "title": "#645 Add flightplan export to QGroundControl .plan JSON format",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "74d8c636-e97d-4a64-ba2a-47348a4ab301",
           "identifier": "TECH-794",
           "title": "Possible issues with wayline flights on DJI Air 3 and DJI Air 3S",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -363,7 +887,8 @@
           "title": "Consider adding support for DJI Mavic Pro Platinum",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -413,7 +938,8 @@
           "title": "Add support for using DJI Developer SDK directly (Mini 4 Pro support + remove manual waypoint replacement hack)",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -465,12 +991,54 @@
       "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
         {
+          "id": "9c852f0d-e259-4387-8b0e-17bfa462bdff",
+          "identifier": "TECH-793",
+          "title": "Create QField plugin for generating flightplans, including user configuration fields & DEM sampling",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/633",
+                "title": "#633 Create QField plugin for generating flightplans, including user configuration fields & DEM sampling",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "445a55c7-c799-47bf-a168-6903a41acb87",
           "identifier": "TECH-665",
           "title": "Create a dronetm-utils Flutter mobile app for loading flightplans on drones & uploading imagery directly",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -510,7 +1078,8 @@
           "title": "Consider packaging up drone mapping kit to take into the field",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -542,7 +1111,8 @@
           "title": "Flightplan generation directly on a mobile device",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -599,7 +1169,8 @@
           "title": "Use hotosm/ui for the new uploader interface",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -631,7 +1202,8 @@
           "title": "Replacing the uploader / transcoder: integrate Uppy file uploader",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -663,7 +1235,8 @@
           "title": "New uploader: ensure URL input, Google Drive links, Dropbox links are all possible",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -692,7 +1265,8 @@
           "title": "A way to handle private datasets?",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -724,7 +1298,8 @@
           "title": "Add option to anonymise uploader user information",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -750,7 +1325,8 @@
           "title": "Convert COGs to suplementary PMTiles archive on upload",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -779,7 +1355,8 @@
           "title": "Replacing the uploader / transcoder: add an API service for upload",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -808,7 +1385,8 @@
           "title": "Authentication and user management",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -837,7 +1415,8 @@
           "title": "Add OAuth2 for sign-in with OSM account",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -866,7 +1445,8 @@
           "title": "Develop additional metadata elements for OAM Catalog",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -908,7 +1488,8 @@
           "title": "New frontend: accept coordinates + zoom as a URL param for quick loading to a bbox",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -940,7 +1521,8 @@
           "title": "Replace frontend prototype with stac-map",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -982,7 +1564,8 @@
           "title": "Ensure metadata fixes propagate across to STAC correctly",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1014,7 +1597,8 @@
           "title": "Add external links to OpenAerialMap STAC catalog schema",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1040,7 +1624,8 @@
           "title": "Add additional metadata to global coverage tiles for filtering",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1072,7 +1657,8 @@
           "title": "Cleanup of invalid imagery from catalogue",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1110,7 +1696,8 @@
           "title": "Define queryables in PgSTAC",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1139,7 +1726,8 @@
           "title": "Automatic indexing of DG Open Data imagery",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1177,7 +1765,8 @@
           "title": "Encouraging good attribution practices",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1256,12 +1845,43 @@
       "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
         {
+          "id": "766fdbc3-952c-4b20-bd6a-b6d3a18e935e",
+          "identifier": "TECH-1024",
+          "title": "Unable to use lock and map sandbox projects",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "Priority: High"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7197",
+                "title": "#7197 Unable to use lock and map sandbox projects",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "d5593f90-a78a-4294-9256-bff67ce849de",
           "identifier": "TECH-993",
           "title": "Visual cues for sandbox projects in the project page",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1285,12 +1905,382 @@
           }
         },
         {
+          "id": "9b527813-f243-46ca-b9d5-0121cf1db0e6",
+          "identifier": "TECH-992",
+          "title": "Sandbox: contribution workflow fails with error if JOSM is the preferred editor",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7177",
+                "title": "#7177 Sandbox: contribution workflow fails with error if JOSM is the preferred editor",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "70d66103-eff0-4af4-88b9-a2e716b62b4c",
+          "identifier": "TECH-978",
+          "title": "Changeset comments to indicate sandbox edits",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: backend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7161",
+                "title": "#7161 Changeset comments to indicate sandbox edits",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1c615b4a-0f2e-4cf0-bd4f-a3de867bf31e",
+          "identifier": "TECH-977",
+          "title": "Enable sandbox filtering in manage project section",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: frontend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7160",
+                "title": "#7160 Enable sandbox filtering in manage project section",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "5fab672d-e8a8-4dd8-8796-a72271c18e66",
+          "identifier": "TECH-976",
+          "title": "Explore proejcts: update filter for sandbox projects",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: frontend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7159",
+                "title": "#7159 Explore proejcts: update filter for sandbox projects",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "fbde0577-946c-498e-a733-55537486a1c1",
+          "identifier": "TECH-975",
+          "title": "Sandbox cue during task workflow",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: frontend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7158",
+                "title": "#7158 Sandbox cue during task workflow",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "2b8b1917-356a-456b-8e9d-3f9451c04cd4",
+          "identifier": "TECH-974",
+          "title": "Remove priority indicator for sandbox projects in the frontend",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: frontend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7157",
+                "title": "#7157 Remove priority indicator for sandbox projects in the frontend",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d12c0d88-9409-4911-a7fc-da6cc8a6070f",
+          "identifier": "TECH-973",
+          "title": "Set low priority for sandbox projects in the backend",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: backend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7156",
+                "title": "#7156 Set low priority for sandbox projects in the backend",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f1972bd6-1d6b-4391-801f-ec050ba5c55b",
+          "identifier": "TECH-972",
+          "title": "Wording changes for database selection during project creation",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: frontend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7155",
+                "title": "#7155 Wording changes for database selection during project creation",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "22a13bb4-3d63-43a9-b2a0-6a33f4eb26f0",
+          "identifier": "TECH-971",
+          "title": "Controlling the editor options for sandbox projects",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "status: in progress"
+              },
+              {
+                "name": "scope: frontend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7154",
+                "title": "#7154 Controlling the editor options for sandbox projects",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "832d1734-34e6-4d59-be02-d7ee7b51a542",
+          "identifier": "TECH-970",
+          "title": "Pending tasks for sandbox implementation",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              },
+              {
+                "name": "Type: Enhancement"
+              },
+              {
+                "name": "upcoming release 🔜"
+              },
+              {
+                "name": "Priority: High"
+              },
+              {
+                "name": "ui/ux 👥"
+              },
+              {
+                "name": "status: done"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7153",
+                "title": "#7153 Pending tasks for sandbox implementation",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "a4288d3c-f723-4e01-8cac-197fdb86fee5",
+          "identifier": "TECH-486",
+          "title": "OSM sandbox setup",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "scope: infrastructure"
+              },
+              {
+                "name": "scope: backend"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/6917",
+                "title": "#6917 OSM sandbox setup",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "0d3bc431-4550-4f9e-9e62-7c6668584bbf",
           "identifier": "TECH-471",
           "title": "Implement OSM Sandbox (Research)",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": {
             "name": "dakota.benjamin@hotosm.org"
@@ -1339,7 +2329,8 @@
           "title": "Required quiz, sandbox or practice edits for new mappers",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1384,7 +2375,8 @@
           "title": "Create Spatial Stratified Train-Val Split",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1413,7 +2405,8 @@
           "title": "Make datasets STAC compilant along with models !",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1442,7 +2435,8 @@
           "title": "Write and optimize dockerfile for fAIr-utilities",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1517,7 +2511,8 @@
           "title": "Deploy QFieldCloud on a separate server - self hosted via helm chart",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -1547,6 +2542,156 @@
               }
             ]
           }
+        },
+        {
+          "id": "c1dbba6c-2650-4263-bbd5-21f596165ca7",
+          "identifier": "TECH-782",
+          "title": "Error during QField project creation",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2848",
+                "title": "#2848 Error during QField project creation",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "297f8b52-f990-431a-830d-0b7afc85e33d",
+          "identifier": "TECH-742",
+          "title": "Remove ODK related options for QField project setup",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:field-tm"
+              },
+              {
+                "name": "testing:ready"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2842",
+                "title": "#2842 Remove ODK related options for QField project setup",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "3fad1369-ae40-49ea-baeb-c54964a4ea40",
+          "identifier": "TECH-740",
+          "title": "Do not create ODK Central project when QField is specified in project creation",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2838",
+                "title": "#2838 Do not create ODK Central project when QField is specified in project creation",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d2a08d6e-ef28-4473-b1e4-b9d9271c42ff",
+          "identifier": "TECH-739",
+          "title": "Follow RedirectResponse for QFieldCloud projects",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend:management"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:field-tm"
+              },
+              {
+                "name": "testing:ready"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2834",
+                "title": "#2834 Follow RedirectResponse for QFieldCloud projects",
+                "sourceType": "github"
+              }
+            ]
+          }
         }
       ]
     },
@@ -1560,7 +2705,121 @@
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": []
+      "issues": [
+        {
+          "id": "2dd443c9-24f2-4591-a82b-5a091f4d8d50",
+          "identifier": "TECH-1001",
+          "title": "Fix open a saved map",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/99",
+                "title": "#99 Fix open a saved map",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "a4b81084-6e00-48b5-b76b-2e97f75981d6",
+          "identifier": "TECH-923",
+          "title": "Save maps created from exported chats",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/64",
+                "title": "#64 Save maps created from exported chats",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b5b0979a-16d0-461c-87c3-a17217f03bd7",
+          "identifier": "TECH-885",
+          "title": "Add authentication + saved maps",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/53",
+                "title": "#53 Add authentication + saved maps",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "30596524-5b4f-4a04-a3dc-58f033c84f21",
+          "identifier": "TECH-762",
+          "title": "Save map data in a DB table",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "emilio.mariscal@hotosm.org"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/41",
+                "title": "#41 Save map data in a DB table",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "358d4756-249d-49b9-8f33-d857ae45b4bb",
@@ -1572,7 +2831,208 @@
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": []
+      "issues": [
+        {
+          "id": "aa46d0dd-5ec4-407f-a080-1316a864c1e5",
+          "identifier": "TECH-1004",
+          "title": "Disable tagging / remove points on Live version",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/102",
+                "title": "#102 Disable tagging / remove points on Live version",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "58b1b61b-74b2-41e1-9a05-2ff3ed110b85",
+          "identifier": "TECH-945",
+          "title": "Authentication and Live as optional features",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/77",
+                "title": "#77 Authentication and Live as optional features",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "edd628cc-07d5-48c7-8d2c-9a4da16a3e85",
+          "identifier": "TECH-886",
+          "title": "Live map",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/54",
+                "title": "#54 Live map",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "fa0f9df7-c8e4-4e7f-9f7c-4a10a3cee16b",
+          "identifier": "TECH-828",
+          "title": "Fix click & zoom in Live mode",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/49",
+                "title": "#49 Fix click & zoom in Live mode",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "2e99b9ee-e461-4aa2-adf7-e88628e7dde5",
+          "identifier": "TECH-763",
+          "title": "Issues with saving images in Live mode",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "emilio.mariscal@hotosm.org"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/47",
+                "title": "#47 Issues with saving images in Live mode",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "c4fab103-4d3f-498e-bf94-b96af6f9d66d",
+          "identifier": "TECH-752",
+          "title": "Audio support for Live Mode",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/27",
+                "title": "#27 Audio support for Live Mode",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "554914b0-90fa-41c5-a335-d907783a397b",
+          "identifier": "TECH-751",
+          "title": "Video support for Live mode",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/26",
+                "title": "#26 Video support for Live mode",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
@@ -1591,7 +3051,8 @@
           "title": "Move the FieldTM management frontend into a separate frontend build / app",
           "priority": 0,
           "state": {
-            "name": "Canceled"
+            "name": "Canceled",
+            "type": "canceled"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -1631,7 +3092,8 @@
           "title": "Simply the FieldTM / WebForms online workflow",
           "priority": 0,
           "state": {
-            "name": "Canceled"
+            "name": "Canceled",
+            "type": "canceled"
           },
           "assignee": null,
           "labels": {
@@ -1679,7 +3141,8 @@
           "title": "Improvements to catalogue of OSM XLSForms with community feedback",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1703,12 +3166,43 @@
           }
         },
         {
+          "id": "a97f5bc7-6e55-4cee-ab2f-ece071939fb9",
+          "identifier": "TECH-866",
+          "title": "We received an OSMF Microgrant for OpenStreetMap surveys!",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/2950",
+                "title": "#2950 We received an OSMF Microgrant for OpenStreetMap surveys!",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "399a4364-270d-4672-bb0d-2369880729f5",
           "identifier": "TECH-712",
           "title": "Addition of other Survey categories on FMTM",
           "priority": 0,
           "state": {
-            "name": "Canceled"
+            "name": "Canceled",
+            "type": "canceled"
           },
           "assignee": null,
           "labels": {
@@ -1762,7 +3256,8 @@
           "title": "Add ChatMap as an additional field mapping app downstream",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1803,7 +3298,8 @@
           "title": "Support odk.ona.io as ODK server option",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1875,7 +3371,8 @@
           "title": "[FEATURE] Move the query_builder logic to a standalone Python package",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1910,7 +3407,8 @@
           "title": "Long term maintenance plan: raw-data-api & export tool",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -1963,7 +3461,8 @@
           "title": "[BUG] : Discrepency on HDX Road Datasets",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -1992,7 +3491,8 @@
           "title": "[FEATURE] Add P-codes to dataset",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2058,7 +3558,8 @@
           "title": "[MLFLow] after enabling auth, service wont start due to missing packages",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2087,7 +3588,8 @@
           "title": "Add CNPG ScheduledBackup objects",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2119,7 +3621,8 @@
           "title": "Deploy pushed development images automatically via Argo Image Updater",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2148,7 +3651,8 @@
           "title": "Update eoapi-support, as the bitnami metrics server image repository moved",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2183,7 +3687,8 @@
           "title": "Enable S3 intelligent tiering for hotosm-k8s-db-backup and other infra buckets",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2218,7 +3723,8 @@
           "title": "Adjust reclaim policy is good to ensure PVs don't sprawl",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2242,12 +3748,52 @@
           }
         },
         {
+          "id": "a22baab6-a2c7-4be0-a6ef-bee622cab166",
+          "identifier": "TECH-1066",
+          "title": "Karpenter AWS setup optimization and best practices",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "question"
+              },
+              {
+                "name": "actionable"
+              },
+              {
+                "name": "repo:k8s-infra"
+              },
+              {
+                "name": "Migrated"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/k8s-infra/issues/61",
+                "title": "#61 Karpenter AWS setup optimization and best practices",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "2a12c177-9760-4bee-aeb0-713b5776e572",
           "identifier": "TECH-1065",
           "title": "Upgrades to CloudNativePG usage before next release (for backups)",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2285,7 +3831,8 @@
           "title": "Work out how to add multiple domains for OpenAerialMap API deployment",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2317,7 +3864,8 @@
           "title": "Test restoring cluster from Velero backups",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2352,7 +3900,8 @@
           "title": "Allow GH Actions to be rerun for tofu updates.",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2381,7 +3930,8 @@
           "title": "Use ArgoCD ApplicationSet to deploy staging environments on demand via PRs",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2419,7 +3969,8 @@
           "title": "Migrate cert-manager to ArgoCD and add replace HTTP01 with DNS01",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2448,7 +3999,8 @@
           "title": "Assess container autoscaling options: KEDA vs HPA vs Other?",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2480,7 +4032,8 @@
           "title": "Cost comparison: Tasking Manager EC2 deployment (current) vs proposed Kubernetes deployment estimate",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2510,7 +4063,7 @@
     },
     {
       "id": "dda32e14-16dd-47e0-a304-e030e9e8682d",
-      "title": "HOT Accounts (shared login) for all tools",
+      "title": "HOT Portal:  Shared authentication for all tools",
       "category": "cross-project",
       "group": "Roadmap item",
       "summary": "",
@@ -2520,12 +4073,94 @@
       "targetDate": "2026-09-30T00:00:00.000Z",
       "issues": [
         {
+          "id": "085058cd-03be-4857-894f-748dfe467571",
+          "identifier": "TECH-1114",
+          "title": "Add centralized authentication with hotosm/hanko-auth",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/tasking-manager/issues/7219",
+                "title": "#7219 Add centralized authentication with hotosm/hanko-auth",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "c17b6bf4-eff3-4c7b-99d7-f365a529ff92",
+          "identifier": "TECH-1113",
+          "title": "Shared authentication with hotosm/hanko-auth",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:export-tool"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/osm-export-tool/issues/539",
+                "title": "#539 Shared authentication with hotosm/hanko-auth",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "4ae96724-a9f6-4688-9b86-f063e361077c",
+          "identifier": "TECH-1111",
+          "title": "Add Hanko SSO Authentication",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/771",
+                "title": "#771 Add Hanko SSO Authentication",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "f46e4dc8-c704-4dea-aaba-0db6597e6e55",
           "identifier": "TECH-1103",
           "title": "Add Hanko SSO Authentication",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2546,12 +4181,40 @@
           }
         },
         {
+          "id": "ea319559-50e5-482c-b080-2e761552c0ed",
+          "identifier": "TECH-1102",
+          "title": "Implement HOT Accounts / shared login (Hanko SSO)",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:umap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/umap/issues/45",
+                "title": "#45 Implement HOT Accounts / shared login (Hanko SSO)",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "414dbcc2-ee2f-42ea-b86b-d9da4d2697a5",
           "identifier": "TECH-1028",
           "title": "Add bundled hanko login instance as part of Kubernetes deployment options",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2592,7 +4255,8 @@
           "title": "Add login to frontend via unified HOT login",
           "priority": 0,
           "state": {
-            "name": "Backlog"
+            "name": "Backlog",
+            "type": "backlog"
           },
           "assignee": null,
           "labels": {
@@ -2622,6 +4286,33 @@
               {
                 "url": "https://github.com/hotosm/field-tm/issues/3019",
                 "title": "#3019 Add login to frontend via unified HOT login",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "9306ee21-3273-44f2-8410-617a7d49c6b9",
+          "identifier": "TECH-914",
+          "title": "Authentication",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/58",
+                "title": "#58 Authentication",
                 "sourceType": "github"
               }
             ]

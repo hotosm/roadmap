@@ -527,20 +527,35 @@ function renderIssuesInPanel(container, issues) {
     return;
   }
 
-  container.innerHTML = `<p class="detail-panel__count">${issues.length} issue${issues.length !== 1 ? "s" : ""}</p>`;
+  const openCount = issues.filter((i) => i.state?.type !== "completed" && i.state?.type !== "cancelled").length;
+  const doneCount = issues.filter((i) => i.state?.type === "completed").length;
+  const countParts = [`${openCount} open`];
+  if (doneCount) countParts.push(`${doneCount} done`);
+  container.innerHTML = `<p class="detail-panel__count">${countParts.join(", ")} &mdash; ${issues.length} total</p>`;
   const list = document.createElement("ul");
   list.className = "issue-list";
 
-  issues.forEach((issue) => {
+  // Sort: open issues first, then done, then cancelled
+  const typeOrder = { started: 0, unstarted: 1, backlog: 2, completed: 3, cancelled: 4 };
+  const sorted = [...issues].sort((a, b) => (typeOrder[a.state?.type] ?? 2) - (typeOrder[b.state?.type] ?? 2));
+
+  sorted.forEach((issue) => {
     const li = document.createElement("li");
     li.className = "issue-item";
 
     const ghUrl = getGitHubUrl(issue);
     const stateSlug = slugify(issue.state?.name || "unknown");
+    const stateType = issue.state?.type || "";
     const identifier = escapeHtml(issue.identifier);
     const title = escapeHtml(issue.title);
     const assignee = issue.assignee?.name ? escapeHtml(issue.assignee.name) : "";
     const priority = priorityIcon(issue.priority);
+
+    if (stateType === "completed" || stateSlug === "done") {
+      li.classList.add("issue-item--done");
+    } else if (stateType === "cancelled" || stateSlug === "cancelled") {
+      li.classList.add("issue-item--cancelled");
+    }
 
     li.innerHTML = `
       <span class="issue-item__priority">${priority}</span>
