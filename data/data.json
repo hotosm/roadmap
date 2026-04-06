@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-18T03:47:07.835Z",
-  "itemCount": 30,
+  "generatedAt": "2026-04-06T08:27:40.323Z",
+  "itemCount": 29,
   "items": [
     {
       "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
@@ -166,47 +166,6 @@
           }
         },
         {
-          "id": "5f532e18-98d6-4707-847e-e23944482eea",
-          "identifier": "TECH-625",
-          "title": "Optimize processing by automating data cleanup on NodeODM",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "odm"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/539",
-                "title": "#539 Optimize processing by automating data cleanup on NodeODM",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "64686432-967d-4b6c-8338-b2a4c80bb3e7",
           "identifier": "TECH-622",
           "title": "Add setup / easy workflow for processing imagery on a local laptop to validate final imagery",
@@ -292,50 +251,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "c93c2869-2048-470d-a4c6-858bd1bff455",
-          "identifier": "TECH-601",
-          "title": "No option to add or replace images when image processing fails",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "good first issue"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "frontend"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/408",
-                "title": "#408 No option to add or replace images when image processing fails",
-                "sourceType": "github"
-              }
-            ]
-          }
         }
       ]
     },
@@ -350,35 +265,6 @@
       "startDate": "2025-10-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
       "issues": [
-        {
-          "id": "8df8717d-abf5-4a93-b7c5-de2397deaaff",
-          "identifier": "TECH-1022",
-          "title": "Unable to upload images for processing",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/736",
-                "title": "#736 Unable to upload images for processing",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
         {
           "id": "cc2316b0-37a3-4bd2-9c52-ac7dac4e3e65",
           "identifier": "TECH-629",
@@ -579,46 +465,6 @@
       "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
         {
-          "id": "9c852f0d-e259-4387-8b0e-17bfa462bdff",
-          "identifier": "TECH-793",
-          "title": "Create QField plugin for generating flightplans, including user configuration fields & DEM sampling",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:high"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/633",
-                "title": "#633 Create QField plugin for generating flightplans, including user configuration fields & DEM sampling",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "445a55c7-c799-47bf-a168-6903a41acb87",
           "identifier": "TECH-665",
           "title": "Create a dronetm-utils Flutter mobile app for loading flightplans on drones & uploading imagery directly",
@@ -729,249 +575,6 @@
               {
                 "url": "https://github.com/hotosm/drone-tm/issues/564",
                 "title": "#564 Flightplan generation directly on a mobile device",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "b97beeb9-08b0-45d9-bdf2-81c97fd807f0",
-      "title": "Imagery: refine the metadata catalog for OpenAerialMap (STAC)",
-      "category": "imagery",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "cristiano.giovando@hotosm.org",
-      "startDate": "2026-04-01T00:00:00.000Z",
-      "targetDate": "2026-12-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "e27bdc98-3474-41a8-ba61-71dc4dbfc72a",
-          "identifier": "TECH-917",
-          "title": "Ensure metadata fixes propagate across to STAC correctly",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "High Priority"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/247",
-                "title": "#247 Ensure metadata fixes propagate across to STAC correctly",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "c5d6e3b3-cbbf-4679-80f1-f023bc78ae68",
-          "identifier": "TECH-817",
-          "title": "Add external links to OpenAerialMap STAC catalog schema",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/239",
-                "title": "#239 Add external links to OpenAerialMap STAC catalog schema",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7900ac8a-4304-4c92-b89c-1e2cd9e549e1",
-          "identifier": "TECH-36",
-          "title": "Add additional metadata to global coverage tiles for filtering",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/225",
-                "title": "#225 Add additional metadata to global coverage tiles for filtering",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "95ce7784-9a0a-4584-918b-7d5a2d4b8c11",
-          "identifier": "TECH-35",
-          "title": "Cleanup of invalid imagery from catalogue",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "STAC"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/224",
-                "title": "#224 Cleanup of invalid imagery from catalogue",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "b73473de-9a23-491c-8eb4-c04a868e7adb",
-          "identifier": "TECH-32",
-          "title": "Define queryables in PgSTAC",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/199",
-                "title": "#199 Define queryables in PgSTAC",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "1dc900cb-7b0f-4671-a34c-e291ccf27098",
-          "identifier": "TECH-21",
-          "title": "Automatic indexing of DG Open Data imagery",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "STAC"
-              },
-              {
-                "name": "new data"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/87",
-                "title": "#87 Automatic indexing of DG Open Data imagery",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "6a0a02a5-c6c7-4fbe-a1a7-cfb83cdc2d04",
-          "identifier": "TECH-20",
-          "title": "Encouraging good attribution practices",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "STAC"
-              },
-              {
-                "name": "docs"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:oam"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/openaerialmap/issues/78",
-                "title": "#78 Encouraging good attribution practices",
                 "sourceType": "github"
               }
             ]
@@ -1363,6 +966,249 @@
       ]
     },
     {
+      "id": "b97beeb9-08b0-45d9-bdf2-81c97fd807f0",
+      "title": "Imagery: refine the metadata catalog for OpenAerialMap (STAC)",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "cristiano.giovando@hotosm.org",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "e27bdc98-3474-41a8-ba61-71dc4dbfc72a",
+          "identifier": "TECH-917",
+          "title": "Ensure metadata fixes propagate across to STAC correctly",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "High Priority"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/247",
+                "title": "#247 Ensure metadata fixes propagate across to STAC correctly",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "c5d6e3b3-cbbf-4679-80f1-f023bc78ae68",
+          "identifier": "TECH-817",
+          "title": "Add external links to OpenAerialMap STAC catalog schema",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/239",
+                "title": "#239 Add external links to OpenAerialMap STAC catalog schema",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7900ac8a-4304-4c92-b89c-1e2cd9e549e1",
+          "identifier": "TECH-36",
+          "title": "Add additional metadata to global coverage tiles for filtering",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/225",
+                "title": "#225 Add additional metadata to global coverage tiles for filtering",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "95ce7784-9a0a-4584-918b-7d5a2d4b8c11",
+          "identifier": "TECH-35",
+          "title": "Cleanup of invalid imagery from catalogue",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "STAC"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/224",
+                "title": "#224 Cleanup of invalid imagery from catalogue",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b73473de-9a23-491c-8eb4-c04a868e7adb",
+          "identifier": "TECH-32",
+          "title": "Define queryables in PgSTAC",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/199",
+                "title": "#199 Define queryables in PgSTAC",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1dc900cb-7b0f-4671-a34c-e291ccf27098",
+          "identifier": "TECH-21",
+          "title": "Automatic indexing of DG Open Data imagery",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "STAC"
+              },
+              {
+                "name": "new data"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/87",
+                "title": "#87 Automatic indexing of DG Open Data imagery",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "6a0a02a5-c6c7-4fbe-a1a7-cfb83cdc2d04",
+          "identifier": "TECH-20",
+          "title": "Encouraging good attribution practices",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "STAC"
+              },
+              {
+                "name": "docs"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/78",
+                "title": "#78 Encouraging good attribution practices",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "539e9ba5-c3a3-4253-b48f-0daf7fcb230c",
       "title": "Utilize 3D data collected by DroneTM to enrich OpenStreetMap",
       "category": "imagery",
@@ -1410,35 +1256,6 @@
       "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
         {
-          "id": "766fdbc3-952c-4b20-bd6a-b6d3a18e935e",
-          "identifier": "TECH-1024",
-          "title": "Unable to use lock and map sandbox projects",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:tm"
-              },
-              {
-                "name": "Priority: High"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/tasking-manager/issues/7197",
-                "title": "#7197 Unable to use lock and map sandbox projects",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "d5593f90-a78a-4294-9256-bff67ce849de",
           "identifier": "TECH-993",
           "title": "Visual cues for sandbox projects in the project page",
@@ -1462,79 +1279,6 @@
               {
                 "url": "https://github.com/hotosm/tasking-manager/issues/7178",
                 "title": "#7178 Visual cues for sandbox projects in the project page",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "70d66103-eff0-4af4-88b9-a2e716b62b4c",
-          "identifier": "TECH-978",
-          "title": "Changeset comments to indicate sandbox edits",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:tm"
-              },
-              {
-                "name": "status: in progress"
-              },
-              {
-                "name": "scope: backend"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/tasking-manager/issues/7161",
-                "title": "#7161 Changeset comments to indicate sandbox edits",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "832d1734-34e6-4d59-be02-d7ee7b51a542",
-          "identifier": "TECH-970",
-          "title": "Pending tasks for sandbox implementation",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:tm"
-              },
-              {
-                "name": "Type: Enhancement"
-              },
-              {
-                "name": "upcoming release 🔜"
-              },
-              {
-                "name": "Priority: High"
-              },
-              {
-                "name": "ui/ux 👥"
-              },
-              {
-                "name": "status: done"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/tasking-manager/issues/7153",
-                "title": "#7153 Pending tasks for sandbox implementation",
                 "sourceType": "github"
               }
             ]
@@ -1807,6 +1551,30 @@
       ]
     },
     {
+      "id": "8e860023-88ef-4c49-b65f-57066aa2e54d",
+      "title": "ChatMap: save data via the web interface",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "https://github.com/hotosm/chatmap/issues/53#issuecomment-3628671061",
+      "status": "Done",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-03-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "358d4756-249d-49b9-8f33-d857ae45b4bb",
+      "title": "ChatMap: live stream of data",
+      "category": "field",
+      "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
+      "summary": "",
+      "status": "Done",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-03-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
       "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
       "title": "FieldTM: restructure as primarily a project coordinator, not a mapping app",
       "category": "field",
@@ -1895,248 +1663,6 @@
       ]
     },
     {
-      "id": "8e860023-88ef-4c49-b65f-57066aa2e54d",
-      "title": "ChatMap: save data via the web interface",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-06-30T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "2dd443c9-24f2-4591-a82b-5a091f4d8d50",
-          "identifier": "TECH-1001",
-          "title": "Fix open a saved map",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/99",
-                "title": "#99 Fix open a saved map",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "bf3c7129-51de-4e6c-9d6b-0d55d82fda4f",
-          "identifier": "TECH-999",
-          "title": "Link for accessing to the GeoJSON URL in a saved map",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/97",
-                "title": "#97 Link for accessing to the GeoJSON URL in a saved map",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "a4b81084-6e00-48b5-b76b-2e97f75981d6",
-          "identifier": "TECH-923",
-          "title": "Save maps created from exported chats",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/64",
-                "title": "#64 Save maps created from exported chats",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "b5b0979a-16d0-461c-87c3-a17217f03bd7",
-          "identifier": "TECH-885",
-          "title": "Add authentication + saved maps",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/53",
-                "title": "#53 Add authentication + saved maps",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "358d4756-249d-49b9-8f33-d857ae45b4bb",
-      "title": "ChatMap: live stream of data",
-      "category": "field",
-      "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
-      "summary": "",
-      "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "e9cad4ad-e97f-4c19-9dd5-5843438a93b1",
-          "identifier": "TECH-966",
-          "title": "Live: filter points by date",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/84",
-                "title": "#84 Live: filter points by date",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7d58676d-4cba-4943-b1c7-ea2f7f85bc92",
-          "identifier": "TECH-929",
-          "title": "Improve Live map update",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/67",
-                "title": "#67 Improve Live map update",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "3d85c105-3c80-470e-86a1-5803632e5455",
-          "identifier": "TECH-759",
-          "title": "Live: Map settings",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": {
-            "name": "emilio.mariscal@hotosm.org"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/37",
-                "title": "#37 Live: Map settings",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7f74211e-eb4d-4d6a-a536-3b0f0b99c09c",
-          "identifier": "TECH-753",
-          "title": "Multi-device support for Live mode",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/28",
-                "title": "#28 Multi-device support for Live mode",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "8b744c42-cb1d-4a3a-8a28-832a814d4bc4",
       "title": "FieldTM: improved OpenStreetMap integration",
       "category": "field",
@@ -2212,48 +1738,6 @@
               {
                 "url": "https://github.com/hotosm/field-tm/issues/2334",
                 "title": "#2334 Addition of other Survey categories on FMTM",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "5a35de38-11d4-4f1a-a441-6ef54879b7fc",
-      "title": "ChatMap: data collection timeline",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2026-04-01T00:00:00.000Z",
-      "targetDate": "2026-09-30T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "1589691a-7ba2-44cb-bb88-a3898aac77dd",
-          "identifier": "TECH-744",
-          "title": "Content timeline",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/7",
-                "title": "#7 Content timeline",
                 "sourceType": "github"
               }
             ]
@@ -2758,44 +2242,6 @@
           }
         },
         {
-          "id": "a22baab6-a2c7-4be0-a6ef-bee622cab166",
-          "identifier": "TECH-1066",
-          "title": "Karpenter AWS setup optimization and best practices",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "question"
-              },
-              {
-                "name": "actionable"
-              },
-              {
-                "name": "repo:k8s-infra"
-              },
-              {
-                "name": "Migrated"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/k8s-infra/issues/61",
-                "title": "#61 Karpenter AWS setup optimization and best practices",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "2a12c177-9760-4bee-aeb0-713b5776e572",
           "identifier": "TECH-1065",
           "title": "Upgrades to CloudNativePG usage before next release (for backups)",
@@ -3064,15 +2510,41 @@
     },
     {
       "id": "dda32e14-16dd-47e0-a304-e030e9e8682d",
-      "title": "All tools should use a unified login system (shared login)",
+      "title": "HOT Accounts (shared login) for all tools",
       "category": "cross-project",
       "group": "Roadmap item",
       "summary": "",
       "status": "Planned",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2025-10-01T00:00:00.000Z",
-      "targetDate": "2026-06-30T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
       "issues": [
+        {
+          "id": "f46e4dc8-c704-4dea-aaba-0db6597e6e55",
+          "identifier": "TECH-1103",
+          "title": "Add Hanko SSO Authentication",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:fair"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/fAIr/issues/497",
+                "title": "#497 Add Hanko SSO Authentication",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
         {
           "id": "414dbcc2-ee2f-42ea-b86b-d9da4d2697a5",
           "identifier": "TECH-1028",
