@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-03-30T08:27:20.598Z",
-  "itemCount": 30,
+  "generatedAt": "2026-04-06T08:27:40.323Z",
+  "itemCount": 29,
   "items": [
     {
       "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
@@ -166,47 +166,6 @@
           }
         },
         {
-          "id": "5f532e18-98d6-4707-847e-e23944482eea",
-          "identifier": "TECH-625",
-          "title": "Optimize processing by automating data cleanup on NodeODM",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "odm"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/539",
-                "title": "#539 Optimize processing by automating data cleanup on NodeODM",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
           "id": "64686432-967d-4b6c-8338-b2a4c80bb3e7",
           "identifier": "TECH-622",
           "title": "Add setup / easy workflow for processing imagery on a local laptop to validate final imagery",
@@ -292,50 +251,6 @@
               }
             ]
           }
-        },
-        {
-          "id": "c93c2869-2048-470d-a4c6-858bd1bff455",
-          "identifier": "TECH-601",
-          "title": "No option to add or replace images when image processing fails",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "good first issue"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "frontend"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/408",
-                "title": "#408 No option to add or replace images when image processing fails",
-                "sourceType": "github"
-              }
-            ]
-          }
         }
       ]
     },
@@ -350,35 +265,6 @@
       "startDate": "2025-10-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
       "issues": [
-        {
-          "id": "8df8717d-abf5-4a93-b7c5-de2397deaaff",
-          "identifier": "TECH-1022",
-          "title": "Unable to upload images for processing",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/736",
-                "title": "#736 Unable to upload images for processing",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
         {
           "id": "cc2316b0-37a3-4bd2-9c52-ac7dac4e3e65",
           "identifier": "TECH-629",
@@ -578,46 +464,6 @@
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
-        {
-          "id": "9c852f0d-e259-4387-8b0e-17bfa462bdff",
-          "identifier": "TECH-793",
-          "title": "Create QField plugin for generating flightplans, including user configuration fields & DEM sampling",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:high"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/633",
-                "title": "#633 Create QField plugin for generating flightplans, including user configuration fields & DEM sampling",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
         {
           "id": "445a55c7-c799-47bf-a168-6903a41acb87",
           "identifier": "TECH-665",
@@ -1709,39 +1555,12 @@
       "title": "ChatMap: save data via the web interface",
       "category": "field",
       "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
+      "summary": "https://github.com/hotosm/chatmap/issues/53#issuecomment-3628671061",
+      "status": "Done",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "bf3c7129-51de-4e6c-9d6b-0d55d82fda4f",
-          "identifier": "TECH-999",
-          "title": "Link for accessing to the GeoJSON URL in a saved map",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/97",
-                "title": "#97 Link for accessing to the GeoJSON URL in a saved map",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
+      "issues": []
     },
     {
       "id": "358d4756-249d-49b9-8f33-d857ae45b4bb",
@@ -1749,124 +1568,11 @@
       "category": "field",
       "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
       "summary": "",
-      "status": "Planned",
+      "status": "Done",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "e9cad4ad-e97f-4c19-9dd5-5843438a93b1",
-          "identifier": "TECH-966",
-          "title": "Live: filter points by date",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/84",
-                "title": "#84 Live: filter points by date",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7d58676d-4cba-4943-b1c7-ea2f7f85bc92",
-          "identifier": "TECH-929",
-          "title": "Improve Live map update",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/67",
-                "title": "#67 Improve Live map update",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "3d85c105-3c80-470e-86a1-5803632e5455",
-          "identifier": "TECH-759",
-          "title": "Live: Map settings",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": {
-            "name": "emilio.mariscal@hotosm.org"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/37",
-                "title": "#37 Live: Map settings",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7f74211e-eb4d-4d6a-a536-3b0f0b99c09c",
-          "identifier": "TECH-753",
-          "title": "Multi-device support for Live mode",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/28",
-                "title": "#28 Multi-device support for Live mode",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
+      "issues": []
     },
     {
       "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
@@ -1949,48 +1655,6 @@
               {
                 "url": "https://github.com/hotosm/field-tm/issues/2853",
                 "title": "#2853 Simply the FieldTM / WebForms online workflow",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "5a35de38-11d4-4f1a-a441-6ef54879b7fc",
-      "title": "ChatMap: data collection timeline",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2026-04-01T00:00:00.000Z",
-      "targetDate": "2026-06-30T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "1589691a-7ba2-44cb-bb88-a3898aac77dd",
-          "identifier": "TECH-744",
-          "title": "Content timeline",
-          "priority": 0,
-          "state": {
-            "name": "Backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/7",
-                "title": "#7 Content timeline",
                 "sourceType": "github"
               }
             ]
@@ -2846,15 +2510,41 @@
     },
     {
       "id": "dda32e14-16dd-47e0-a304-e030e9e8682d",
-      "title": "All tools should use a unified login system (shared login)",
+      "title": "HOT Accounts (shared login) for all tools",
       "category": "cross-project",
       "group": "Roadmap item",
       "summary": "",
       "status": "Planned",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2025-10-01T00:00:00.000Z",
-      "targetDate": "2026-06-30T00:00:00.000Z",
+      "targetDate": "2026-09-30T00:00:00.000Z",
       "issues": [
+        {
+          "id": "f46e4dc8-c704-4dea-aaba-0db6597e6e55",
+          "identifier": "TECH-1103",
+          "title": "Add Hanko SSO Authentication",
+          "priority": 0,
+          "state": {
+            "name": "Backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:fair"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/fAIr/issues/497",
+                "title": "#497 Add Hanko SSO Authentication",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
         {
           "id": "414dbcc2-ee2f-42ea-b86b-d9da4d2697a5",
           "identifier": "TECH-1028",
