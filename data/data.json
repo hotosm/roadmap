@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-06T22:02:56.512Z",
+  "generatedAt": "2026-04-13T08:37:13.560Z",
   "itemCount": 29,
   "items": [
     {
@@ -91,8 +91,8 @@
           "title": "Assist users with ongoing imagery processing problems",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -3723,8 +3723,8 @@
           "title": "Adjust reclaim policy is good to ensure PVs don't sprawl",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Canceled",
+            "type": "canceled"
           },
           "assignee": null,
           "labels": {
@@ -4062,6 +4062,18 @@
       ]
     },
     {
+      "id": "be51e279-709d-4afd-a3a4-827b8875c341",
+      "title": "HOT Portal: centralized E2E mapping dashboard",
+      "category": "cross-project",
+      "group": "Experience: our tools should be easy to use and accessible with low tech literacy",
+      "summary": "",
+      "status": "In progress",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
       "id": "dda32e14-16dd-47e0-a304-e030e9e8682d",
       "title": "HOT Portal:  Shared authentication for all tools",
       "category": "cross-project",
@@ -4319,18 +4331,6 @@
           }
         }
       ]
-    },
-    {
-      "id": "be51e279-709d-4afd-a3a4-827b8875c341",
-      "title": "HOT Portal: centralized E2E mapping dashboard",
-      "category": "cross-project",
-      "group": "Experience: our tools should be easy to use and accessible with low tech literacy",
-      "summary": "",
-      "status": "In progress",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2025-10-01T00:00:00.000Z",
-      "targetDate": "2026-06-30T00:00:00.000Z",
-      "issues": []
     },
     {
       "id": "33193480-35f0-4dd1-a998-13276575a30d",
