@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-13T08:37:13.560Z",
-  "itemCount": 29,
+  "generatedAt": "2026-04-20T08:40:13.474Z",
+  "itemCount": 26,
   "items": [
     {
       "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
@@ -19,8 +19,8 @@
           "title": "Determine approx resource requirements for workflow based on number of images to process",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1034,7 +1034,7 @@
         {
           "id": "445a55c7-c799-47bf-a168-6903a41acb87",
           "identifier": "TECH-665",
-          "title": "Create a dronetm-utils Flutter mobile app for loading flightplans on drones & uploading imagery directly",
+          "title": "Create a transfer-util Flutter mobile app for loading flightplans on drones",
           "priority": 0,
           "state": {
             "name": "Backlog",
@@ -1066,7 +1066,7 @@
             "nodes": [
               {
                 "url": "https://github.com/hotosm/drone-tm/issues/615",
-                "title": "#615 Create a dronetm-utils Flutter mobile app for loading flightplans on drones & uploading imagery directly",
+                "title": "#615 Create a transfer-util Flutter mobile app for loading flightplans on drones",
                 "sourceType": "github"
               }
             ]
@@ -1810,30 +1810,6 @@
       "issues": []
     },
     {
-      "id": "bf855439-8abe-4259-9c19-2b149893cd8f",
-      "title": "fAIr: re-use same pre-trained model on new imagery or different area",
-      "category": "digitization",
-      "group": "Roadmap item",
-      "summary": "Currently a model is linked to a specific set of imagery and area. Re-using the same models would be helpful.",
-      "status": "Done",
-      "owner": "omran.najjar@hotosm.org",
-      "startDate": "2025-01-01T00:00:00.000Z",
-      "targetDate": "2025-06-30T00:00:00.000Z",
-      "issues": []
-    },
-    {
-      "id": "63d5b26a-8b45-4214-84cf-568c35c48130",
-      "title": "fAIr: process predictions in the background while user is offline",
-      "category": "digitization",
-      "group": "Roadmap item",
-      "summary": "Currently the user must wait for predictions to be made in the same session. This should be stored and can be returned to.",
-      "status": "Done",
-      "owner": "omran.najjar@hotosm.org",
-      "startDate": "2025-04-01T00:00:00.000Z",
-      "targetDate": "2025-06-30T00:00:00.000Z",
-      "issues": []
-    },
-    {
       "id": "19ae5d95-3b95-41a2-bfe3-b1c53fd6724b",
       "title": "OSM Sandbox: storing mapped data outside of OpenStreetMap",
       "category": "digitization",
@@ -2469,18 +2445,6 @@
           }
         }
       ]
-    },
-    {
-      "id": "0b8e6c47-2f32-40c9-8b13-349cc24fca68",
-      "title": "fAIr: integrate with MapSwipe for feature validation",
-      "category": "digitization",
-      "group": "Roadmap item",
-      "summary": "User validation via MapSwipe would allow for fAIr-generated data to be pushed to OpenStreetMap.",
-      "status": "Done",
-      "owner": "omran.najjar@hotosm.org",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": []
     },
     {
       "id": "c2624635-6f3a-4ef2-b143-f211c70934bf",
