@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T08:40:13.474Z",
+  "generatedAt": "2026-04-27T08:46:04.655Z",
   "itemCount": 26,
   "items": [
     {
@@ -4108,8 +4108,8 @@
           "title": "Add Hanko SSO Authentication",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
