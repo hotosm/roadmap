@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-04T08:46:01.564Z",
-  "itemCount": 26,
+  "generatedAt": "2026-05-04T19:54:08.668Z",
+  "itemCount": 28,
   "items": [
     {
       "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
@@ -11,7 +11,7 @@
       "status": "In progress",
       "owner": "Ping Yee",
       "startDate": "2025-10-01T00:00:00.000Z",
-      "targetDate": "2026-09-30T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
       "issues": [
         {
           "id": "8e396b11-1494-4b36-a6e7-f518ba568f59",
@@ -44,42 +44,6 @@
               {
                 "url": "https://github.com/hotosm/ScaleODM/issues/4",
                 "title": "#4 Determine approx resource requirements for workflow based on number of images to process",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d60ef56d-c728-4b30-9d7e-45dfa37c22f8",
-          "identifier": "TECH-1033",
-          "title": "Implement split-merge processing",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "repo:scaleodm"
-              },
-              {
-                "name": "Migrated"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/ScaleODM/issues/3",
-                "title": "#3 Implement split-merge processing",
                 "sourceType": "github"
               }
             ]
@@ -119,51 +83,6 @@
               {
                 "url": "https://github.com/hotosm/drone-tm/issues/638",
                 "title": "#638 Assist users with ongoing imagery processing problems",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "bae4536e-4398-46dd-b92d-e25a8f3ca32e",
-          "identifier": "TECH-640",
-          "title": "Considerations for processing large city-scale projects",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:high"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "odm"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/569",
-                "title": "#569 Considerations for processing large city-scale projects",
                 "sourceType": "github"
               }
             ]
@@ -353,7 +272,7 @@
       "category": "imagery",
       "group": "Imagery: users can collect, process, and visualise from coordinated field activities",
       "summary": "The first release had lots of great field feedback, user frustrations, and parts to improve",
-      "status": "In progress",
+      "status": "Done",
       "owner": "Ping Yee",
       "startDate": "2025-10-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
@@ -1798,6 +1717,206 @@
       ]
     },
     {
+      "id": "22682f61-40c0-4b38-b921-b1f57879fa82",
+      "title": "DroneTM: city-scale processing workflow",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "Ping Yee",
+      "startDate": "2026-07-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "7f8e0b68-995f-410e-80bc-0e43e202ad87",
+          "identifier": "TECH-1168",
+          "title": "Separate out flightplan generation UI from processing UI",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/800",
+                "title": "#800 Separate out flightplan generation UI from processing UI",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "a4fc9d43-6be0-4a70-b85b-ea4265e36506",
+          "identifier": "TECH-1131",
+          "title": "Processing DJI Mini 5 Pro imagery in RAW / DNG format does not work via ODM?",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "docs"
+              },
+              {
+                "name": "priority:critical"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/777",
+                "title": "#777 Processing DJI Mini 5 Pro imagery in RAW / DNG format does not work via ODM?",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "3fe0e6bf-ded4-4291-a7b7-4ff7b748c82a",
+          "identifier": "TECH-1117",
+          "title": "Implement a pipeline for processing thermal imagery",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "documentation"
+              },
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "repo:scaleodm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/ScaleODM/issues/5",
+                "title": "#5 Implement a pipeline for processing thermal imagery",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d60ef56d-c728-4b30-9d7e-45dfa37c22f8",
+          "identifier": "TECH-1033",
+          "title": "Implement split-merge processing",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "repo:scaleodm"
+              },
+              {
+                "name": "Migrated"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/ScaleODM/issues/3",
+                "title": "#3 Implement split-merge processing",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bae4536e-4398-46dd-b92d-e25a8f3ca32e",
+          "identifier": "TECH-640",
+          "title": "Considerations for processing large city-scale projects",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "odm"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/569",
+                "title": "#569 Considerations for processing large city-scale projects",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "539e9ba5-c3a3-4253-b48f-0daf7fcb230c",
       "title": "Utilize 3D data collected by DroneTM to enrich OpenStreetMap",
       "category": "imagery",
@@ -2464,7 +2583,7 @@
       "category": "field",
       "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
       "summary": "Integrations with QField as underlying mapping app",
-      "status": "In progress",
+      "status": "Done",
       "owner": "Sam Woodcock",
       "startDate": "2025-07-01T00:00:00.000Z",
       "targetDate": "2026-03-31T00:00:00.000Z",
@@ -3089,12 +3208,24 @@
       ]
     },
     {
+      "id": "7fee74fd-2895-480f-a089-ea49f0d3cea4",
+      "title": "FieldTM: QField-HOT plugin for easier mapping experience",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-04-01T00:00:00.000Z",
+      "targetDate": "2026-06-30T00:00:00.000Z",
+      "issues": []
+    },
+    {
       "id": "8b744c42-cb1d-4a3a-8a28-832a814d4bc4",
       "title": "FieldTM: improved OpenStreetMap integration",
       "category": "field",
       "group": "Roadmap item",
       "summary": "The scope of FieldTM widened over the years, but we plan to prioritize OSM-based workflows again",
-      "status": "Planned",
+      "status": "In progress",
       "owner": "Sam Woodcock",
       "startDate": "2026-04-01T00:00:00.000Z",
       "targetDate": "2026-09-30T00:00:00.000Z",
@@ -3204,6 +3335,18 @@
       ]
     },
     {
+      "id": "3bd90973-59dd-4ec4-aca0-de68f9eafcaa",
+      "title": "FieldTM: data extraction and visualization dashboards",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-07-01T00:00:00.000Z",
+      "targetDate": "2027-03-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
       "id": "5bd98fbe-7528-4d6e-a7ac-2c9a8561298c",
       "title": "FieldTM: integrate with other field data collection tools",
       "category": "field",
@@ -3211,13 +3354,130 @@
       "summary": "",
       "status": "Planned",
       "owner": "Sam Woodcock",
-      "startDate": "2027-01-01T00:00:00.000Z",
+      "startDate": "2026-07-01T00:00:00.000Z",
       "targetDate": "2027-06-30T00:00:00.000Z",
       "issues": [
         {
+          "id": "48a64fa9-cf58-49af-92e9-2dff9850722a",
+          "identifier": "TECH-1171",
+          "title": "Mapping app: add Comapeo",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3072",
+                "title": "#3072 Mapping app: add Comapeo",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "03920c4f-42e0-46c2-9e0a-43e82aea8600",
+          "identifier": "TECH-1142",
+          "title": "Mapping app: add CoMaps",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "repo:field-tm"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "backend"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3064",
+                "title": "#3064 Mapping app: add CoMaps",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "77d5e21a-ed80-460d-a6fc-8611cf590df4",
+          "identifier": "TECH-988",
+          "title": "Mapping app: add Panoramax projects via QField",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3018",
+                "title": "#3018 Mapping app: add Panoramax projects via QField",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
           "id": "40cb8703-8583-4c99-a85e-f5c4a97bf6cf",
           "identifier": "TECH-783",
-          "title": "Add ChatMap as an additional field mapping app downstream",
+          "title": "Mapping app: add ChatMap",
           "priority": 0,
           "state": {
             "name": "Backlog",
@@ -3250,7 +3510,7 @@
             "nodes": [
               {
                 "url": "https://github.com/hotosm/field-tm/issues/2850",
-                "title": "#2850 Add ChatMap as an additional field mapping app downstream",
+                "title": "#2850 Mapping app: add ChatMap",
                 "sourceType": "github"
               }
             ]
@@ -3305,18 +3565,6 @@
           }
         }
       ]
-    },
-    {
-      "id": "3bd90973-59dd-4ec4-aca0-de68f9eafcaa",
-      "title": "FieldTM: data extraction and visualization dashboards",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "Sam Woodcock",
-      "startDate": "2027-07-01T00:00:00.000Z",
-      "targetDate": "2027-12-31T00:00:00.000Z",
-      "issues": []
     },
     {
       "id": "653b098c-cb9a-4ce3-8464-a4d939173701",
