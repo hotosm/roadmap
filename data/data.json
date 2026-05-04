@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T08:46:04.655Z",
+  "generatedAt": "2026-05-04T08:46:01.564Z",
   "itemCount": 26,
   "items": [
     {
@@ -3338,7 +3338,9 @@
             "name": "Backlog",
             "type": "backlog"
           },
-          "assignee": null,
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
           "labels": {
             "nodes": [
               {
