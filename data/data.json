@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T19:54:08.668Z",
+  "generatedAt": "2026-05-11T09:01:31.922Z",
   "itemCount": 28,
   "items": [
     {
@@ -3335,18 +3335,6 @@
       ]
     },
     {
-      "id": "3bd90973-59dd-4ec4-aca0-de68f9eafcaa",
-      "title": "FieldTM: data extraction and visualization dashboards",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "",
-      "status": "Planned",
-      "owner": "Sam Woodcock",
-      "startDate": "2026-07-01T00:00:00.000Z",
-      "targetDate": "2027-03-31T00:00:00.000Z",
-      "issues": []
-    },
-    {
       "id": "5bd98fbe-7528-4d6e-a7ac-2c9a8561298c",
       "title": "FieldTM: integrate with other field data collection tools",
       "category": "field",
@@ -3559,6 +3547,64 @@
               {
                 "url": "https://github.com/hotosm/field-tm/issues/1829",
                 "title": "#1829 Support odk.ona.io as ODK server option",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "3bd90973-59dd-4ec4-aca0-de68f9eafcaa",
+      "title": "FieldTM: data extraction and visualization dashboards",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-07-01T00:00:00.000Z",
+      "targetDate": "2027-03-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "a5dd81ca-0367-40b0-9ba4-e4a58ceec309",
+          "identifier": "TECH-1172",
+          "title": "Approaches to extract and visualise the final data",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "devops"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "contrib"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3073",
+                "title": "#3073 Approaches to extract and visualise the final data",
                 "sourceType": "github"
               }
             ]
