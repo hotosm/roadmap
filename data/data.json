@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T09:01:31.922Z",
+  "generatedAt": "2026-05-18T09:02:52.389Z",
   "itemCount": 28,
   "items": [
     {
@@ -1440,8 +1440,8 @@
           "title": "Replace frontend prototype with stac-map",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
