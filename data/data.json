@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T09:02:52.389Z",
+  "generatedAt": "2026-05-25T09:14:16.511Z",
   "itemCount": 28,
   "items": [
     {
@@ -4256,7 +4256,7 @@
         {
           "id": "a6600a8a-e4e5-4185-b351-be397ad46729",
           "identifier": "TECH-1059",
-          "title": "Assess container autoscaling options: KEDA vs HPA vs Other?",
+          "title": "Deploy KEDA for event driven autoscaling option",
           "priority": 0,
           "state": {
             "name": "Backlog",
@@ -4266,13 +4266,16 @@
           "labels": {
             "nodes": [
               {
-                "name": "question"
-              },
-              {
                 "name": "repo:k8s-infra"
               },
               {
                 "name": "Migrated"
+              },
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "actionable"
               }
             ]
           },
@@ -4280,7 +4283,7 @@
             "nodes": [
               {
                 "url": "https://github.com/hotosm/k8s-infra/issues/4",
-                "title": "#4 Assess container autoscaling options: KEDA vs HPA vs Other?",
+                "title": "#4 Deploy KEDA for event driven autoscaling option",
                 "sourceType": "github"
               }
             ]
