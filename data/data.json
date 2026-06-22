@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T10:01:19.536Z",
+  "generatedAt": "2026-06-22T09:55:12.197Z",
   "itemCount": 28,
   "items": [
     {
@@ -2460,7 +2460,7 @@
       "group": "Roadmap item",
       "summary": "",
       "status": "Planned",
-      "owner": "omran.najjar@hotosm.org",
+      "owner": "",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2026-09-30T00:00:00.000Z",
       "issues": [
