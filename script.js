@@ -10,10 +10,13 @@ const requestModal = document.getElementById("request-modal");
 const requestForm = document.getElementById("request-form");
 const requestClose = document.getElementById("request-close");
 const requestCancel = document.getElementById("request-cancel");
+const requestSendEmail = document.getElementById("request-send-email");
 
 /* ── Config ───────────────────────────────────────────────── */
 const DATA_URL = "./data/data.json";
 const GITHUB_REQUESTS_REPO = "hotosm/requests";
+const REQUEST_EMAIL_RECIPIENT = "tech@hotosm.org";
+const REQUEST_HASH = "#tech-request";
 const DAY_WIDTH = 8;
 const ROW_HEIGHT = 48;
 const BAR_HEIGHT = 34;
@@ -431,44 +434,56 @@ function openRequestModal() {
   requestModal.hidden = false;
   syncBodyModalState();
   requestForm.elements.name.focus();
+  if (window.location.hash !== REQUEST_HASH) {
+    history.replaceState(null, "", REQUEST_HASH);
+  }
 }
 
 function closeRequestModal() {
   requestModal.hidden = true;
   syncBodyModalState();
+  if (window.location.hash === REQUEST_HASH) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+}
+
+function readRequestFields(formData) {
+  return {
+    name: String(formData.get("name") || "").trim(),
+    email: String(formData.get("email") || "").trim(),
+    hub: String(formData.get("hub") || "").trim(),
+    tool: String(formData.get("tool") || "").trim(),
+    type: String(formData.get("type") || "").trim(),
+    priority: String(formData.get("priority") || "Normal").trim(),
+    title: String(formData.get("title") || "").trim(),
+    description: String(formData.get("description") || "").trim(),
+  };
 }
 
 function buildGitHubIssueUrl(formData) {
-  const tool = String(formData.get("tool") || "").trim();
-  const type = String(formData.get("type") || "").trim();
-  const priority = String(formData.get("priority") || "Normal").trim();
-  const title = String(formData.get("title") || "").trim();
-  const description = String(formData.get("description") || "").trim();
-  const name = String(formData.get("name") || "").trim();
-  const email = String(formData.get("email") || "").trim();
-  const hub = String(formData.get("hub") || "").trim();
+  const f = readRequestFields(formData);
 
-  const issueTitle = `[${tool}] ${title}`;
+  const issueTitle = `[${f.tool}] ${f.title}`;
   const issueBody = [
     "### Request Details",
     "",
     `| Field | Value |`,
     `| --- | --- |`,
-    `| **Requester** | ${name} (${email}) |`,
-    `| **Regional Hub** | ${hub} |`,
-    `| **Related Tool** | ${tool} |`,
-    `| **Request Type** | ${type} |`,
-    `| **Priority** | ${priority} |`,
+    `| **Requester** | ${f.name} (${f.email}) |`,
+    `| **Regional Hub** | ${f.hub} |`,
+    `| **Related Tool** | ${f.tool} |`,
+    `| **Request Type** | ${f.type} |`,
+    `| **Priority** | ${f.priority} |`,
     "",
     "### Description",
     "",
-    description,
+    f.description,
     "",
     "---",
     `*Submitted via [HOT Tech Roadmap](${window.location.href})*`,
   ].join("\n");
 
-  const labels = [type.toLowerCase().replace(/ \/ /g, "-").replace(/ /g, "-")];
+  const labels = [f.type.toLowerCase().replace(/ \/ /g, "-").replace(/ /g, "-")];
 
   const params = new URLSearchParams({
     title: issueTitle,
@@ -477,6 +492,33 @@ function buildGitHubIssueUrl(formData) {
   });
 
   return `https://github.com/${GITHUB_REQUESTS_REPO}/issues/new?${params.toString()}`;
+}
+
+function buildEmailUrl(formData) {
+  const f = readRequestFields(formData);
+
+  const subject = `[Tech Request] [${f.tool}] ${f.title}`;
+  const body = [
+    "Hi HOT Tech Team,",
+    "",
+    "I'd like to submit a tech request. Details below:",
+    "",
+    `Requester:     ${f.name} (${f.email})`,
+    `Regional Hub:  ${f.hub}`,
+    `Related Tool:  ${f.tool}`,
+    `Request Type:  ${f.type}`,
+    `Priority:      ${f.priority}`,
+    "",
+    "Description",
+    "-----------",
+    f.description,
+    "",
+    "---",
+    `Submitted via HOT Tech Roadmap: ${window.location.href}`,
+  ].join("\r\n");
+
+  const params = new URLSearchParams({ subject, body });
+  return `mailto:${REQUEST_EMAIL_RECIPIENT}?${params.toString().replace(/\+/g, "%20")}`;
 }
 
 /* ── Bar label sticky positioning ─────────────────────────── */
@@ -635,8 +677,28 @@ requestForm.addEventListener("submit", (e) => {
   const formData = new FormData(requestForm);
   const url = buildGitHubIssueUrl(formData);
   window.open(url, "_blank", "noopener");
-  closeRequestModal();
-  requestForm.reset();
 });
+requestSendEmail.addEventListener("click", () => {
+  if (!requestForm.reportValidity()) return;
+  const formData = new FormData(requestForm);
+  const mailtoUrl = buildEmailUrl(formData);
+  const mailTab = window.open("about:blank", "_blank");
+  if (mailTab) {
+    mailTab.location.href = mailtoUrl;
+  } else {
+    window.location.href = mailtoUrl;
+  }
+});
+
+function syncModalToHash() {
+  if (window.location.hash === REQUEST_HASH) {
+    if (requestModal.hidden) openRequestModal();
+  } else if (!requestModal.hidden) {
+    closeRequestModal();
+  }
+}
+
+window.addEventListener("hashchange", syncModalToHash);
+syncModalToHash();
 
 init();

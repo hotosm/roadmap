@@ -649,6 +649,10 @@ a { color: inherit; }
   transform: scale(0.98);
 }
 
+.request-form__submit--email {
+  background: var(--ink);
+}
+
 .detail-panel {
   position: relative;
   z-index: 1;
