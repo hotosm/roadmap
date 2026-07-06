@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T09:29:16.331Z",
+  "generatedAt": "2026-07-06T09:16:03.089Z",
   "itemCount": 28,
   "items": [
     {
@@ -183,8 +183,8 @@
           "title": "Provide option to re-run processing after new imagery is uploaded",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -3848,8 +3848,8 @@
           "title": "Add CNPG ScheduledBackup objects",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -4052,8 +4052,8 @@
           "title": "Upgrades to CloudNativePG usage before next release (for backups)",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
