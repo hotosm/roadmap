@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T09:16:03.089Z",
+  "generatedAt": "2026-07-13T09:00:28.626Z",
   "itemCount": 28,
   "items": [
     {
@@ -3881,10 +3881,12 @@
           "title": "Deploy pushed development images automatically via Argo Image Updater",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
-          "assignee": null,
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
           "labels": {
             "nodes": [
               {
@@ -4160,8 +4162,8 @@
           "title": "Allow GH Actions to be rerun for tofu updates.",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -4190,8 +4192,8 @@
           "title": "Use ArgoCD ApplicationSet to deploy staging environments on demand via PRs",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -4229,8 +4231,8 @@
           "title": "Migrate cert-manager to ArgoCD and add replace HTTP01 with DNS01",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
