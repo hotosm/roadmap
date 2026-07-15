@@ -10,12 +10,10 @@ const requestModal = document.getElementById("request-modal");
 const requestForm = document.getElementById("request-form");
 const requestClose = document.getElementById("request-close");
 const requestCancel = document.getElementById("request-cancel");
-const requestSendEmail = document.getElementById("request-send-email");
 
 /* ── Config ───────────────────────────────────────────────── */
 const DATA_URL = "./data/data.json";
 const GITHUB_REQUESTS_REPO = "hotosm/requests";
-const REQUEST_EMAIL_RECIPIENT = "tech@hotosm.org";
 const REQUEST_HASH = "#tech-request";
 const DAY_WIDTH = 8;
 const ROW_HEIGHT = 48;
@@ -450,11 +448,9 @@ function closeRequestModal() {
 function readRequestFields(formData) {
   return {
     name: String(formData.get("name") || "").trim(),
-    email: String(formData.get("email") || "").trim(),
-    hub: String(formData.get("hub") || "").trim(),
     tool: String(formData.get("tool") || "").trim(),
     type: String(formData.get("type") || "").trim(),
-    priority: String(formData.get("priority") || "Normal").trim(),
+    priority: String(formData.get("priority") || "Low").trim(),
     title: String(formData.get("title") || "").trim(),
     description: String(formData.get("description") || "").trim(),
   };
@@ -469,8 +465,7 @@ function buildGitHubIssueUrl(formData) {
     "",
     `| Field | Value |`,
     `| --- | --- |`,
-    `| **Requester** | ${f.name} (${f.email}) |`,
-    `| **Regional Hub** | ${f.hub} |`,
+    `| **Requester** | ${f.name} |`,
     `| **Related Tool** | ${f.tool} |`,
     `| **Request Type** | ${f.type} |`,
     `| **Priority** | ${f.priority} |`,
@@ -483,42 +478,12 @@ function buildGitHubIssueUrl(formData) {
     `*Submitted via [HOT Tech Roadmap](${window.location.href})*`,
   ].join("\n");
 
-  const labels = [f.type.toLowerCase().replace(/ \/ /g, "-").replace(/ /g, "-")];
-
   const params = new URLSearchParams({
     title: issueTitle,
     body: issueBody,
-    labels: labels.join(","),
   });
 
   return `https://github.com/${GITHUB_REQUESTS_REPO}/issues/new?${params.toString()}`;
-}
-
-function buildEmailUrl(formData) {
-  const f = readRequestFields(formData);
-
-  const subject = `[Tech Request] [${f.tool}] ${f.title}`;
-  const body = [
-    "Hi HOT Tech Team,",
-    "",
-    "I'd like to submit a tech request. Details below:",
-    "",
-    `Requester:     ${f.name} (${f.email})`,
-    `Regional Hub:  ${f.hub}`,
-    `Related Tool:  ${f.tool}`,
-    `Request Type:  ${f.type}`,
-    `Priority:      ${f.priority}`,
-    "",
-    "Description",
-    "-----------",
-    f.description,
-    "",
-    "---",
-    `Submitted via HOT Tech Roadmap: ${window.location.href}`,
-  ].join("\r\n");
-
-  const params = new URLSearchParams({ subject, body });
-  return `mailto:${REQUEST_EMAIL_RECIPIENT}?${params.toString().replace(/\+/g, "%20")}`;
 }
 
 /* ── Bar label sticky positioning ─────────────────────────── */
@@ -677,17 +642,6 @@ requestForm.addEventListener("submit", (e) => {
   const formData = new FormData(requestForm);
   const url = buildGitHubIssueUrl(formData);
   window.open(url, "_blank", "noopener");
-});
-requestSendEmail.addEventListener("click", () => {
-  if (!requestForm.reportValidity()) return;
-  const formData = new FormData(requestForm);
-  const mailtoUrl = buildEmailUrl(formData);
-  const mailTab = window.open("about:blank", "_blank");
-  if (mailTab) {
-    mailTab.location.href = mailtoUrl;
-  } else {
-    window.location.href = mailtoUrl;
-  }
 });
 
 function syncModalToHash() {
