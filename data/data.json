@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:00:28.626Z",
+  "generatedAt": "2026-07-20T08:59:09.035Z",
   "itemCount": 28,
   "items": [
     {
@@ -1407,8 +1407,8 @@
           "title": "New frontend: accept coordinates + zoom as a URL param for quick loading to a bbox",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1975,8 +1975,8 @@
           "title": "Visual cues for sandbox projects in the project page",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -3435,7 +3435,7 @@
         {
           "id": "77d5e21a-ed80-460d-a6fc-8611cf590df4",
           "identifier": "TECH-988",
-          "title": "Mapping app: add Panoramax projects via QField",
+          "title": "Mapping app: add Panoramax",
           "priority": 0,
           "state": {
             "name": "Backlog",
@@ -3456,7 +3456,7 @@
             "nodes": [
               {
                 "url": "https://github.com/hotosm/field-tm/issues/3018",
-                "title": "#3018 Mapping app: add Panoramax projects via QField",
+                "title": "#3018 Mapping app: add Panoramax",
                 "sourceType": "github"
               }
             ]
