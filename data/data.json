@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T08:59:09.035Z",
+  "generatedAt": "2026-07-27T09:01:39.321Z",
   "itemCount": 28,
   "items": [
     {
@@ -4261,8 +4261,8 @@
           "title": "Deploy KEDA for event driven autoscaling option",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
