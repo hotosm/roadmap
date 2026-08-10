@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T09:00:57.351Z",
+  "generatedAt": "2026-08-10T08:28:47.536Z",
   "itemCount": 28,
   "items": [
     {
@@ -1088,8 +1088,8 @@
           "title": "Use hotosm/ui for the new uploader interface",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1121,8 +1121,8 @@
           "title": "Replacing the uploader / transcoder: integrate Uppy file uploader",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1274,8 +1274,8 @@
           "title": "Replacing the uploader / transcoder: add an API service for upload",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1304,8 +1304,8 @@
           "title": "Authentication and user management",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1364,8 +1364,8 @@
           "title": "Develop additional metadata elements for OAM Catalog",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
