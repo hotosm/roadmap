@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T08:28:47.536Z",
+  "generatedAt": "2026-08-17T08:10:24.962Z",
   "itemCount": 28,
   "items": [
     {
@@ -3913,8 +3913,8 @@
           "title": "Update eoapi-support, as the bitnami metrics server image repository moved",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -4093,8 +4093,8 @@
           "title": "Work out how to add multiple domains for OpenAerialMap API deployment",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
