@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T08:12:12.863Z",
+  "generatedAt": "2026-08-31T08:02:57.773Z",
   "itemCount": 28,
   "items": [
     {
@@ -1154,8 +1154,8 @@
           "title": "New uploader: ensure URL input, Google Drive links, Dropbox links are all possible",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
