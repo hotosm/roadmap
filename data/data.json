@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T08:02:57.773Z",
+  "generatedAt": "2026-09-07T08:02:45.348Z",
   "itemCount": 28,
   "items": [
     {
@@ -1217,8 +1217,8 @@
           "title": "Add option to anonymise uploader user information",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -4436,8 +4436,8 @@
           "title": "Add Hanko SSO Authentication",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
