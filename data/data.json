@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T08:02:45.348Z",
+  "generatedAt": "2026-09-14T08:02:30.042Z",
   "itemCount": 28,
   "items": [
     {
@@ -4382,8 +4382,8 @@
           "title": "Shared authentication with hotosm/hanko-auth",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -4535,7 +4535,9 @@
             "name": "Backlog",
             "type": "backlog"
           },
-          "assignee": null,
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
           "labels": {
             "nodes": [
               {
