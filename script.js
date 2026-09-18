@@ -448,6 +448,7 @@ function closeRequestModal() {
 function readRequestFields(formData) {
   return {
     name: String(formData.get("name") || "").trim(),
+    email: String(formData.get("email") || "").trim(),
     tool: String(formData.get("tool") || "").trim(),
     type: String(formData.get("type") || "").trim(),
     priority: String(formData.get("priority") || "Low").trim(),
@@ -466,6 +467,7 @@ function buildGitHubIssueUrl(formData) {
     `| Field | Value |`,
     `| --- | --- |`,
     `| **Requester** | ${f.name} |`,
+    ...(f.email ? [`| **Contact Email** | ${f.email} |`] : []),
     `| **Related Tool** | ${f.tool} |`,
     `| **Request Type** | ${f.type} |`,
     `| **Priority** | ${f.priority} |`,
