@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T08:02:30.042Z",
-  "itemCount": 28,
+  "generatedAt": "2026-09-21T08:02:28.731Z",
+  "itemCount": 27,
   "items": [
     {
       "id": "fbb7f062-6def-4ece-b42a-16cb33f717d7",
@@ -3110,96 +3110,6 @@
               {
                 "url": "https://github.com/hotosm/chatmap/issues/26",
                 "title": "#26 Video support for Live mode",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "a09c05c4-6fa9-4b0a-9164-f61ae67bf472",
-      "title": "FieldTM: restructure as primarily a project coordinator, not a mapping app",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "FieldTM diverged to become both a coordination and mapping app. Let's keep it simple and focus on coordination only.",
-      "status": "Done",
-      "owner": "Sam Woodcock",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "eced36c2-f888-4205-a9cd-79cbce62736f",
-          "identifier": "TECH-790",
-          "title": "Move the FieldTM management frontend into a separate frontend build / app",
-          "priority": 0,
-          "state": {
-            "name": "Canceled",
-            "type": "canceled"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "frontend:management"
-              },
-              {
-                "name": "effort:medium"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2859",
-                "title": "#2859 Move the FieldTM management frontend into a separate frontend build / app",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "9e72e34e-7d28-4be6-a70c-508c0d431501",
-          "identifier": "TECH-787",
-          "title": "Simply the FieldTM / WebForms online workflow",
-          "priority": 0,
-          "state": {
-            "name": "Canceled",
-            "type": "canceled"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "effort:high"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2853",
-                "title": "#2853 Simply the FieldTM / WebForms online workflow",
                 "sourceType": "github"
               }
             ]
