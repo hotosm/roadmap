@@ -305,7 +305,8 @@ class Plan {
   }
 
   async createProject(change) {
-    const existing = this.projects.find((p) => sameName(p.name, change.name));
+    const existing = this.projects.find((p) => sameName(p.name, change.name)) ||
+      this.projects.find((p) => sameName(p.name, this.aliases[change.name.toLowerCase()]));
     if (existing) {
       // Re-run after a partial apply: finish the remaining steps
       console.log(`    – "${change.name}" already exists, checking the rest`);

@@ -101,6 +101,7 @@ changes:
     op: update_project
     project: "Imagery: new uploader for OpenAerialMap"
     set:
+      name: { to: "OAM: new uploader" }
       status: { from: Backlog, to: Completed }
     why: >-
       README ✅ "New uploader" (v2.3), and the Q3 report says it soft-launched. 7/10 linked
@@ -110,6 +111,7 @@ changes:
     op: update_project
     project: "Imagery: new frontend for OpenAerialMap"
     set:
+      name: { to: "OAM: new frontend" }
       status: { from: Backlog, to: In Progress }
       targetQuarter: { from: 2026-Q3, to: 2026-Q4 }
     why: >-
@@ -120,6 +122,7 @@ changes:
     op: update_project
     project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
     set:
+      name: { to: "OAM: refine the metadata catalog (STAC)" }
       status: { from: Backlog, to: In Progress }
     why: >-
       README ✅ STAC catalogue, extra viewers, elevation catalogue. 🔄 more imagery providers.
@@ -169,6 +172,30 @@ changes:
     why: >-
       README 📅 rows (v2.4/v2.5). Overlaps the "3D data via OAM" milestone in "Utilize 3D
       data collected by DroneTM".
+
+  - id: oam-new-1-name
+    op: update_project
+    project: "Imagery: OpenAerialMap user accounts, contributor tools and statistics"
+    set:
+      name: { to: "OAM: user accounts, contributor tools and statistics" }
+    why: >-
+      OAM projects use the "OAM:" prefix (created above under the old name).
+
+  - id: oam-new-2-name
+    op: update_project
+    project: "Imagery: advanced search and new imagery alerts for OpenAerialMap"
+    set:
+      name: { to: "OAM: advanced search and new imagery alerts" }
+    why: >-
+      OAM projects use the "OAM:" prefix (created above under the old name).
+
+  - id: oam-new-3-name
+    op: update_project
+    project: "Imagery: more imagery types in OpenAerialMap (multispectral, elevation, 3D)"
+    set:
+      name: { to: "OAM: more imagery types (multispectral, elevation, 3D)" }
+    why: >-
+      OAM projects use the "OAM:" prefix (created above under the old name).
 
   # ── fAIr ──────────────────────────────────────────────────────────────────
 
