@@ -1,0 +1,1304 @@
+# Roadmap sync plan: README roadmaps -> Linear projects
+#
+# Review process:
+#   - Set `approved: true` when done, then:
+#       node scripts/apply.js plans/2026-10-13.yaml            # dry run (default)
+#       node scripts/apply.js plans/2026-10-13.yaml --apply    # write to Linear
+#
+# Sources: READMEs of drone-tm, openaerialmap, fAIr, field-tm, tasking-manager,
+# osm-export-tool, k8s-infra (default branches, k8s-infra as of 2026-10-14), chatmap +
+# portal (branch docs/user-roadmap-2026-q3), release tag dates, "2026 Q3 - HOT Tech -
+# Quarterly Report Out", Sam's notes (2026-10-14), Linear state on 2026-10-14.
+#
+# Quarters: "2026-Q4" -> start 2026-10-01 / target 2026-12-31, resolution "quarter".
+# Statuses: Backlog | Planned | In Progress | Completed | Canceled
+
+version: 1
+approved: true
+team: TECH
+
+changes:
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # PART 1: PROJECT CHANGES (review these)
+  # New projects, status/date/name/lead changes. This is what the public roadmap shows.
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  # ── DroneTM ───────────────────────────────────────────────────────────────
+
+  - id: dtm-1
+    op: update_project
+    project: "DroneTM: scalable and resilient imagery processing"
+    set:
+      name: { to: "DroneTM: resilient imagery processing with user feedback and retries" }
+      status: { from: In Progress, to: Completed }
+      targetQuarter: { from: 2026-Q2, to: 2026-Q3 }
+    why: >-
+      Imagery processing is in place: retry/feedback during processing (2026.2.0), parallel
+      ODM (2026.5.0), 2D/3D visualisation (2026.6.0), separate ODM workflows (2026.7.0).
+      "Scalable" is dropped from the name because city-scale (>10 km²) is still pending and
+      tracked in dtm-5.
+
+  - id: dtm-2
+    op: update_project
+    project: "DroneTM: improve the experience of uploading captured photos"
+    set:
+      targetQuarter: { from: 2026-Q1, to: 2026-Q2 }
+    why: >-
+      Its "single drag-and-drop image dump" milestone shipped as project creation via
+      photo dump in 2026.4.0 (May 2026).
+
+  - id: dtm-3
+    op: update_project
+    project: "DroneTM: support additional drone models"
+    set:
+      status: { from: Backlog, to: In Progress }
+    why: >-
+      README ⚙️ Potensic Atom 3, DJI Lito X1, SkyRover X1. The Litchi CSV milestone is
+      already ✅ (v2025.5.0).
+
+  - id: dtm-4
+    op: update_project
+    project: "DroneTM: improvements to drone operator experience in the field"
+    set:
+      status: { from: Backlog, to: In Progress }
+      targetQuarter: { from: 2026-Q2, to: 2027-Q1 }
+    why: >-
+      ✅ fully offline browser flight planning (2026.10.0) and offline QField flight plans
+      (2026.2.0). ⚙️ sending flight plans straight to the drone is a Q4 priority (RFP out)
+      and the biggest technical risk. ⚙️ multi-angle capture.
+
+  - id: dtm-5
+    op: update_project
+    project: "DroneTM: city-scale processing workflow"
+    set:
+      status: { from: Backlog, to: In Progress }
+      description: { from: null, to: "Process projects larger than ~10 km² (whole cities) with little or no manual help from the team." }
+    why: >-
+      Scalability and city-scale processing is the outstanding part of imagery processing.
+      README ⚙️. Q4 priority in the report. Target stays 2026-Q4.
+
+  - id: dtm-new-1
+    op: create_project
+    name: "DroneTM: easy to use and manage without tech team support"
+    description: "Community users can run DroneTM projects standalone, fixing failed uploads and processing themselves instead of relying on the tech team."
+    lead: Ping Yee
+    status: In Progress
+    startQuarter: 2026-Q4
+    targetQuarter: 2027-Q3
+    milestones:
+      - name: "Clearer error messages, so users can fix failed uploads/processing themselves"
+      - name: "Troubleshooting tools so users can get stuck projects moving again"
+      - name: "Real-time notifications for drone flight progress & task status"
+    why: >-
+      Q3 report learning: UX is still hard for unsupported community users. Long-term plan
+      is better error messages and troubleshooting tools. DroneTM Lite has been dropped as an
+      idea (the drone-tm README still lists it).
+
+  # ── OpenAerialMap ─────────────────────────────────────────────────────────
+
+  - id: oam-1
+    op: update_project
+    project: "Imagery: new uploader for OpenAerialMap"
+    set:
+      status: { from: Backlog, to: Completed }
+    why: >-
+      README ✅ "New uploader" (v2.3), and the Q3 report says it soft-launched. 7/10 linked
+      issues are done. Target stays 2026-Q3.
+
+  - id: oam-2
+    op: update_project
+    project: "Imagery: new frontend for OpenAerialMap"
+    set:
+      status: { from: Backlog, to: In Progress }
+      targetQuarter: { from: 2026-Q3, to: 2026-Q4 }
+    why: >-
+      README ✅ OAM Browser, coverage map, soft launch. 🔄 "Complete site transition" is the
+      first Q4 priority (full switch-over from legacy OAM).
+
+  - id: oam-3
+    op: update_project
+    project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
+    set:
+      status: { from: Backlog, to: In Progress }
+    why: >-
+      README ✅ STAC catalogue, extra viewers, elevation catalogue. 🔄 more imagery providers.
+      📅 broader catalogue discovery.
+
+  - id: oam-new-1
+    op: create_project
+    name: "Imagery: OpenAerialMap user accounts, contributor tools and statistics"
+    description: "Contributors can manage their own and their organisation's imagery, and everyone can see coverage, usage and impact statistics."
+    lead: cristiano.giovando@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q4
+    targetQuarter: 2026-Q4
+    milestones:
+      - name: "Contributor tools: edit imagery details, delete uploads, view contributions"
+      - name: "Shared imagery management for organisations, incl. old-site ownership"
+      - name: "Public imagery statistics by provider, year and image detail"
+      - name: "Usage and contributor impact"
+    why: >-
+      Q4 priority "subcontracts delivered: usage statistics, legacy data migration, user
+      accounts and data management", due Nov–Dec. Matches four 📅 README rows.
+
+  - id: oam-new-2
+    op: create_project
+    name: "Imagery: advanced search and new imagery alerts for OpenAerialMap"
+    description: "Flexible date, image-detail and cloud-cover filters, and notifications when imagery becomes available in areas you follow."
+    lead: cristiano.giovando@hotosm.org
+    status: Planned
+    startQuarter: 2026-Q4
+    targetQuarter: 2026-Q4   # Q4 priority in report; may slip to 2027-Q1
+    why: >-
+      Q4 priority "Advanced filters and area alerts". README 📅 "Advanced search" and
+      "New imagery alerts".
+
+  - id: oam-new-3
+    op: create_project
+    name: "Imagery: more imagery types in OpenAerialMap (multispectral, elevation, 3D)"
+    description: "Publish directly from OpenDroneMap, and support multispectral imagery, elevation models and 3D point clouds."
+    lead: cristiano.giovando@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q3
+    targetQuarter: 2027-Q4
+    milestones:
+      - name: "OpenDroneMap integration: publish imagery directly from ODM"
+      - name: "Support multispectral and other specialised imagery"
+      - name: "Elevation models and 3D point cloud uploads"
+    why: >-
+      README 📅 rows (v2.4/v2.5). Overlaps the "3D data via OAM" milestone in "Utilize 3D
+      data collected by DroneTM".
+
+  # ── fAIr ──────────────────────────────────────────────────────────────────
+
+  - id: fair-1
+    op: update_project
+    project: "fAIr: v3 architecture"
+    set:
+      status: { from: Backlog, to: In Progress }
+      targetQuarter: { from: 2026-Q3, to: 2026-Q4 }
+      lead: { from: null, to: kshitij.sharma@hotosm.org }
+      description: { from: null, to: "Any GeoAI model can be added to fAIr and used by anyone, with a production release of at least 15 ready-to-use models." }
+    why: >-
+      2026 goal "fAIr 3.0 ⇒ any GeoAI model integration". README ✅ AI community
+      contribution; 🔄 Try fAIr, larger areas, public results, private/public datasets.
+      Q4 priority is a production release with 15+ models. k8s production infra is in place.
+
+  - id: fair-new-1
+    op: create_project
+    name: "fAIr: fAIrSwipe community validation and open training data"
+    description: "The MapSwipe community creates training data and validates AI predictions, and verified training data is published openly."
+    lead: kshitij.sharma@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q1
+    targetQuarter: 2026-Q4
+    milestones:
+      - name: "fAIrSwipe training datasets created by the MapSwipe community"
+        targetQuarter: 2026-Q3
+      - name: "fAIrSwipe validation of AI predictions"
+        targetQuarter: 2026-Q3
+      - name: "Publish manually verified training data from fAIrSwipe and Open Mapping Gurus"
+        targetQuarter: 2026-Q4
+    why: >-
+      2026 goal "fAIrSwipe ⇒ MS Locate integration". README ✅ x2 (24 field projects,
+      47 validation projects). Q4 priority is public verified training data.
+
+  - id: fair-new-2
+    op: create_project
+    name: "fAIr: community collaboration on models"
+    description: "Users can copy a model and its dataset to improve it, and give feedback on public models."
+    lead: kshitij.sharma@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q1
+    targetQuarter: 2027-Q2
+    milestones:
+      - name: "Clone a model and its dataset to improve it further"
+      - name: "Comment and give feedback on public models"
+    why: >-
+      README 📅 rows not covered by any existing project. ("Integrate Tasking Manager" goes
+      under tm-new-2.)
+
+  # ── FieldTM ───────────────────────────────────────────────────────────────
+
+  - id: ftm-0
+    op: update_project
+    project: "FieldTM: Mapa das Periferias collaboration"
+    set:
+      status: { from: In Progress, to: Completed }
+      targetQuarter: { from: 2026-Q2, to: 2026-Q3 }
+    why: >-
+      Completed in Q3 2026 (per Sam).
+
+  - id: ftm-1
+    op: update_project
+    project: "FieldTM: QField-HOT plugin for easier mapping experience"
+    set:
+      status: { from: Backlog, to: Completed }
+    why: >-
+      README ✅ "simplified mapping in QField via a Field-TM plugin" (v2026.3.0, May 2026).
+      Target stays 2026-Q2. Feedback-driven plugin work continues in ftm-new-1.
+
+  - id: ftm-2
+    op: update_project
+    project: "FieldTM: improved OpenStreetMap integration"
+    set:
+      status: { from: In Progress, to: Planned }
+      startQuarter: { from: 2026-Q2, to: 2027-Q1 }
+      targetQuarter: { from: 2026-Q3, to: 2027-Q2 }
+    why: >-
+      Rescheduled to 2027-Q1 to 2027-Q2 (per Sam). README 🔄 pre-defined OSM forms;
+      📅 EveryDoor/StreetComplete and export to OSM. Set to Planned because work starts next year.
+
+  - id: ftm-new-1
+    op: create_project
+    name: "FieldTM: task assignment, SketchMap integration and QField improvements"
+    description: "Managers assign tasks to mappers before fieldwork starts, field data can come from Sketch Map Tool, and the QField plugin improves from field feedback."
+    lead: Sam Woodcock
+    members: [Sam Woodcock, Ishan Shrestha]
+    status: In Progress
+    startQuarter: 2026-Q4
+    targetQuarter: 2026-Q4
+    milestones:
+      - name: "Task assignment UI: assign tasks to specific mappers before fieldwork starts"
+        targetQuarter: 2026-Q4
+      - name: "Integration with HeiGIT Sketch Map Tool"
+        targetQuarter: 2026-Q4
+      - name: "Improve the QField plugin and default mapping workflow from field feedback"
+        targetQuarter: 2026-Q4
+    why: >-
+      Sam + Ishan's Q4 2026 FieldTM goals. Matches README 🔄 task assignment and 📅 Sketch Map
+      Tool rows and the Q3 report's Q4 priorities.
+
+  - id: ftm-new-2
+    op: create_project
+    name: "FieldTM: field testing and support for hub usage"
+    description: "Thorough field testing with HOT's regional hubs so FieldTM works well for real projects, using ODK and QField at a minimum."
+    lead: Sam Woodcock
+    members: [Sam Woodcock, Ishan Shrestha]
+    status: In Progress
+    startQuarter: 2026-Q4
+    targetQuarter: 2027-Q4
+    milestones:
+      - name: "Map points, lines and polygons in the same project"
+      - name: "Optional restriction of mapping to the assigned task area"
+    why: >-
+      "Thorough testing for hub usage through 2027". Mixed geometry types (Dhaka) and
+      geofencing were Q4 priorities in the Q3 report but aren't in your Q4 list, so they're
+      parked here as hub-driven needs. Move or delete them as you prefer.
+
+  - id: ftm-4
+    op: update_project
+    project: "FieldTM: integrate with other field data collection tools"
+    set:
+      status: { from: Backlog, to: Planned }
+      startQuarter: { from: 2026-Q3, to: 2027-Q1 }
+    why: >-
+      The planned Q3 start passed without work starting. Sketch Map Tool now starts first
+      via ftm-new-1.
+
+  # ── Tasking Manager ───────────────────────────────────────────────────────
+
+  - id: tm-1
+    op: update_project
+    project: "OSM Sandbox: storing mapped data outside of OpenStreetMap"
+    set:
+      status: { from: In Progress, to: Completed }
+      targetQuarter: { from: 2026-Q2, to: 2026-Q3 }
+    why: >-
+      TM README ✅ OSM practice projects/sandbox (v5.5, Feb), sandbox data downloads, compare
+      with existing OSM (v5.6, Jul). The Q3 report covers the sandbox overhaul. 13/15 linked
+      issues done.
+
+  - id: tm-new-1
+    op: create_project
+    name: "Tasking Manager: AI assistant and task assignment"
+    description: "An AI assistant answers recurring user questions, and project managers can assign tasks to specific mappers."
+    lead: ramya.ragupathy@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q3
+    targetQuarter: 2027-Q1
+    milestones:
+      - name: "AI chat assistant for recurring user queries"
+        targetQuarter: 2026-Q4
+      - name: "Assign specific tasks to specific mappers"
+        targetQuarter: 2026-Q4
+      - name: "AI-assisted task difficulty estimation and validation"
+    why: >-
+      README 🔄 AI integration. Both are Q4 priorities in the report.
+
+  - id: tm-new-2
+    op: create_project
+    name: "Tasking Manager: new project types for AI validation and data conflation"
+    description: "Project types beyond basemap features: validating fAIr predictions, and merging external data into OpenStreetMap using the sandbox."
+    lead: ramya.ragupathy@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q3
+    targetQuarter: 2027-Q2
+    milestones:
+      - name: "fAIr validation project type"
+        targetQuarter: 2026-Q4
+      - name: "Use validated Tasking Manager tasks as fAIr training data"
+      - name: "Data conflation project workflow"
+    why: >-
+      TM README 🔄 "expanding project types". fAIr README 📅 "Integrate Tasking Manager".
+      Both are Q4 priorities in the report.
+
+  - id: tm-new-3
+    op: create_project
+    name: "Tasking Manager: dependency health and technical debt"
+    description: "Keep Tasking Manager stable and maintainable: framework upgrades, upstream iD editor, translations."
+    lead: ramya.ragupathy@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q3
+    targetQuarter: 2026-Q4
+    why: >-
+      README 🔄 dependency & framework health check, 🔄 translations. 2026 goal "tech debt
+      clearance".
+
+  - id: tm-new-4
+    op: create_project
+    name: "Tasking Manager: integrations with MapSwipe, uMap and MapRoulette"
+    lead: ramya.ragupathy@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q1
+    targetQuarter: 2027-Q2
+    why: >-
+      README 📅 "External tools integration".
+
+  # ── ChatMap ───────────────────────────────────────────────────────────────
+  # Source: chatmap branch docs/user-roadmap-2026-q3 (no ChatMap projects in Linear yet).
+
+  - id: cm-new-1
+    op: create_project
+    name: "ChatMap: survey ChatBot"
+    description: "A chatbot guides untrained mappers through automated surveys, so data collected in public chat groups follows the right method."
+    lead: emilio.mariscal@hotosm.org
+    status: Completed
+    startQuarter: 2026-Q2
+    targetQuarter: 2026-Q3
+    issues: [TECH-1245]   # chatmap #186
+    why: >-
+      README ✅ ChatBot (beta). Q3 report lists it as a new feature.
+
+  - id: cm-new-2
+    op: create_project
+    name: "ChatMap: live dashboard for chat data"
+    description: "Create and update map points live from chat data, and visualise and classify incoming data streams."
+    lead: emilio.mariscal@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q3
+    targetQuarter: 2026-Q4
+    why: >-
+      README ⚙️. Q4 priority "Dashboard".
+
+  - id: cm-new-3
+    op: create_project
+    name: "ChatMap: mapper app for iOS and Android"
+    description: "A standalone ChatMap app for chat-mapping, independent of WhatsApp."
+    lead: emilio.mariscal@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q3
+    targetQuarter: 2026-Q4
+    why: >-
+      README ⚙️. Q4 priority "App" (POC done in Q3).
+
+  - id: cm-new-4
+    op: create_project
+    name: "ChatMap: field-checking AI and damage data"
+    description: "Use ChatMap to field-validate AI-generated and damage data, and to create AI training data."
+    lead: emilio.mariscal@hotosm.org
+    status: In Progress
+    startQuarter: 2026-Q3
+    targetQuarter: 2027-Q1
+    why: >-
+      README ⚙️. Q3 report lists it as progress.
+
+  - id: cm-new-5
+    op: create_project
+    name: "ChatMap: ChatBot on Telegram and Signal"
+    description: "Alternatives to WhatsApp for the ChatBot, as Meta starts charging for messages."
+    lead: emilio.mariscal@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q2
+    targetQuarter: 2027-Q2
+    why: >-
+      README planned row. Q3 report flags Meta pricing as a risk.
+
+  - id: cm-new-6
+    op: create_project
+    name: "ChatMap: content management, licensing and sharing"
+    description: "Content timeline, filtering, licensing options, tagger view, and uploading to Panoramax."
+    lead: emilio.mariscal@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q1
+    targetQuarter: 2027-Q2
+    milestones:
+      - name: "Upload content to Panoramax"
+      - name: "User content licensing options"
+      - name: "Content timeline"
+      - name: "Content filtering options"
+      - name: "Tagger view"
+    issues: [TECH-748]   # chatmap #20 (Panoramax)
+
+  # ── Portal ────────────────────────────────────────────────────────────────
+  # Source: portal branch docs/user-roadmap-2026-q3.
+
+  - id: portal-1
+    op: update_project
+    project: "HOT Portal: centralized E2E mapping dashboard"
+    set:
+      targetQuarter: { from: 2026-Q2, to: 2026-Q4 }
+    why: >-
+      Most README rows are ✅. ⚙️ Learning Center, disaster dashboard and vendor profiles are
+      all Q4 priorities in the report.
+
+  - id: portal-2
+    op: update_project
+    project: "HOT Portal:  Shared authentication for all tools"
+    set:
+      name: { to: "HOT Portal: shared authentication for all tools" }   # removes double space
+      status: { from: Backlog, to: In Progress }
+      targetQuarter: { from: 2026-Q3, to: 2027-Q1 }
+    why: >-
+      HOT login is live in FieldTM, DroneTM, OAM, Portal, fAIr, Export Tool, ChatMap and uMap.
+      Only Tasking Manager is left: it's planned in tasking-manager#7219 (TECH-1114, already
+      linked here), with no PR or assignee yet.
+
+  - id: portal-new-1
+    op: create_project
+    name: "HOT Portal: visualisation, story maps and metrics"
+    lead: emilio.mariscal@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q1
+    targetQuarter: 2027-Q2
+    milestones:
+      - name: "Visualisation options"
+      - name: "Story maps"
+      - name: "Metrics"
+    why: >-
+      README planned rows.
+
+  # ── Data access / Export ──────────────────────────────────────────────────
+
+  - id: data-1
+    op: update_project
+    project: "Data access: reassess our OSM export tools and simplify where possible"
+    set:
+      name: { to: "Data access: cloud-native OSM exports generated on the fly" }
+      description: { from: null, to: "Replace raw-data-api with an OEX / DuckDB, cloud-native pipeline that generates OSM exports on demand, including HDX country exports." }
+      status: { from: Backlog, to: Planned }
+      lead: { from: Sam Woodcock, to: Ishan Shrestha }
+      startQuarter: { from: 2026-Q2, to: 2027-Q1 }
+      targetQuarter: { from: 2026-Q2, to: 2027-Q1 }
+    why: >-
+      Ishan works on the export pipeline update in 2027-Q1. The osm-export-tool README ⚙️
+      HDX/yaml work fits under the existing HDX milestone.
+
+  # ── Infrastructure ────────────────────────────────────────────────────────
+  # Source: k8s-infra README (updated 2026-10-14) + Sam's notes. Anil leads.
+
+  - id: infra-new-1
+    op: create_project
+    name: "Infrastructure: make our infrastructure accessible to the whole tech team"
+    description: "Every tech team member can deploy and manage their tool, including virtual machines inside the Kubernetes cluster (KubeVirt) as an interim for those not comfortable with Kubernetes."
+    lead: anil.rajrimal@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q1
+    targetQuarter: 2027-Q1
+    milestones:
+      - name: "Provision virtual machines within the Kubernetes cluster using KubeVirt"
+      - name: "Documentation and onboarding for deploying a tool on the cluster"
+    why: >-
+      Prerequisite for migrating ChatMap, Portal, uMap and Export Tool (per Sam).
+
+  - id: infra-1
+    op: update_project
+    project: "Move tools to more modern and optimized infrastructure"
+    set:
+      name: { to: "Infrastructure: migrate HOT tools to Kubernetes" }
+      lead: { from: dakota.benjamin@hotosm.org, to: anil.rajrimal@hotosm.org }
+      targetQuarter: { from: 2026-Q4, to: 2027-Q1 }
+    why: >-
+      k8s-infra README: OAM, FieldTM, Shared Login, DroneTM + ScaleODM and fAIr done. ODK +
+      QFieldCloud in progress (Nov), then ChatMap + Portal (Dec), uMap (Jan), HDX exports +
+      Export Tool (Feb). Tasking Manager and raw-data-api are not planned. Below, each tool
+      gets its own milestone.
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # PART 2: MILESTONE CHANGES (quick scan)
+  # Milestones added to / renamed / moved / removed from existing projects.
+  # (Milestones for brand-new projects are listed inside those projects in part 1.)
+  # ═══════════════════════════════════════════════════════════════════════════
+
+  # ── DroneTM ───────────────────────────────────────────────────────────────
+
+  - id: dtm-1a
+    op: move_milestone
+    project: "DroneTM: resilient imagery processing with user feedback and retries"
+    milestone: "Multiple server options available for user to process imagery (selectable)"
+    to: "DroneTM: city-scale processing workflow"
+    why: >-
+      Still useful, and belongs with scalability / city-scale processing (per Sam).
+
+  - id: dtm-3a
+    op: add_milestones
+    project: "DroneTM: support additional drone models"
+    milestones:
+      - name: "Flight plans working on Potensic Atom 3"
+      - name: "Flight plans working on DJI Lito X1"
+      - name: "Flight plans working on SkyRover X1"
+      - name: "HOT community mapping drone: cheap, mapping-optimised, locally sourced materials"
+
+  - id: dtm-4a
+    op: update_milestone
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "Divide or merge task areas on demand (flexible boundaries)"
+    set:
+      name: { to: "Let users edit and split flightplans before flying" }
+    why: >-
+      Uses the README wording for the same feature.
+
+  - id: dtm-4b
+    op: add_milestones
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestones:
+      - name: "Plan flights fully offline in a web browser, including terrain following"
+        targetQuarter: 2026-Q3
+      - name: "Send flightplans straight to the drone from any Android phone (USB transfer)"
+        targetQuarter: 2026-Q4
+      - name: "Capture imagery at multiple (configurable) camera angles"
+
+  # ── OpenAerialMap ─────────────────────────────────────────────────────────
+
+  - id: oam-2a
+    op: add_milestones
+    project: "Imagery: new frontend for OpenAerialMap"
+    milestones:
+      - name: "Soft launch of the new site alongside the old site"
+        targetQuarter: 2026-Q3
+      - name: "Complete switch-over from the legacy OAM site (incl. user comms)"
+        targetQuarter: 2026-Q4
+
+  - id: oam-3a
+    op: add_milestones
+    project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
+    milestones:
+      - name: "Expand the catalogue with imagery from additional providers"
+      - name: "Find imagery from more external catalogues in one place"
+      - name: "More accurate imagery outlines, preview alignment and coverage estimates"
+
+  # ── fAIr ──────────────────────────────────────────────────────────────────
+
+  - id: fair-1a
+    op: add_milestones
+    project: "fAIr: v3 architecture"
+    milestones:
+      - name: "AI developers can add their own models (HOT, HeiGIT, Mozilla AI so far)"
+        targetQuarter: 2026-Q3
+      - name: "Start Mapping (\"Try fAIr\"): apply any model to any imagery"
+      - name: "Request predictions over larger areas in one go"
+      - name: "Public prediction results and private/public datasets & models"
+      - name: "Production release with 15+ ready-to-use models"
+        targetQuarter: 2026-Q4
+
+  # ── FieldTM ───────────────────────────────────────────────────────────────
+
+  - id: ftm-3
+    op: add_milestones
+    project: "FieldTM: integrate with other field data collection tools"
+    milestones:
+      - name: "Integration with ChatMap"
+      - name: "Integration with other ODK server types: Ona.io, Kobo"
+    why: >-
+      README 📅 rows. Sketch Map Tool is in ftm-new-1 because it's a Q4 goal.
+
+  - id: ftm-5
+    op: add_milestones
+    project: "FieldTM: data extraction and visualization dashboards"
+    milestones:
+      - name: "Instructions for how to best visualise ODK data within QField"
+    why: >-
+      README 📅 row. Note README ✅ "export mapped data from QField projects" (v2026.4.0)
+      partly covers the existing "QField data extraction and display" milestone.
+
+  # ── Portal ────────────────────────────────────────────────────────────────
+
+  - id: portal-1a
+    op: add_milestones
+    project: "HOT Portal: centralized E2E mapping dashboard"
+    milestones:
+      - name: "Plans, collections, organisations and public profiles"
+        targetQuarter: 2026-Q3
+      - name: "Integration with the HOT Learning Center (Learn & Connect)"
+        targetQuarter: 2026-Q4
+      - name: "Maps for plans / Disaster Dashboard"
+        targetQuarter: 2026-Q4
+      - name: "More options for public profiles (e.g. vendors)"
+        targetQuarter: 2026-Q4
+
+  - id: portal-2a
+    op: add_milestones
+    project: "HOT Portal: shared authentication for all tools"
+    milestones:
+      - name: "FieldTM"
+      - name: "DroneTM"
+      - name: "OpenAerialMap"
+      - name: "Portal"
+      - name: "fAIr"
+      - name: "Export Tool"
+      - name: "ChatMap"
+      - name: "uMap"
+      - name: "Tasking Manager"
+    why: >-
+      One milestone per tool. All are done except Tasking Manager. Uses the new name because
+      portal-2 renames the project first.
+
+  # ── Data access / Export ──────────────────────────────────────────────────
+
+  - id: data-1a
+    op: update_milestone
+    project: "Data access: cloud-native OSM exports generated on the fly"
+    milestone: "Consider replacing raw-data-api with postpass"
+    set:
+      name: { to: "Replace raw-data-api with an OEX / DuckDB cloud-native export pipeline" }
+      targetQuarter: { to: 2027-Q1 }
+
+  # ── Infrastructure ────────────────────────────────────────────────────────
+
+  - id: infra-1a
+    op: update_milestone
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate ChatMap, uMap, Export Tool to Kubernetes"
+    set:
+      name: { to: "Migrate ChatMap to Kubernetes" }
+      targetQuarter: { to: 2026-Q4 }
+
+  - id: infra-1b
+    op: update_milestone
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate FieldTM + ODK to Kubernetes"
+    set:
+      name: { to: "Migrate FieldTM to Kubernetes" }
+      targetQuarter: { to: 2026-Q1 }
+
+  - id: infra-1c
+    op: update_milestone
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate DroneTM + OpenDroneMap to Kubernetes"
+    set:
+      name: { to: "Migrate DroneTM + ScaleODM to Kubernetes" }
+      targetQuarter: { to: 2026-Q1 }
+
+  - id: infra-1d
+    op: update_milestone
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate fAIr to Kubernetes"
+    set:
+      targetQuarter: { to: 2026-Q2 }
+
+  - id: infra-1e
+    op: delete_milestone
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate Tasking Manager to Kubernetes"
+    why: >-
+      README says it isn't currently planned. TECH-1058 (TM EC2 vs k8s cost comparison) stays
+      in the project.
+
+  - id: infra-1f
+    op: add_milestones
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestones:
+      - name: "Migrate OpenAerialMap to Kubernetes"
+        targetQuarter: 2025-Q3
+      - name: "Migrate Shared Login to Kubernetes"
+        targetQuarter: 2026-Q1
+      - name: "Migrate ODK Central and QFieldCloud to Kubernetes"
+        targetQuarter: 2026-Q4
+      - name: "Migrate Portal to Kubernetes"
+        targetQuarter: 2026-Q4
+      - name: "Migrate uMap to Kubernetes"
+        targetQuarter: 2027-Q1
+      - name: "Migrate HDX Country Exports to Kubernetes"
+        targetQuarter: 2027-Q1
+      - name: "Migrate Export Tool to Kubernetes"
+        targetQuarter: 2027-Q1
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # PART 3: ISSUE LINKS (optional review)
+  # ═══════════════════════════════════════════════════════════════════════════
+  # Open issues matched to projects/milestones, so each shows what is still pending.
+  # Delete any line (or block) you disagree with. [high]/[medium] = match confidence.
+  # Blocks with move: true take issues out of their current project (named per line).
+  # 795 open issues were reviewed; most (routine bugs, chores, old requests) are left unlinked.
+
+  - id: link-01
+    op: link_issues
+    project: "All HOT tools should have a similar look and feel: UI/UX enhancements"
+    milestone: "Export Tool: integrate shared UI components and design system"
+    issues:
+      - TECH-46   # [medium] Update UI Design to Reflect HOT Brand
+
+  - id: link-02
+    op: link_issues
+    project: "All HOT tools should have a similar look and feel: UI/UX enhancements"
+    milestone: "Tasking Manager: consider implications of major UI changes within the community"
+    issues:
+      - TECH-399   # [medium] Redesign the frontend for better information design and discovery
+
+  - id: link-03
+    op: link_issues
+    project: "All HOT tools should have a similar look and feel: UI/UX enhancements"
+    issues:
+      - TECH-1275   # [medium] Pre-bake product wordmarks into the logo SVG
+      - TECH-13   # [medium] Footer component
+
+  - id: link-04
+    op: link_issues
+    project: "ChatMap: ChatBot on Telegram and Signal"
+    issues:
+      - TECH-756   # [high] Signal API connector
+      - TECH-755   # [high] Telegram API connector
+
+  - id: link-05
+    op: link_issues
+    project: "ChatMap: content management, licensing and sharing"
+    milestone: "Upload content to Panoramax"
+    issues:
+      - TECH-748   # [high] Option to upload geo-located images to Panoramax
+
+  - id: link-06
+    op: link_issues
+    project: "ChatMap: content management, licensing and sharing"
+    issues:
+      - TECH-1005   # [medium] More sharing permissions for maps
+
+  - id: link-07
+    op: link_issues
+    project: "ChatMap: live dashboard for chat data"
+    issues:
+      - TECH-1338   # [high] ChatMap Dashboard - Points with status
+      - TECH-1340   # [high] Statuses API for maps and points
+      - TECH-1341   # [high] Statuses in the map UI
+      - TECH-1342   # [high] Statuses in map exports
+      - TECH-1337   # [medium] ChatMap Dashboard - CLI adapting for group conversations
+      - TECH-929   # [medium] Improve Live map update
+      - TECH-966   # [medium] Live: filter points by date
+
+  - id: link-08
+    op: link_issues
+    project: "ChatMap: mapper app for iOS and Android"
+    issues:
+      - TECH-1327   # [high] Chatmap App
+
+  - id: link-09
+    op: link_issues
+    project: "Data access: append additional metadata to OSM for humanitarian purposes"
+    milestone: "Add p-code references to exported raw-data-api data"
+    issues:
+      - TECH-584   # [high] [FEATURE] Add P-codes to dataset
+
+  - id: link-10
+    op: link_issues
+    project: "Data access: cloud-native OSM exports generated on the fly"
+    milestone: "Replace raw-data-api with an OEX / DuckDB cloud-native export pipeline"
+    issues:
+      - TECH-589   # [high] Long term maintenance plan: raw-data-api & export tool
+      - TECH-52   # [medium] Research solution to world wide queries
+
+  - id: link-11
+    op: link_issues
+    project: "Data access: cloud-native OSM exports generated on the fly"
+    milestone: "Update Humanitarian Data Exchange exports for long term stability"
+    issues:
+      - TECH-44   # [medium] Merge sectioned country datasets together
+      - TECH-62   # [medium] Add some method of re-running stuck HDX exports
+
+  - id: link-12
+    op: link_issues
+    project: "Data access: cloud-native OSM exports generated on the fly"
+    milestone: "Update Humanitarian Data Exchange exports for long term stability"
+    move: true
+    issues:
+      - TECH-587   # [medium] [BUG] : Discrepency on HDX Road Datasets (from: Data access: append additional metadata to OSM for humanitarian purposes)
+
+  - id: link-13
+    op: link_issues
+    project: "Data access: cloud-native OSM exports generated on the fly"
+    issues:
+      - TECH-911   # [medium] [FEATURE] Move the query_builder logic to a standalone Python package
+
+  - id: link-14
+    op: link_issues
+    project: "DroneTM: city-scale processing workflow"
+    milestone: "Multiple server options available for user to process imagery (selectable)"
+    issues:
+      - TECH-1135   # [medium] Add an option to run entirely locally via k3s install
+
+  - id: link-15
+    op: link_issues
+    project: "DroneTM: city-scale processing workflow"
+    milestone: "Multiple server options available for user to process imagery (selectable)"
+    move: true
+    issues:
+      - TECH-622   # [medium] Add setup / easy workflow for processing imagery on a local laptop to validate f (from: DroneTM: scalable and resilient imagery processing)
+
+  - id: link-16
+    op: link_issues
+    project: "DroneTM: city-scale processing workflow"
+    issues:
+      - TECH-781   # [medium] Consider increasing the max project size limit?
+      - TECH-608   # [medium] Add align point cloud for aligning multiple flights
+      - TECH-1227   # [medium] Allow retry if a spot instance terminates during the final upload stage
+
+  - id: link-17
+    op: link_issues
+    project: "DroneTM: easy to use and manage without tech team support"
+    milestone: "Clearer error messages, so users can fix failed uploads/processing themselves"
+    issues:
+      - TECH-1240   # [medium] Users should be notified if imagery is currently being transferred internally
+
+  - id: link-18
+    op: link_issues
+    project: "DroneTM: easy to use and manage without tech team support"
+    milestone: "Real-time notifications for drone flight progress & task status"
+    issues:
+      - TECH-1217   # [medium] [Enhancement] Implement real-time auto-updates, progress indicators, and ETAs in
+
+  - id: link-19
+    op: link_issues
+    project: "DroneTM: easy to use and manage without tech team support"
+    milestone: "Troubleshooting tools so users can get stuck projects moving again"
+    issues:
+      - TECH-1094   # [high] Add a way to delete uploaded images for a task and start from scratch
+      - TECH-1256   # [medium] Pick up any ongoing image classification jobs on first server load, resume where
+      - TECH-1303   # [medium] Can't easily match project/task to entries in the processing page
+
+  - id: link-20
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "Capture imagery at multiple (configurable) camera angles"
+    issues:
+      - TECH-663   # [high] Capture multiple photo angles along the flightplan
+
+  - id: link-21
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "Let users edit and split flightplans before flying"
+    issues:
+      - TECH-636   # [high] Allow flightplan to be modified prior to takeoff
+      - TECH-635   # [high] Chunking of flightplans into multiple parts
+      - TECH-647   # [medium] Specify required flight time during flightplan generation, and optionally split 
+      - TECH-653   # [medium] Users should be able to edit created tasks after they are generated (split or me
+
+  - id: link-22
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "Plan flights fully offline in a web browser, including terrain following"
+    issues:
+      - TECH-637   # [medium] Flightplan generation directly on a mobile device
+
+  - id: link-23
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "QField plugin to generate flightplans entirely offline"
+    issues:
+      - TECH-1151   # [medium] Scraped DEM should be clipped to a buffered AOI, reducing file size
+
+  - id: link-24
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "Rotation of flightplans based on terrain and prevailing wind considerations"
+    issues:
+      - TECH-642   # [high] Auto-rotation of flightplans based on parameters (parent issue)
+      - TECH-646   # [high] Auto-rotate flightplan based on prevailing wind direction
+      - TECH-599   # [high] Auto-rotate flight plans to fly rough contoured grid according to terrain
+
+  - id: link-25
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    milestone: "Send flightplans straight to the drone from any Android phone (USB transfer)"
+    issues:
+      - TECH-665   # [high] Create a transfer-util Flutter mobile app for loading flightplans on drones
+      - TECH-1099   # [high] Create a small Android activity for copying flightplans direct to DJI Drones (SD
+      - TECH-1086   # [high] Test & finalize the best approach to copying flightplans to controllers in the f
+
+  - id: link-26
+    op: link_issues
+    project: "DroneTM: improvements to drone operator experience in the field"
+    issues:
+      - TECH-666   # [medium] Replace the flightplan thumbnail image on the controller with a rendered image c
+      - TECH-1305   # [medium] Allow all launch points to be downloaded as KML/KMZ/GPX
+      - TECH-1280   # [medium] [PROPOSAL] Field Edge Kit: offline validation, privacy AI and store-and-forward 
+
+  - id: link-27
+    op: link_issues
+    project: "DroneTM: support additional drone models"
+    milestone: "Assess potential of direct SDK usage for DJI or similar drones"
+    issues:
+      - TECH-623   # [high] Add support for using DJI Developer SDK directly (Mini 4 Pro support + remove ma
+
+  - id: link-28
+    op: link_issues
+    project: "DroneTM: support additional drone models"
+    milestone: "Export to Litchi CSV format (additional DJI drone support)"
+    issues:
+      - TECH-1250   # [high] Litchi format is broken
+
+  - id: link-29
+    op: link_issues
+    project: "DroneTM: support additional drone models"
+    milestone: "Flight plans working on DJI Lito X1"
+    issues:
+      - TECH-1290   # [high] DJI Lito X1 Support
+
+  - id: link-30
+    op: link_issues
+    project: "DroneTM: support additional drone models"
+    milestone: "Flight plans working on Potensic Atom 3"
+    issues:
+      - TECH-1264   # [high] Add support for Potensic Atom 3
+
+  - id: link-31
+    op: link_issues
+    project: "DroneTM: support additional drone models"
+    milestone: "Flight plans working on SkyRover X1"
+    issues:
+      - TECH-1296   # [high] SkyRover X1 Support
+
+  - id: link-32
+    op: link_issues
+    project: "DroneTM: support additional drone models"
+    issues:
+      - TECH-776   # [medium] Either the Potensic coordinates have flipped, or the flightplan copy is not work
+      - TECH-1315   # [medium] Consider support for larger drones >250g, especially if they already support way
+
+  - id: link-33
+    op: link_issues
+    project: "FieldTM: data extraction and visualization dashboards"
+    milestone: "Instructions for how to best visualise ODK data within QField"
+    issues:
+      - TECH-725   # [medium] Contribute to QuODK for submission visualisation in QGIS
+
+  - id: link-34
+    op: link_issues
+    project: "FieldTM: data extraction and visualization dashboards"
+    milestone: "ODK data extraction and display"
+    issues:
+      - TECH-719   # [medium] Add docs for visualising OData in Excel as well as PowerBI
+
+  - id: link-35
+    op: link_issues
+    project: "FieldTM: data extraction and visualization dashboards"
+    issues:
+      - TECH-724   # [medium] Assess usage of uMap for FieldTM submission visualisation
+
+  - id: link-36
+    op: link_issues
+    project: "FieldTM: field testing and support for hub usage"
+    milestone: "Map points, lines and polygons in the same project"
+    issues:
+      - TECH-1185   # [high] Mapping multiple geometry types at the same time
+
+  - id: link-37
+    op: link_issues
+    project: "FieldTM: field testing and support for hub usage"
+    issues:
+      - TECH-1116   # [medium] Mapping linear features via field-tm does not make sense: add alternative pathwa
+
+  - id: link-38
+    op: link_issues
+    project: "FieldTM: improved OpenStreetMap integration"
+    milestone: "Streamline project creation for OSM with pre-defined surveys and data extraction"
+    issues:
+      - TECH-867   # [medium] Improvements to catalogue of OSM XLSForms with community feedback
+
+  - id: link-39
+    op: link_issues
+    project: "FieldTM: integrate with other field data collection tools"
+    milestone: "Integration with ChatMap"
+    issues:
+      - TECH-783   # [high] Mapping app: add ChatMap
+
+  - id: link-40
+    op: link_issues
+    project: "FieldTM: integrate with other field data collection tools"
+    milestone: "Integration with other ODK server types: Ona.io, Kobo"
+    issues:
+      - TECH-688   # [high] Support odk.ona.io as ODK server option
+
+  - id: link-41
+    op: link_issues
+    project: "FieldTM: integrate with other field data collection tools"
+    issues:
+      - TECH-1311   # [medium] Mapping app: consider integration possibilities with DHIS2
+
+  - id: link-42
+    op: link_issues
+    project: "FieldTM: task assignment, SketchMap integration and QField improvements"
+    milestone: "Improve the QField plugin and default mapping workflow from field feedback"
+    issues:
+      - TECH-1247   # [high] Updates to the QField-FieldTM plugin
+
+  - id: link-43
+    op: link_issues
+    project: "FieldTM: task assignment, SketchMap integration and QField improvements"
+    milestone: "Integration with HeiGIT Sketch Map Tool"
+    issues:
+      - TECH-1239   # [high] Mapping app: add SketchMap
+
+  - id: link-44
+    op: link_issues
+    project: "FieldTM: task assignment, SketchMap integration and QField improvements"
+    milestone: "Task assignment UI: assign tasks to specific mappers before fieldwork starts"
+    issues:
+      - TECH-1208   # [high] We need a task assignment UI
+      - TECH-898   # [medium] Updates to project invite / sharing functionality
+      - TECH-1013   # [medium] The ODK form currently has no task locking capabilities
+
+  - id: link-45
+    op: link_issues
+    project: "HOT Portal: centralized E2E mapping dashboard"
+    milestone: "Maps for plans / Disaster Dashboard"
+    issues:
+      - TECH-1295   # [high] Disaster response dashboard
+
+  - id: link-46
+    op: link_issues
+    project: "HOT Portal: centralized E2E mapping dashboard"
+    milestone: "Plans, collections, organisations and public profiles"
+    issues:
+      - TECH-1231   # [medium] REST API endpoints for integration with HOT Portal
+
+  - id: link-47
+    op: link_issues
+    project: "HOT Portal: shared authentication for all tools"
+    milestone: "Export Tool"
+    issues:
+      - TECH-1126   # [medium] Add tool-menu to the header
+
+  - id: link-48
+    op: link_issues
+    project: "HOT Portal: shared authentication for all tools"
+    milestone: "FieldTM"
+    issues:
+      - TECH-1237   # [high] Shared HOT login
+      - TECH-989   # [high] Add login to frontend via unified HOT login
+      - TECH-1028   # [medium] Add bundled hanko login instance as part of Kubernetes deployment options
+      - TECH-1075   # [medium] Use a locale switcher cookie based on unified HOT login cookie
+
+  - id: link-49
+    op: link_issues
+    project: "HOT Portal: shared authentication for all tools"
+    milestone: "OpenAerialMap"
+    move: true
+    issues:
+      - TECH-25   # [medium] Add OAuth2 for sign-in with OSM account (from: Imagery: new uploader for OpenAerialMap)
+
+  - id: link-50
+    op: link_issues
+    project: "HOT Portal: shared authentication for all tools"
+    milestone: "Tasking Manager"
+    issues:
+      - TECH-1114   # [high] Add centralized authentication with hotosm/hanko-auth
+      - TECH-1128   # [medium] Add tool-menu to the header
+
+  - id: link-51
+    op: link_issues
+    project: "Imagery: OpenAerialMap user accounts, contributor tools and statistics"
+    milestone: "Contributor tools: edit imagery details, delete uploads, view contributions"
+    issues:
+      - TECH-1321   # [high] Uploader: let users delete uploads and edit their metadata
+      - TECH-1283   # [high] v2 profile, is it missing a list of prior uploads?
+
+  - id: link-52
+    op: link_issues
+    project: "Imagery: OpenAerialMap user accounts, contributor tools and statistics"
+    milestone: "Public imagery statistics by provider, year and image detail"
+    issues:
+      - TECH-1333   # [high] Public statistics page
+
+  - id: link-53
+    op: link_issues
+    project: "Imagery: OpenAerialMap user accounts, contributor tools and statistics"
+    milestone: "Usage and contributor impact"
+    issues:
+      - TECH-1343   # [medium] Usage tracking for the new OAM site, uploader and STAC Browser
+
+  - id: link-54
+    op: link_issues
+    project: "Imagery: advanced search and new imagery alerts for OpenAerialMap"
+    issues:
+      - TECH-1331   # [high] Subscribe to an area and get notified when new imagery is added
+      - TECH-1330   # [high] Browse: cloud-cover filter
+      - TECH-1241   # [high] Custom filters (such as date range) on the frontend, via global density coverage
+
+  - id: link-55
+    op: link_issues
+    project: "Imagery: more imagery types in OpenAerialMap (multispectral, elevation, 3D)"
+    milestone: "Elevation models and 3D point cloud uploads"
+    issues:
+      - TECH-1181   # [high] 3D data ingestion & conversion
+
+  - id: link-56
+    op: link_issues
+    project: "Imagery: new frontend for OpenAerialMap"
+    milestone: "Complete switch-over from the legacy OAM site (incl. user comms)"
+    issues:
+      - TECH-1263   # [high] Swap from old openaerialmap.org service to new OAM at imagery.hotosm.org
+
+  - id: link-57
+    op: link_issues
+    project: "Imagery: new frontend for OpenAerialMap"
+    issues:
+      - TECH-1334   # [medium] Supporters, credits and citations page
+
+  - id: link-58
+    op: link_issues
+    project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
+    milestone: "Expand the catalogue with imagery from additional providers"
+    issues:
+      - TECH-1267   # [medium] OAM STAC new provider onboarding guide
+      - TECH-21   # [medium] Automatic indexing of DG Open Data imagery
+
+  - id: link-59
+    op: link_issues
+    project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
+    milestone: "Find imagery from more external catalogues in one place"
+    issues:
+      - TECH-922   # [medium] Federation of OpenAerialMap STAC catalogues
+
+  - id: link-60
+    op: link_issues
+    project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
+    milestone: "More accurate imagery outlines, preview alignment and coverage estimates"
+    issues:
+      - TECH-1335   # [high] Browse: preview thumbnails do not line up with footprints until the image is sel
+      - TECH-1332   # [high] Use true image footprints instead of bounding boxes
+
+  - id: link-61
+    op: link_issues
+    project: "Imagery: refine the metadata catalog for OpenAerialMap (STAC)"
+    issues:
+      - TECH-1262   # [medium] 765 catalogue records carry no properties.license, mostly DigitalGlobe and Plane
+
+  - id: link-62
+    op: link_issues
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate ChatMap to Kubernetes"
+    issues:
+      - TECH-938   # [high] K8s deployment
+
+  - id: link-63
+    op: link_issues
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate DroneTM + ScaleODM to Kubernetes"
+    issues:
+      - TECH-1173   # [medium] Add docs about how to use Karpenter to scale to 0 and launch new nodes on demand
+      - TECH-942   # [medium] Consider migrating bunkerweb from compose --> k8s helm chart
+
+  - id: link-64
+    op: link_issues
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate HDX Country Exports to Kubernetes"
+    issues:
+      - TECH-1260   # [medium] Windmill: optimise labels, queues, images per project
+
+  - id: link-65
+    op: link_issues
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate ODK Central and QFieldCloud to Kubernetes"
+    issues:
+      - TECH-1074   # [high] Move ODK Central to Kubernetes cluster
+
+  - id: link-66
+    op: link_issues
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate ODK Central and QFieldCloud to Kubernetes"
+    move: true
+    issues:
+      - TECH-1073   # [high] Deploy QFieldCloud on a separate server - self hosted via helm chart (from: FieldTM: QField integration)
+
+  - id: link-67
+    op: link_issues
+    project: "Infrastructure: migrate HOT tools to Kubernetes"
+    milestone: "Migrate uMap to Kubernetes"
+    issues:
+      - TECH-939   # [high] K8s deployment
+
+  - id: link-68
+    op: link_issues
+    project: "Tasking Manager: AI assistant and task assignment"
+    milestone: "AI-assisted task difficulty estimation and validation"
+    issues:
+      - TECH-113   # [medium] Complexity based suggestions for tasks
+      - TECH-112   # [medium] Complexity layer in project creation flow
+      - TECH-117   # [medium] Create logic for recommended tasks
+      - TECH-394   # [medium] Let users access AI generated feature detection for better project prioritisatio
+
+  - id: link-69
+    op: link_issues
+    project: "Tasking Manager: AI assistant and task assignment"
+    milestone: "Assign specific tasks to specific mappers"
+    issues:
+      - TECH-111   # [high] Task Assignment
+
+  - id: link-70
+    op: link_issues
+    project: "Tasking Manager: dependency health and technical debt"
+    issues:
+      - TECH-1312   # [high] Unify the sandbox and OSM task editors on @openstreetmap/id
+      - TECH-436   # [high] Replace craco / webpack frontend module bundler with vite
+      - TECH-438   # [medium] Migrate from JavaScript --> TypeScript
+      - TECH-437   # [medium] Switch from Yarn to PNPM
+      - TECH-440   # [medium] Migrating code from react-chart-js to chartjs
+      - TECH-361   # [medium] Refactor out schematics Python dependency, prior to backend upgrade to Python 3.
+      - TECH-333   # [high] [DEV] Ensure codebase dependencies are stable and updated
+      - TECH-400   # [high] Minimize existing technical debt to have a steady stream of community contributi
+      - TECH-325   # [medium] Update for translations
+
+  - id: link-71
+    op: link_issues
+    project: "Tasking Manager: integrations with MapSwipe, uMap and MapRoulette"
+    issues:
+      - TECH-435   # [medium] MapSwipe Connector and DTO Specification
+
+  - id: link-72
+    op: link_issues
+    project: "Tasking Manager: new project types for AI validation and data conflation"
+    milestone: "Data conflation project workflow"
+    issues:
+      - TECH-1177   # [medium] OSM data layer for sandbox projects
+
+  - id: link-73
+    op: link_issues
+    project: "Utilize 3D data collected by DroneTM to enrich OpenStreetMap"
+    issues:
+      - TECH-1276   # [medium] Plans for 3D data consumption: viewing and tagging (parent issue)
+      - TECH-1104   # [medium] Implement a pipeline for point cloud building identification & height estimation
+
+  - id: link-74
+    op: link_issues
+    project: "fAIr: community collaboration on models"
+    milestone: "Comment and give feedback on public models"
+    issues:
+      - TECH-554   # [high] Feature request : Comment Section on Models Page
+
+  - id: link-75
+    op: link_issues
+    project: "fAIr: v3 architecture"
+    milestone: "Production release with 15+ ready-to-use models"
+    issues:
+      - TECH-567   # [medium] feat : Include torgeo models in the research
+
+  - id: link-76
+    op: link_issues
+    project: "fAIr: v3 architecture"
+    issues:
+      - TECH-1249   # [medium] Integrate fAIr-models repo here as a monorepo under ./models
+
+questions:
+  - "Possible roadmap gaps seen while matching issues (not proposed): fAIr and infrastructure tech debt/maintenance (EKS upgrade, Aurora PG14 EOL Feb 2027, backup restore tests); TM data quality & validation workflow; TM notifications overhaul; FieldTM task splitting & project-creation wizard; DroneTM thermal imagery and disaster-response coordination; OAM tile serving/performance; cross-tool usage analytics; GDPR account deletion across tools."
+  - "Open issues left in Completed projects: TECH-629 (DroneTM photo uploads), TECH-819 + TECH-38 (OAM uploader), TECH-296 + TECH-471 (OSM Sandbox). Close or re-home?"
+  - "Not proposed (too granular or ongoing): DroneTM thermal imagery and role-based access control; TM sorting/filtering, UI/UX, sandbox reference layer; Export Tool frontend (ideation, already a milestone in the UI/UX look-and-feel project)."
+  - "Unchanged: QField integration (Completed), Utilize 3D data (2027), data quality / QGIS plugin (2027), OSM metadata (stays with data export), UI/UX look and feel."

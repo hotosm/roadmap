@@ -1,0 +1,11 @@
+{
+  "name": "roadmap",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate.js",
+    "apply": "node scripts/apply.js"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  }
+}
