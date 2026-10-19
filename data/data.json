@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T12:52:08.937Z",
-  "itemCount": 45,
+  "generatedAt": "2026-10-19T08:06:25.773Z",
+  "itemCount": 44,
   "items": [
     {
       "id": "95ff0877-2c0a-421e-960c-fe7e646b7470",
@@ -1824,7 +1824,7 @@
     },
     {
       "id": "b97beeb9-08b0-45d9-bdf2-81c97fd807f0",
-      "title": "Imagery: refine the metadata catalog for OpenAerialMap (STAC)",
+      "title": "OAM: refine the metadata catalog (STAC)",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "",
@@ -2238,7 +2238,7 @@
     },
     {
       "id": "16dc5dcc-3e35-4f2c-891d-ba6846105013",
-      "title": "Imagery: new frontend for OpenAerialMap",
+      "title": "OAM: new frontend",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "",
@@ -2379,7 +2379,7 @@
     },
     {
       "id": "44ff5688-b308-44db-88ce-fc0124fcf5c2",
-      "title": "Imagery: new uploader for OpenAerialMap",
+      "title": "OAM: new uploader",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "",
@@ -3047,7 +3047,7 @@
     },
     {
       "id": "51eaf48e-f43e-4c22-b931-3350d5a4ae40",
-      "title": "Imagery: advanced search and new imagery alerts for OpenAerialMap",
+      "title": "OAM: advanced search and new imagery alerts",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "Flexible date, image-detail and cloud-cover filters, and notifications when imagery becomes available in areas you follow.",
@@ -3159,7 +3159,7 @@
     },
     {
       "id": "9eb0bcbe-b843-4920-a620-46427fa97ae4",
-      "title": "Imagery: OpenAerialMap user accounts, contributor tools and statistics",
+      "title": "OAM: user accounts, contributor tools and statistics",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "Contributors can manage their own and their organisation's imagery, and everyone can see coverage, usage and impact statistics.",
@@ -3582,7 +3582,7 @@
     },
     {
       "id": "85af1d29-f0a5-484a-9200-2c8efa748704",
-      "title": "Imagery: more imagery types in OpenAerialMap (multispectral, elevation, 3D)",
+      "title": "OAM: more imagery types (multispectral, elevation, 3D)",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "Publish directly from OpenDroneMap, and support multispectral imagery, elevation models and 3D point clouds.",
@@ -5286,7 +5286,7 @@
       "status": "In progress",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-07-01T00:00:00.000Z",
-      "targetDate": "2026-12-31T00:00:00.000Z",
+      "targetDate": "2027-03-31T00:00:00.000Z",
       "issues": [
         {
           "id": "64a400fb-d8dd-44fa-ad17-0623fba48dad",
@@ -5321,18 +5321,6 @@
       ]
     },
     {
-      "id": "61125e6a-7598-4771-91ba-a94b3e1f3740",
-      "title": "ChatMap: field-checking AI and damage data",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "Use ChatMap to field-validate AI-generated and damage data, and to create AI training data.",
-      "status": "In progress",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2026-07-01T00:00:00.000Z",
-      "targetDate": "2027-03-31T00:00:00.000Z",
-      "issues": []
-    },
-    {
       "id": "5aea58a9-6369-447c-bc79-f41ef13628b3",
       "title": "ChatMap: live dashboard for chat data",
       "category": "field",
@@ -5341,7 +5329,7 @@
       "status": "In progress",
       "owner": "emilio.mariscal@hotosm.org",
       "startDate": "2026-07-01T00:00:00.000Z",
-      "targetDate": "2026-12-31T00:00:00.000Z",
+      "targetDate": "2027-03-31T00:00:00.000Z",
       "issues": [
         {
           "id": "282f9a5c-6960-43a9-9a67-b28db1b00bbb",
@@ -5695,8 +5683,8 @@
           "title": "Add docs for visualising OData in Excel as well as PowerBI",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -6027,76 +6015,6 @@
               {
                 "url": "https://github.com/hotosm/field-tm/issues/2988",
                 "title": "#2988 Updates to project invite / sharing functionality",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "7dae4926-75a5-41b3-a36d-4fb890aeded3",
-      "title": "ChatMap: content management, licensing and sharing",
-      "category": "field",
-      "group": "Roadmap item",
-      "summary": "Content timeline, filtering, licensing options, tagger view, and uploading to Panoramax.",
-      "status": "Planned",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2027-01-01T00:00:00.000Z",
-      "targetDate": "2027-06-30T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "6c742e6c-6ca0-47e8-8c1c-6296895104d3",
-          "identifier": "TECH-1005",
-          "title": "More sharing permissions for maps",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/103",
-                "title": "#103 More sharing permissions for maps",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "e49632ed-b237-4547-b28f-8f702eaa6e19",
-          "identifier": "TECH-748",
-          "title": "Option to upload geo-located images to Panoramax",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:chatmap"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/chatmap/issues/20",
-                "title": "#20 Option to upload geo-located images to Panoramax",
                 "sourceType": "github"
               }
             ]
@@ -6544,6 +6462,76 @@
               {
                 "url": "https://github.com/hotosm/chatmap/issues/30",
                 "title": "#30 Telegram API connector",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "7dae4926-75a5-41b3-a36d-4fb890aeded3",
+      "title": "ChatMap: content management, licensing and sharing",
+      "category": "field",
+      "group": "Roadmap item",
+      "summary": "Content timeline, filtering, licensing options, tagger view, and uploading to Panoramax.",
+      "status": "Planned",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": null,
+      "targetDate": null,
+      "issues": [
+        {
+          "id": "6c742e6c-6ca0-47e8-8c1c-6296895104d3",
+          "identifier": "TECH-1005",
+          "title": "More sharing permissions for maps",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/103",
+                "title": "#103 More sharing permissions for maps",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "e49632ed-b237-4547-b28f-8f702eaa6e19",
+          "identifier": "TECH-748",
+          "title": "Option to upload geo-located images to Panoramax",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:chatmap"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/chatmap/issues/20",
+                "title": "#20 Option to upload geo-located images to Panoramax",
                 "sourceType": "github"
               }
             ]
@@ -7600,6 +7588,78 @@
       ]
     },
     {
+      "id": "be51e279-709d-4afd-a3a4-827b8875c341",
+      "title": "HOT Portal: centralized E2E mapping dashboard",
+      "category": "cross-project",
+      "group": "Experience: our tools should be easy to use and accessible with low tech literacy",
+      "summary": "",
+      "status": "In progress",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2025-10-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "ad615029-bd53-4105-a15d-07f8652264c1",
+          "identifier": "TECH-1295",
+          "title": "Disaster response dashboard",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:portal"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/portal/issues/184",
+                "title": "#184 Disaster response dashboard",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "6b540e8f-1dbf-425f-b911-d296240f8640",
+          "identifier": "TECH-1231",
+          "title": "REST API endpoints for integration with HOT Portal",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "repo:field-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/field-tm/issues/3104",
+                "title": "#3104 REST API endpoints for integration with HOT Portal",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "dda32e14-16dd-47e0-a304-e030e9e8682d",
       "title": "HOT Portal: shared authentication for all tools",
       "category": "cross-project",
@@ -7673,8 +7733,8 @@
           "title": "Add tool-menu to the header",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -7957,8 +8017,8 @@
           "title": "Add OAuth2 for sign-in with OSM account",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Canceled",
+            "type": "canceled"
           },
           "assignee": null,
           "labels": {
@@ -7976,78 +8036,6 @@
               {
                 "url": "https://github.com/hotosm/openaerialmap/issues/169",
                 "title": "#169 Add OAuth2 for sign-in with OSM account",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "be51e279-709d-4afd-a3a4-827b8875c341",
-      "title": "HOT Portal: centralized E2E mapping dashboard",
-      "category": "cross-project",
-      "group": "Experience: our tools should be easy to use and accessible with low tech literacy",
-      "summary": "",
-      "status": "In progress",
-      "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2025-10-01T00:00:00.000Z",
-      "targetDate": "2026-12-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "ad615029-bd53-4105-a15d-07f8652264c1",
-          "identifier": "TECH-1295",
-          "title": "Disaster response dashboard",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:portal"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/portal/issues/184",
-                "title": "#184 Disaster response dashboard",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "6b540e8f-1dbf-425f-b911-d296240f8640",
-          "identifier": "TECH-1231",
-          "title": "REST API endpoints for integration with HOT Portal",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/3104",
-                "title": "#3104 REST API endpoints for integration with HOT Portal",
                 "sourceType": "github"
               }
             ]
@@ -8223,8 +8211,8 @@
       "summary": "",
       "status": "Planned",
       "owner": "emilio.mariscal@hotosm.org",
-      "startDate": "2027-01-01T00:00:00.000Z",
-      "targetDate": "2027-06-30T00:00:00.000Z",
+      "startDate": null,
+      "targetDate": null,
       "issues": []
     }
   ]
