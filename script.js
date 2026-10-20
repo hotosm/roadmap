@@ -273,22 +273,24 @@ function renderScheduled(items) {
     return;
   }
 
-  // Sort by category order, then by startDate
-  scheduled.sort((a, b) => {
-    const catA = CATEGORY_ORDER.indexOf(a.category);
-    const catB = CATEGORY_ORDER.indexOf(b.category);
-    if (catA !== catB) return catA - catB;
-    if (!a.startDate && !b.startDate) return 0;
-    if (!a.startDate) return 1;
-    if (!b.startDate) return -1;
-    return new Date(a.startDate) - new Date(b.startDate);
-  });
-
   // Compute range
   const minimumRangeStart = addMonths(startOfQuarter(today), -3);
   const maximumRangeEnd = addDays(addMonths(startOfQuarter(today), 12), -1);
   const rangeStart = minimumRangeStart;
   const rangeEnd = maximumRangeEnd;
+
+  // Sort by category order, then by where the bar starts on screen (items that began before
+  // the range all start at its left edge), then by targetDate, so bars step down to the right
+  const barStart = (item) => {
+    const start = item.startDate ? new Date(item.startDate) : today;
+    return start < rangeStart ? rangeStart : start;
+  };
+  scheduled.sort((a, b) => {
+    const catA = CATEGORY_ORDER.indexOf(a.category);
+    const catB = CATEGORY_ORDER.indexOf(b.category);
+    if (catA !== catB) return catA - catB;
+    return barStart(a) - barStart(b) || new Date(a.targetDate) - new Date(b.targetDate);
+  });
   const totalWidth = Math.max(diffDays(rangeEnd, rangeStart) * DAY_WIDTH, timelineScroll.clientWidth);
 
   scheduledRangeStart = rangeStart;
