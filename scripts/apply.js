@@ -312,7 +312,7 @@ class Plan {
       console.log(`    – "${change.name}" already exists, checking the rest`);
       await this.assignPeople(existing, change.lead, change.members);
       if (change.milestones) await this.addMilestones({ project: change.name, milestones: change.milestones });
-      if (change.issues) await this.linkIssues({ project: change.name, issues: change.issues });
+      if (change.issues) await this.linkIssues({ project: change.name, issues: change.issues, move: change.move });
       return;
     }
 
@@ -343,7 +343,7 @@ class Plan {
     await this.assignPeople(project, change.lead, change.members);
 
     if (change.milestones) await this.addMilestones({ project: change.name, milestones: change.milestones });
-    if (change.issues) await this.linkIssues({ project: change.name, issues: change.issues });
+    if (change.issues) await this.linkIssues({ project: change.name, issues: change.issues, move: change.move });
   }
 
   async addMilestones(change) {

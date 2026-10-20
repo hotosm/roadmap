@@ -1,0 +1,103 @@
+# Roadmap sync plan: DroneTM priorities + disaster response dashboards
+#
+# Review process:
+#   - Set `approved: true` when done, then:
+#       node scripts/apply.js plans/2026-10-20.yaml            # dry run (default)
+#       node scripts/apply.js plans/2026-10-20.yaml --apply    # write to Linear
+#
+# Sources: Sam's notes (2026-10-20), Linear state on 2026-10-20.
+#
+# DroneTM priorities:
+#   1. City-scale processing (2026-Q4, unchanged), and the related "easy to use without tech
+#      team support" item, pulled in to 2027-Q2.
+#   2. 3D data for OSM (2027-Q1 -> 2027-Q4, unchanged). More imagery types in OAM unchanged.
+#   3. New: disaster response drone tracking dashboard, in parallel from 2027-Q2.
+#
+# Quarters: "2026-Q4" -> start 2026-10-01 / target 2026-12-31, resolution "quarter".
+# Statuses: Backlog | Planned | In Progress | Completed | Canceled
+
+version: 1
+approved: true
+team: TECH
+
+changes:
+
+  # ── DroneTM ───────────────────────────────────────────────────────────────
+
+  - id: dtm-1
+    op: update_project
+    project: "DroneTM: easy to use and manage without tech team support"
+    set:
+      targetQuarter: { from: 2027-Q3, to: 2027-Q2 }
+    why: >-
+      Follows on from city-scale processing (users processing on their own), but can be
+      completed earlier than first planned.
+
+  - id: dtm-new-1
+    op: create_project
+    name: "DroneTM: disaster response drone tracking dashboard"
+    description: "Live monitoring of drone flights during disaster response, including flight locations, so coordinators can see where drones are and what has been covered."
+    lead: Ping Yee
+    status: Planned
+    startQuarter: 2027-Q2
+    targetQuarter: 2028-Q1
+    issues:
+      - TECH-1314   # DroneTM as a drone flight monitoring platform (with live location if possible) (drone-tm#896)
+      - TECH-1315   # Consider support for larger drones >250g, especially if they already support waypoints (drone-tm#897)
+    move: true      # TECH-1315 is currently in "DroneTM: support additional drone models"
+    why: >-
+      Not previously on the roadmap. Runs in parallel with the 3D data work. drone-tm#896 and
+      #897 both belong here.
+
+  # ── HOT Portal ────────────────────────────────────────────────────────────
+
+  - id: portal-new-1
+    op: create_project
+    name: "HOT Portal: disaster management dashboard"
+    description: "A shared dashboard bringing together data from HOT tools (e.g. drone tracking from DroneTM) to coordinate disaster response."
+    lead: emilio.mariscal@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q2
+    targetQuarter: 2027-Q4
+    why: >-
+      Planned alongside the DroneTM disaster response drone tracking dashboard.
+
+  # ── DroneTM leads ─────────────────────────────────────────────────────────
+  # Ping Yee leads city-scale processing and 3D data; Sam Woodcock leads the other
+  # active/planned DroneTM items. Completed projects are left with their original lead.
+
+  - id: dtm-lead-1
+    op: update_project
+    project: "Utilize 3D data collected by DroneTM to enrich OpenStreetMap"
+    set:
+      lead: Ping Yee
+
+  - id: dtm-lead-2
+    op: update_project
+    project: "DroneTM: city-scale processing workflow"
+    set:
+      lead: Ping Yee
+
+  - id: dtm-lead-3
+    op: update_project
+    project: "DroneTM: improvements to drone operator experience in the field"
+    set:
+      lead: Sam Woodcock
+
+  - id: dtm-lead-4
+    op: update_project
+    project: "DroneTM: support additional drone models"
+    set:
+      lead: Sam Woodcock
+
+  - id: dtm-lead-5
+    op: update_project
+    project: "DroneTM: easy to use and manage without tech team support"
+    set:
+      lead: Sam Woodcock
+
+  - id: dtm-lead-6
+    op: update_project
+    project: "DroneTM: disaster response drone tracking dashboard"
+    set:
+      lead: Sam Woodcock

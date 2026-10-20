@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-19T08:06:25.773Z",
-  "itemCount": 44,
+  "generatedAt": "2026-10-20T10:10:49.484Z",
+  "itemCount": 46,
   "items": [
     {
       "id": "95ff0877-2c0a-421e-960c-fe7e646b7470",
@@ -663,13 +663,399 @@
       ]
     },
     {
+      "id": "1bcc0527-745d-4272-b3e7-37efeab0a1c4",
+      "title": "DroneTM: support additional drone models",
+      "category": "imagery",
+      "group": "Imagery: users can collect, process, and visualise from coordinated field activities",
+      "summary": "",
+      "status": "In progress",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-01-01T00:00:00.000Z",
+      "targetDate": "2026-12-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "94dd4cd7-607d-487a-bfa6-3334b58243e9",
+          "identifier": "TECH-1296",
+          "title": "SkyRover X1 Support",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/886",
+                "title": "#886 SkyRover X1 Support",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "8c41966e-556a-407a-a1f4-24b472c392a4",
+          "identifier": "TECH-1290",
+          "title": "DJI Lito X1 Support",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/885",
+                "title": "#885 DJI Lito X1 Support",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ae007665-64b8-40d3-8912-ff5d1a78d0cb",
+          "identifier": "TECH-1264",
+          "title": "Add support for Potensic Atom 3",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/870",
+                "title": "#870 Add support for Potensic Atom 3",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "696cb745-0de8-4dcc-ac2c-5acdc857e0b6",
+          "identifier": "TECH-1250",
+          "title": "Litchi format is broken",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/855",
+                "title": "#855 Litchi format is broken",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "45843ef0-daf2-43ca-badc-bccb34138b6d",
+          "identifier": "TECH-806",
+          "title": "Add flightplan export to QGroundControl .plan JSON format",
+          "priority": 0,
+          "state": {
+            "name": "Done",
+            "type": "completed"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/645",
+                "title": "#645 Add flightplan export to QGroundControl .plan JSON format",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "74d8c636-e97d-4a64-ba2a-47348a4ab301",
+          "identifier": "TECH-794",
+          "title": "Possible issues with wayline flights on DJI Air 3 and DJI Air 3S",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "field testing"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/634",
+                "title": "#634 Possible issues with wayline flights on DJI Air 3 and DJI Air 3S",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "988f0fa3-d410-4194-b38a-eb78826c976d",
+          "identifier": "TECH-776",
+          "title": "Either the Potensic coordinates have flipped, or the flightplan copy is not working as intended",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": {
+            "name": "Sam Woodcock"
+          },
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:drone-tm"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/627",
+                "title": "#627 Either the Potensic coordinates have flipped, or the flightplan copy is not working as intended",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "f1b386f1-6c05-43bb-926a-8b2557499867",
+          "identifier": "TECH-624",
+          "title": "Consider adding support for DJI Mavic Pro Platinum",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "good first issue"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "field testing"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/538",
+                "title": "#538 Consider adding support for DJI Mavic Pro Platinum",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "a87ec51a-58a5-4056-9065-b5e8e1a7c41a",
+          "identifier": "TECH-623",
+          "title": "Add support for using DJI Developer SDK directly (Mini 4 Pro support + remove manual waypoint replacement hack)",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "mobile"
+              },
+              {
+                "name": "Migrated"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/535",
+                "title": "#535 Add support for using DJI Developer SDK directly (Mini 4 Pro support + remove manual waypoint replacement hack)",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "572f15bf-295e-44c3-975f-d241540faa2f",
       "title": "DroneTM: improvements to drone operator experience in the field",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "Operators often don't have internet, need to navigate difficult terrain, and be flexible with workflows",
       "status": "In progress",
-      "owner": "Ping Yee",
+      "owner": "Sam Woodcock",
       "startDate": "2026-01-01T00:00:00.000Z",
       "targetDate": "2027-03-31T00:00:00.000Z",
       "issues": [
@@ -1390,431 +1776,6 @@
               {
                 "url": "https://github.com/hotosm/drone-tm/issues/405",
                 "title": "#405 Auto-rotate flight plans to fly rough contoured grid according to terrain",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "1bcc0527-745d-4272-b3e7-37efeab0a1c4",
-      "title": "DroneTM: support additional drone models",
-      "category": "imagery",
-      "group": "Imagery: users can collect, process, and visualise from coordinated field activities",
-      "summary": "",
-      "status": "In progress",
-      "owner": "Ping Yee",
-      "startDate": "2026-01-01T00:00:00.000Z",
-      "targetDate": "2026-12-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "4bd2babc-8c87-41f8-9930-84fa3f4d1b96",
-          "identifier": "TECH-1315",
-          "title": "Consider support for larger drones >250g, especially if they already support waypoints",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:medium"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/897",
-                "title": "#897 Consider support for larger drones >250g, especially if they already support waypoints",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "94dd4cd7-607d-487a-bfa6-3334b58243e9",
-          "identifier": "TECH-1296",
-          "title": "SkyRover X1 Support",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/886",
-                "title": "#886 SkyRover X1 Support",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "8c41966e-556a-407a-a1f4-24b472c392a4",
-          "identifier": "TECH-1290",
-          "title": "DJI Lito X1 Support",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/885",
-                "title": "#885 DJI Lito X1 Support",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "ae007665-64b8-40d3-8912-ff5d1a78d0cb",
-          "identifier": "TECH-1264",
-          "title": "Add support for Potensic Atom 3",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/870",
-                "title": "#870 Add support for Potensic Atom 3",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "696cb745-0de8-4dcc-ac2c-5acdc857e0b6",
-          "identifier": "TECH-1250",
-          "title": "Litchi format is broken",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/855",
-                "title": "#855 Litchi format is broken",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "45843ef0-daf2-43ca-badc-bccb34138b6d",
-          "identifier": "TECH-806",
-          "title": "Add flightplan export to QGroundControl .plan JSON format",
-          "priority": 0,
-          "state": {
-            "name": "Done",
-            "type": "completed"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/645",
-                "title": "#645 Add flightplan export to QGroundControl .plan JSON format",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "74d8c636-e97d-4a64-ba2a-47348a4ab301",
-          "identifier": "TECH-794",
-          "title": "Possible issues with wayline flights on DJI Air 3 and DJI Air 3S",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "effort:medium"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "field testing"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/634",
-                "title": "#634 Possible issues with wayline flights on DJI Air 3 and DJI Air 3S",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "988f0fa3-d410-4194-b38a-eb78826c976d",
-          "identifier": "TECH-776",
-          "title": "Either the Potensic coordinates have flipped, or the flightplan copy is not working as intended",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": {
-            "name": "Sam Woodcock"
-          },
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:drone-tm"
-              },
-              {
-                "name": "effort:medium"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/627",
-                "title": "#627 Either the Potensic coordinates have flipped, or the flightplan copy is not working as intended",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "f1b386f1-6c05-43bb-926a-8b2557499867",
-          "identifier": "TECH-624",
-          "title": "Consider adding support for DJI Mavic Pro Platinum",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "good first issue"
-              },
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "field testing"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/538",
-                "title": "#538 Consider adding support for DJI Mavic Pro Platinum",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "a87ec51a-58a5-4056-9065-b5e8e1a7c41a",
-          "identifier": "TECH-623",
-          "title": "Add support for using DJI Developer SDK directly (Mini 4 Pro support + remove manual waypoint replacement hack)",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "effort:high"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "dependency:drone-flightplan"
-              },
-              {
-                "name": "mobile"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/535",
-                "title": "#535 Add support for using DJI Developer SDK directly (Mini 4 Pro support + remove manual waypoint replacement hack)",
                 "sourceType": "github"
               }
             ]
@@ -2680,7 +2641,7 @@
         {
           "id": "eaf98f6a-7d16-43c1-a8f7-3ca6750c1075",
           "identifier": "TECH-1227",
-          "title": "Allow retry if a spot instance terminates during the final upload stage",
+          "title": "Workflow checkpointing: ensure jobs can resume on evicted spot instances",
           "priority": 0,
           "state": {
             "name": "Backlog",
@@ -2701,7 +2662,7 @@
             "nodes": [
               {
                 "url": "https://github.com/hotosm/ScaleODM/issues/11",
-                "title": "#11 Allow retry if a spot instance terminates during the final upload stage",
+                "title": "#11 Workflow checkpointing: ensure jobs can resume on evicted spot instances",
                 "sourceType": "github"
               }
             ]
@@ -3046,6 +3007,196 @@
       ]
     },
     {
+      "id": "6119985b-ad08-4a4d-a6bc-2dd5ab0df56e",
+      "title": "DroneTM: easy to use and manage without tech team support",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "Community users can run DroneTM projects standalone, fixing failed uploads and processing themselves instead of relying on the tech team.",
+      "status": "In progress",
+      "owner": "Sam Woodcock",
+      "startDate": "2026-10-01T00:00:00.000Z",
+      "targetDate": "2027-06-30T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "62d245fd-f3c6-4f25-b485-81d7c793881b",
+          "identifier": "TECH-1303",
+          "title": "Can't easily match project/task to entries in the processing page",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/890",
+                "title": "#890 Can't easily match project/task to entries in the processing page",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "8d69b6be-e3f0-4a9e-b63f-eb26f37bd762",
+          "identifier": "TECH-1256",
+          "title": "Pick up any ongoing image classification jobs on first server load, resume where possible",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/858",
+                "title": "#858 Pick up any ongoing image classification jobs on first server load, resume where possible",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7b63e3e9-7e5d-4a4f-a3fc-ce414fc5e5cd",
+          "identifier": "TECH-1240",
+          "title": "Users should be notified if imagery is currently being transferred internally",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "Bug"
+              },
+              {
+                "name": "priority:high"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/846",
+                "title": "#846 Users should be notified if imagery is currently being transferred internally",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "5a62899e-15e4-4d2b-b357-d1071b098189",
+          "identifier": "TECH-1217",
+          "title": "[Enhancement] Implement real-time auto-updates, progress indicators, and ETAs in Processing Status modal",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "enhancement"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/836",
+                "title": "#836 [Enhancement] Implement real-time auto-updates, progress indicators, and ETAs in Processing Status modal",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "2f77d41b-93dc-4d43-ab2f-92aa537fa7f9",
+          "identifier": "TECH-1094",
+          "title": "Add a way to delete uploaded images for a task and start from scratch",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:low"
+              },
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "frontend"
+              },
+              {
+                "name": "repo:drone-tm"
+              },
+              {
+                "name": "enhancement"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/760",
+                "title": "#760 Add a way to delete uploaded images for a task and start from scratch",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "51eaf48e-f43e-4c22-b931-3350d5a4ae40",
       "title": "OAM: advanced search and new imagery alerts",
       "category": "imagery",
@@ -3294,203 +3445,13 @@
       ]
     },
     {
-      "id": "6119985b-ad08-4a4d-a6bc-2dd5ab0df56e",
-      "title": "DroneTM: easy to use and manage without tech team support",
-      "category": "imagery",
-      "group": "Roadmap item",
-      "summary": "Community users can run DroneTM projects standalone, fixing failed uploads and processing themselves instead of relying on the tech team.",
-      "status": "In progress",
-      "owner": "Ping Yee",
-      "startDate": "2026-10-01T00:00:00.000Z",
-      "targetDate": "2027-09-30T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "62d245fd-f3c6-4f25-b485-81d7c793881b",
-          "identifier": "TECH-1303",
-          "title": "Can't easily match project/task to entries in the processing page",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/890",
-                "title": "#890 Can't easily match project/task to entries in the processing page",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "8d69b6be-e3f0-4a9e-b63f-eb26f37bd762",
-          "identifier": "TECH-1256",
-          "title": "Pick up any ongoing image classification jobs on first server load, resume where possible",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "help wanted"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/858",
-                "title": "#858 Pick up any ongoing image classification jobs on first server load, resume where possible",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7b63e3e9-7e5d-4a4f-a3fc-ce414fc5e5cd",
-          "identifier": "TECH-1240",
-          "title": "Users should be notified if imagery is currently being transferred internally",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "priority:high"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "frontend"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/846",
-                "title": "#846 Users should be notified if imagery is currently being transferred internally",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "5a62899e-15e4-4d2b-b357-d1071b098189",
-          "identifier": "TECH-1217",
-          "title": "[Enhancement] Implement real-time auto-updates, progress indicators, and ETAs in Processing Status modal",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "repo:drone-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/836",
-                "title": "#836 [Enhancement] Implement real-time auto-updates, progress indicators, and ETAs in Processing Status modal",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "2f77d41b-93dc-4d43-ab2f-92aa537fa7f9",
-          "identifier": "TECH-1094",
-          "title": "Add a way to delete uploaded images for a task and start from scratch",
-          "priority": 0,
-          "state": {
-            "name": "Backlog",
-            "type": "backlog"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "frontend"
-              },
-              {
-                "name": "repo:drone-tm"
-              },
-              {
-                "name": "enhancement"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/drone-tm/issues/760",
-                "title": "#760 Add a way to delete uploaded images for a task and start from scratch",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "539e9ba5-c3a3-4253-b48f-0daf7fcb230c",
       "title": "Utilize 3D data collected by DroneTM to enrich OpenStreetMap",
       "category": "imagery",
       "group": "Roadmap item",
       "summary": "",
       "status": "Planned",
-      "owner": "Sam Woodcock",
+      "owner": "Ping Yee",
       "startDate": "2027-01-01T00:00:00.000Z",
       "targetDate": "2027-12-31T00:00:00.000Z",
       "issues": [
@@ -3573,6 +3534,94 @@
               {
                 "url": "https://github.com/hotosm/drone-tm/issues/767",
                 "title": "#767 Implement a pipeline for point cloud building identification & height estimation",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "90a68c49-9898-4a1a-b49c-6e9efa6e479d",
+      "title": "DroneTM: disaster response drone tracking dashboard",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "Live monitoring of drone flights during disaster response, including flight locations, so coordinators can see where drones are and what has been covered.",
+      "status": "Planned",
+      "owner": "Sam Woodcock",
+      "startDate": "2027-04-01T00:00:00.000Z",
+      "targetDate": "2028-03-31T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "4bd2babc-8c87-41f8-9930-84fa3f4d1b96",
+          "identifier": "TECH-1315",
+          "title": "Consider support for larger drones >250g, especially if they already support waypoints",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "backend"
+              },
+              {
+                "name": "effort:medium"
+              },
+              {
+                "name": "dependency:drone-flightplan"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/897",
+                "title": "#897 Consider support for larger drones >250g, especially if they already support waypoints",
+                "sourceType": "github"
+              }
+            ]
+          }
+        },
+        {
+          "id": "59a2f45e-7bfe-46ec-8fff-cfd0f1f6e09e",
+          "identifier": "TECH-1314",
+          "title": "DroneTM as a drone flight monitoring platform (with live location if possible)",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "priority:low"
+              },
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "effort:high"
+              },
+              {
+                "name": "repo:drone-tm"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/drone-tm/issues/896",
+                "title": "#896 DroneTM as a drone flight monitoring platform (with live location if possible)",
                 "sourceType": "github"
               }
             ]
@@ -5910,8 +5959,8 @@
           "title": "We need a task assignment UI",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -7676,8 +7725,8 @@
           "title": "Shared HOT login",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -7895,8 +7944,8 @@
           "title": "Use a locale switcher cookie based on unified HOT login cookie",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -8060,8 +8109,8 @@
           "title": "Pre-bake product wordmarks into the logo SVG",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Canceled",
+            "type": "canceled"
           },
           "assignee": null,
           "labels": {
@@ -8201,6 +8250,18 @@
       "owner": "anil.rajrimal@hotosm.org",
       "startDate": "2027-01-01T00:00:00.000Z",
       "targetDate": "2027-03-31T00:00:00.000Z",
+      "issues": []
+    },
+    {
+      "id": "46247809-927b-495c-97e8-83af542fd284",
+      "title": "HOT Portal: disaster management dashboard",
+      "category": "cross-project",
+      "group": "Roadmap item",
+      "summary": "A shared dashboard bringing together data from HOT tools (e.g. drone tracking from DroneTM) to coordinate disaster response.",
+      "status": "Planned",
+      "owner": "emilio.mariscal@hotosm.org",
+      "startDate": "2027-04-01T00:00:00.000Z",
+      "targetDate": "2027-12-31T00:00:00.000Z",
       "issues": []
     },
     {
