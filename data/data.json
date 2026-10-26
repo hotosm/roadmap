@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T10:10:49.484Z",
+  "generatedAt": "2026-10-26T08:07:56.899Z",
   "itemCount": 46,
   "items": [
     {
@@ -1092,8 +1092,8 @@
           "title": "[PROPOSAL] Field Edge Kit: offline validation, privacy AI and store-and-forward at the charging base",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -1866,8 +1866,8 @@
           "title": "OAM STAC new provider onboarding guide",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -4127,8 +4127,8 @@
           "title": "Implement OSM Sandbox (Research)",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": {
             "name": "dakota.benjamin@hotosm.org"
@@ -5413,8 +5413,8 @@
           "title": "Statuses in the map UI",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -5440,8 +5440,8 @@
           "title": "Statuses API for maps and points",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -5467,8 +5467,8 @@
           "title": "ChatMap Dashboard - Points with status",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -5494,8 +5494,8 @@
           "title": "ChatMap Dashboard - CLI adapting for group conversations",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -6648,8 +6648,8 @@
           "title": "[FEATURE] Move the query_builder logic to a standalone Python package",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": {
             "name": "Sam Woodcock"
@@ -6889,7 +6889,7 @@
       "group": "Roadmap item",
       "summary": "",
       "status": "In progress",
-      "owner": "anil.rajrimal@hotosm.org",
+      "owner": "Anil Raj Rimal",
       "startDate": "2025-07-01T00:00:00.000Z",
       "targetDate": "2027-03-31T00:00:00.000Z",
       "issues": [
@@ -8247,7 +8247,7 @@
       "group": "Roadmap item",
       "summary": "Every tech team member can deploy and manage their tool, including virtual machines inside the Kubernetes cluster (KubeVirt) as an interim for those not comfortable with Kubernetes.",
       "status": "Planned",
-      "owner": "anil.rajrimal@hotosm.org",
+      "owner": "Anil Raj Rimal",
       "startDate": "2027-01-01T00:00:00.000Z",
       "targetDate": "2027-03-31T00:00:00.000Z",
       "issues": []
