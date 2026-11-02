@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T08:07:56.899Z",
+  "generatedAt": "2026-11-02T08:01:29.849Z",
   "itemCount": 46,
   "items": [
     {
@@ -6902,7 +6902,9 @@
             "name": "Backlog",
             "type": "backlog"
           },
-          "assignee": null,
+          "assignee": {
+            "name": "Anil Raj Rimal"
+          },
           "labels": {
             "nodes": [
               {
