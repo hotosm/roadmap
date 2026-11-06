@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T08:01:29.849Z",
+  "generatedAt": "2026-11-06T13:38:10.171Z",
   "itemCount": 46,
   "items": [
     {
@@ -3542,6 +3542,55 @@
       ]
     },
     {
+      "id": "91a85689-d165-491e-9aaa-3fb2193e8534",
+      "title": "OAM: privacy protection for high-resolution imagery",
+      "category": "imagery",
+      "group": "Roadmap item",
+      "summary": "Reduce the risk of identifying people in very high-resolution uploads by blurring faces or reducing image detail.",
+      "status": "Planned",
+      "owner": "cristiano.giovando@hotosm.org",
+      "startDate": "2027-04-01T00:00:00.000Z",
+      "targetDate": "2027-09-30T00:00:00.000Z",
+      "issues": [
+        {
+          "id": "8310eaa4-c4ac-44c0-ad4a-1351d9dbe982",
+          "identifier": "TECH-1399",
+          "title": "Add capability for downsampling high resolution imagery, or facial recognition and blurring algorithm",
+          "priority": 0,
+          "state": {
+            "name": "Backlog",
+            "type": "backlog"
+          },
+          "assignee": null,
+          "labels": {
+            "nodes": [
+              {
+                "name": "help wanted"
+              },
+              {
+                "name": "discussion"
+              },
+              {
+                "name": "High Priority"
+              },
+              {
+                "name": "repo:oam"
+              }
+            ]
+          },
+          "attachments": {
+            "nodes": [
+              {
+                "url": "https://github.com/hotosm/openaerialmap/issues/382",
+                "title": "#382 Add capability for downsampling high resolution imagery, or facial recognition and blurring algorithm",
+                "sourceType": "github"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "90a68c49-9898-4a1a-b49c-6e9efa6e479d",
       "title": "DroneTM: disaster response drone tracking dashboard",
       "category": "imagery",
@@ -5109,169 +5158,6 @@
       "issues": []
     },
     {
-      "id": "0040a20b-bf69-4cb7-a2f4-80de554a8c1d",
-      "title": "FieldTM: QField integration",
-      "category": "field",
-      "group": "Field tagging: simple workflows for adding field data to digitised features should be well documented",
-      "summary": "Integrations with QField as underlying mapping app",
-      "status": "Done",
-      "owner": "Sam Woodcock",
-      "startDate": "2025-07-01T00:00:00.000Z",
-      "targetDate": "2026-03-31T00:00:00.000Z",
-      "issues": [
-        {
-          "id": "c1dbba6c-2650-4263-bbd5-21f596165ca7",
-          "identifier": "TECH-782",
-          "title": "Error during QField project creation",
-          "priority": 0,
-          "state": {
-            "name": "Done",
-            "type": "completed"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2848",
-                "title": "#2848 Error during QField project creation",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "297f8b52-f990-431a-830d-0b7afc85e33d",
-          "identifier": "TECH-742",
-          "title": "Remove ODK related options for QField project setup",
-          "priority": 0,
-          "state": {
-            "name": "Done",
-            "type": "completed"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:field-tm"
-              },
-              {
-                "name": "testing:ready"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2842",
-                "title": "#2842 Remove ODK related options for QField project setup",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "3fad1369-ae40-49ea-baeb-c54964a4ea40",
-          "identifier": "TECH-740",
-          "title": "Do not create ODK Central project when QField is specified in project creation",
-          "priority": 0,
-          "state": {
-            "name": "Done",
-            "type": "completed"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "Bug"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "backend"
-              },
-              {
-                "name": "effort:medium"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:field-tm"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2838",
-                "title": "#2838 Do not create ODK Central project when QField is specified in project creation",
-                "sourceType": "github"
-              }
-            ]
-          }
-        },
-        {
-          "id": "d2a08d6e-ef28-4473-b1e4-b9d9271c42ff",
-          "identifier": "TECH-739",
-          "title": "Follow RedirectResponse for QFieldCloud projects",
-          "priority": 0,
-          "state": {
-            "name": "Done",
-            "type": "completed"
-          },
-          "assignee": null,
-          "labels": {
-            "nodes": [
-              {
-                "name": "enhancement"
-              },
-              {
-                "name": "priority:low"
-              },
-              {
-                "name": "frontend:management"
-              },
-              {
-                "name": "effort:low"
-              },
-              {
-                "name": "Migrated"
-              },
-              {
-                "name": "repo:field-tm"
-              },
-              {
-                "name": "testing:ready"
-              }
-            ]
-          },
-          "attachments": {
-            "nodes": [
-              {
-                "url": "https://github.com/hotosm/field-tm/issues/2834",
-                "title": "#2834 Follow RedirectResponse for QFieldCloud projects",
-                "sourceType": "github"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "e33a6494-b319-495a-b0b1-c34c0f79ffc7",
       "title": "ChatMap: survey ChatBot",
       "category": "field",
@@ -5878,8 +5764,8 @@
           "title": "Updates to the QField-FieldTM plugin",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -5991,8 +5877,8 @@
           "title": "The ODK form currently has no task locking capabilities",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -6033,8 +5919,8 @@
           "title": "Updates to project invite / sharing functionality",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -7684,8 +7570,8 @@
           "title": "REST API endpoints for integration with HOT Portal",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -7982,8 +7868,8 @@
           "title": "Add bundled hanko login instance as part of Kubernetes deployment options",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": null,
           "labels": {
@@ -8024,8 +7910,8 @@
           "title": "Add login to frontend via unified HOT login",
           "priority": 0,
           "state": {
-            "name": "Backlog",
-            "type": "backlog"
+            "name": "Done",
+            "type": "completed"
           },
           "assignee": {
             "name": "Sam Woodcock"

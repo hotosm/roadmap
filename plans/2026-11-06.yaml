@@ -1,0 +1,31 @@
+# Roadmap sync plan: OAM privacy protection for high-resolution imagery
+#
+# Review process:
+#   - Set `approved: true` when done, then:
+#       node scripts/apply.js plans/2026-11-06.yaml            # dry run (default)
+#       node scripts/apply.js plans/2026-11-06.yaml --apply    # write to Linear
+#
+# Sources: Sam's notes (2026-11-06), openaerialmap#382, responsible-usage-guides/drone#3.
+#
+# Quarters: "2026-Q4" -> start 2026-10-01 / target 2026-12-31, resolution "quarter".
+# Statuses: Backlog | Planned | In Progress | Completed | Canceled
+
+version: 1
+approved: true
+team: TECH
+
+changes:
+
+  - id: oam-new-1
+    op: create_project
+    name: "OAM: privacy protection for high-resolution imagery"
+    description: "Reduce the risk of identifying people in very high-resolution uploads by blurring faces or reducing image detail."
+    lead: cristiano.giovando@hotosm.org
+    status: Planned
+    startQuarter: 2027-Q2
+    targetQuarter: 2027-Q3
+    issues:
+      - TECH-1399   # Add capability for downsampling high resolution imagery, or facial recognition and blurring algorithm (openaerialmap#382)
+    why: >-
+      Not previously on the roadmap. Imagery finer than 3 cm/px can make faces recognisable,
+      which is a privacy risk now that cheap drones capture it. Planned ahead of more imagery types.
