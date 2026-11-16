@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T08:01:27.063Z",
+  "generatedAt": "2026-11-16T08:07:55.127Z",
   "itemCount": 46,
   "items": [
     {
@@ -3510,30 +3510,39 @@
           "labels": {
             "nodes": [
               {
-                "name": "help wanted"
+                "name": "priority:low"
               },
               {
-                "name": "backend"
+                "name": "enhancement"
+              },
+              {
+                "name": "help wanted"
               },
               {
                 "name": "effort:high"
               },
               {
-                "name": "priority:low"
+                "name": "backend"
+              },
+              {
+                "name": "repo:drone-tm"
+              },
+              {
+                "name": "repo:oam"
               },
               {
                 "name": "OAM"
               },
               {
-                "name": "repo:drone-tm"
+                "name": "Medium Priority"
               }
             ]
           },
           "attachments": {
             "nodes": [
               {
-                "url": "https://github.com/hotosm/drone-tm/issues/767",
-                "title": "#767 Implement a pipeline for point cloud building identification & height estimation",
+                "url": "https://github.com/hotosm/openaerialmap/issues/389",
+                "title": "#389 Implement a pipeline for point cloud building identification & height estimation",
                 "sourceType": "github"
               }
             ]
